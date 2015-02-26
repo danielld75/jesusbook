@@ -82,4 +82,4 @@ production:
   <<: *default
   database: jesusbook_production
   username: jsbarm
-  password: <%= ENV['JESUSBOOK_DATABASE_PASSWORD'] %>
+  password: <%= ENV['book@3xx13'] %>
