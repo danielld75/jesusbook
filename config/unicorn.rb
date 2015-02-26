@@ -12,7 +12,7 @@ working_directory app_dir
 
 # Set up socket location
 # listen "#{shared_dir}/sockets/unicorn.jesusbook.sock", :backlog => 64
-listen 6969, :tcp_nopush => true
+listen 127.0.0.1:6969, :tcp_nopush => true
 
 # Loging
 stderr_path "#{shared_dir}/log/unicorn.stderr.log"
