@@ -6801,3 +6801,194 @@ ActionController::RoutingError (No route matches [POST] "/welcome/index"):
   Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
   Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (113.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (14.8ms)[0m  INSERT INTO "users" ("name", "lastName", "religion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Daniel"], ["lastName", "Dziuda"], ["religion", "katolik"], ["created_at", "2015-05-21 09:03:39.497585"], ["updated_at", "2015-05-21 09:03:39.497585"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfirmation Load (0.2ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [[nil, 1]]
+SQLite3::SQLException: no such column: confirmations.user_id: SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1
+  [1m[36mConfirmation Load (0.3ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [[nil, 1]]
+SQLite3::SQLException: no such column: confirmations.user_id: SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Daniel"], ["created_at", "2015-05-21 09:10:49.503253"], ["updated_at", "2015-05-21 09:10:49.503253"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfirmation Load (0.3ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [[nil, 2]]
+SQLite3::SQLException: no such column: confirmations.user_id: SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Daniel"], ["created_at", "2015-05-21 09:13:34.527425"], ["updated_at", "2015-05-21 09:13:34.527425"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfirmation Load (0.2ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [[nil, 3]]
+SQLite3::SQLException: no such column: confirmations.user_id: SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mConfirmation Load (0.2ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [[nil, 1]]
+SQLite3::SQLException: no such column: confirmations.user_id: SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserIdToConfirmations (20150521095443)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "confirmations" ADD "user_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150521095443"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mConfirmation Load (0.2ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "confirmations" ("local", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["local", "Wielowieś"], ["user_id", 1], ["created_at", "2015-05-21 10:09:52.345881"], ["updated_at", "2015-05-21 10:09:52.345881"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (2.5ms)[0m  DELETE FROM "users"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveUserIdFromConfirmations (20150521103044)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150521103044"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to RemoveUserIdFromConfirmations (20150521103044)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20150521103044"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveUserIdFromConfirmations (20150521103214)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "aconfirmations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "local" varchar, "parish" varchar, "minister" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "user_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "confirmations"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aconfirmations" ("id","date","local","parish","minister","created_at","updated_at","user_id") VALUES (1, NULL, 'Wielowieś', NULL, NULL, '2015-05-21 10:09:52.345881', '2015-05-21 10:09:52.345881', 1)[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "confirmations"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "confirmations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "local" varchar, "parish" varchar, "minister" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "aconfirmations"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "confirmations" ("id","date","local","parish","minister","created_at","updated_at") VALUES (1, NULL, 'Wielowieś', NULL, NULL, '2015-05-21 10:09:52.345881', '2015-05-21 10:09:52.345881')[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "aconfirmations"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150521103214"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToConfirmations (20150521103338)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "confirmations" ADD "user_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150521103338"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddUserRefToConfirmations (20150521103338)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TEMPORARY TABLE "aconfirmations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "local" varchar, "parish" varchar, "minister" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "user_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "confirmations"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aconfirmations" ("id","date","local","parish","minister","created_at","updated_at","user_id") VALUES (1, NULL, 'Wielowieś', NULL, NULL, '2015-05-21 10:09:52.345881', '2015-05-21 10:09:52.345881', NULL)
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "confirmations"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "confirmations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "local" varchar, "parish" varchar, "minister" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "aconfirmations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "confirmations" ("id","date","local","parish","minister","created_at","updated_at") VALUES (1, NULL, 'Wielowieś', NULL, NULL, '2015-05-21 10:09:52.345881', '2015-05-21 10:09:52.345881')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "aconfirmations"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20150521103338"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToConfirmations (20150521103338)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "confirmations" ADD "user_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150521103338"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddUserRefToConfirmations (20150521103338)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "aconfirmations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "local" varchar, "parish" varchar, "minister" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "user_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "confirmations"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aconfirmations" ("id","date","local","parish","minister","created_at","updated_at","user_id") VALUES (1, NULL, 'Wielowieś', NULL, NULL, '2015-05-21 10:09:52.345881', '2015-05-21 10:09:52.345881', NULL)
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "confirmations"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "confirmations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "local" varchar, "parish" varchar, "minister" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "aconfirmations"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "confirmations" ("id","date","local","parish","minister","created_at","updated_at") VALUES (1, NULL, 'Wielowieś', NULL, NULL, '2015-05-21 10:09:52.345881', '2015-05-21 10:09:52.345881')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "aconfirmations"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20150521103338"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToConfirmations (20150521104547)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "confirmations" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_confirmations_on_user_id" ON "confirmations" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150521104547"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_confirmations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_confirmations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToBabtisms (20150521104801)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "babtisms" ADD "user_id" integer[0m
+SQLite3::SQLException: no such table: babtisms: ALTER TABLE "babtisms" ADD "user_id" integer
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToBaptisms (20150521104801)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "baptisms" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_baptisms_on_user_id" ON "baptisms" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150521104801"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddUserRefToMarriages (20150521104836)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "marriages" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_marriages_on_user_id" ON "marriages" ("user_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150521104836"]]
+  [1m[35m (7.2ms)[0m  commit transaction
+Migrating to AddUserRefToPriesthoods (20150521104917)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "priesthoods" ADD "user_id" integer
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_priesthoods_on_user_id" ON "priesthoods" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150521104917"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_baptisms_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_baptisms_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_confirmations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_confirmations_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_marriages_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_marriages_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_priesthoods_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_priesthoods_on_user_id' AND type='index'
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150428064721) do
+ActiveRecord::Schema.define(version: 20150521104917) do
 
   create_table "baptisms", force: :cascade do |t|
     t.date     "date"
@@ -20,7 +20,10 @@ ActiveRecord::Schema.define(version: 20150428064721) do
     t.string   "minister"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
+
+  add_index "baptisms", ["user_id"], name: "index_baptisms_on_user_id"
 
   create_table "confirmations", force: :cascade do |t|
     t.date     "date"
@@ -29,7 +32,10 @@ ActiveRecord::Schema.define(version: 20150428064721) do
     t.string   "minister"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
+
+  add_index "confirmations", ["user_id"], name: "index_confirmations_on_user_id"
 
   create_table "marriages", force: :cascade do |t|
     t.date     "date"
@@ -38,7 +44,10 @@ ActiveRecord::Schema.define(version: 20150428064721) do
     t.string   "minister"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
+
+  add_index "marriages", ["user_id"], name: "index_marriages_on_user_id"
 
   create_table "priesthoods", force: :cascade do |t|
     t.date     "date"
@@ -47,7 +56,10 @@ ActiveRecord::Schema.define(version: 20150428064721) do
     t.string   "minister"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
+
+  add_index "priesthoods", ["user_id"], name: "index_priesthoods_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
