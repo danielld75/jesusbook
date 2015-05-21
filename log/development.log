@@ -5384,3 +5384,1420 @@ Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-04-28 12:19:01 +020
 
 
 Started GET "/assets/jesus.jpg" for ::1 at 2015-04-28 12:19:01 +0200
+
+
+Started GET "/" for ::1 at 2015-05-15 19:01:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (15.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 85ms
+
+ActionView::MissingTemplate (Missing template welcome/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/daniel/apps/jesusbook/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/daniel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/daniel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (68.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-05-15 19:07:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined local variable or method `tweet_path' for #<#<Class:0x007fa260b63280>:0x007fa260b5b2b0>):
+    2: %p pixel
+    3: %h2= @tweet = "tweet"
+    4: .content Hello World
+    5: = link_to 'delete', tweet_path, method: :delete
+    6: = link_to_unless @tweet.nil?, "Reply"
+  app/views/welcome/index.html.haml:5:in `_app_views_welcome_index_html_haml___2760878316043635212_70167691874640'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-15 19:07:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 1262ms (Views: 1261.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-15 19:07:52 +0200
+
+
+Started GET "/welcome/index" for ::1 at 2015-05-15 19:07:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for ::1 at 2015-05-15 19:08:16 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-15 19:08:16 +0200
+
+
+Started GET "/welcome/index" for ::1 at 2015-05-15 19:09:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-15 19:09:58 +0200
+
+
+Started GET "/welcome/index" for ::1 at 2015-05-15 19:09:59 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-15 19:09:59 +0200
+
+
+Started GET "/welcome/index" for ::1 at 2015-05-15 19:10:15 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-15 19:10:15 +0200
+
+
+Started GET "/welcome/index" for ::1 at 2015-05-15 19:10:29 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-15 19:10:29 +0200
+
+
+Started GET "/welcome/index" for ::1 at 2015-05-15 19:10:54 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-15 19:10:54 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 22:53:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 564ms (Views: 543.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-05-18 22:53:34 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 22:53:59 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:53:59 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 22:54:10 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (42.4ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (undefined local variable or method `checkbox_tag' for #<#<Class:0x007fa34e5061f0>:0x007fa34b1c9378>):
+    5: 
+    6: = link_to_unless @tweet, "Reply"
+    7: 
+    8: = checkbox_tag
+  app/views/welcome/index.html.haml:8:in `_app_views_welcome_index_html_haml__3075993394026451854_70169658446520'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.1ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 22:54:31 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..4)):
+    5: 
+    6: = link_to_unless @tweet, "Reply"
+    7: 
+    8: = check_box_tag
+  app/views/welcome/index.html.haml:8:in `_app_views_welcome_index_html_haml__3075993394026451854_70169696132420'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.6ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 22:55:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:55:18 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 22:56:34 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:56:34 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 22:57:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 22:57:13 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:00:05 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...e_false(( check_box_tag(:name), class = "name"
+...                               ^):
+  app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.5ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 23:00:40 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/views/welcome/index.html.haml:8: syntax error, unexpected keyword_class, expecting ')'
+...se(( check_box_tag(:name) class = "name"
+...                               ^):
+  app/views/welcome/index.html.haml:8: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.7ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 23:01:04 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...e_false(( check_box_tag(:name), class: "name"
+...                               ^):
+  app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 23:01:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...e_false(( check_box_tag(:name), class: :name
+...                               ^):
+  app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 23:01:43 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...e_false(( check_box_tag(:name), class: name
+...                               ^):
+  app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 23:01:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/views/welcome/index.html.haml:8: syntax error, unexpected tLABEL, expecting ')'
+...e(( check_box_tag(:name) class: :name
+...                               ^):
+  app/views/welcome/index.html.haml:8: syntax error, unexpected tLABEL, expecting ')'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 23:02:06 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+...e_false(( check_box_tag(:name), class: :name
+...                               ^):
+  app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.4ms)
+
+
+Started GET "/" for fe80::1%lo0 at 2015-05-18 23:03:40 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for fe80::1%lo0 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for fe80::1%lo0 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:03:40 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:15:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:15:06 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:15:06 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:15:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:15:06 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:15:06 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:15:06 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:15:06 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-18 23:25:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `radio_buttom_tag' for #<#<Class:0x007fa34e5061f0>:0x007fa35125bec0>):
+     8: = check_box_tag((:name), class: :name)
+     9: = label_tag(:name)
+    10: %br
+    11: = radio_buttom_tag(:names, "child")
+    12: %br
+    13: = radio_button_tag(:names, "color")
+  app/views/welcome/index.html.haml:11:in `_app_views_welcome_index_html_haml__3075993394026451854_70169708910080'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:25:28 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:25:37 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2015-05-18 23:26:16 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:29:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:29:20 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:29:40 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:29:40 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:29:43 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:29:43 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:30:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:30:18 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:31:06 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:31:06 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:31:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `data_field' for #<#<Class:0x007fa34e5061f0>:0x007fa3515cd748>):
+    14: %br
+    15: = text_area_tag(:message, "Hej koleś", size: "23x5")
+    16: %br
+    17: = data_field(:user, :name)
+  app/views/welcome/index.html.haml:17:in `_app_views_welcome_index_html_haml__3075993394026451854_70169710715460'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 23:31:54 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (28.2ms)
+Completed 200 OK in 53ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:31:54 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:32:43 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (31.5ms)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:32:44 +0200
+
+
+Started GET "/" for ::1 at 2015-05-18 23:33:05 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (31.5ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-18 23:33:05 +0200
+
+
+Started GET "/" for ::1 at 2015-05-19 06:05:39 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    16: %br
+    17: = range_field(:user, :name)
+    18: %br
+    19: = form_for @user, url: {action: "create"}, html: {class: "notify"} do |f|
+    20:   = f.text_field :name
+    21:   = f.area_field :description, size: "30x2"
+    22:   = f.submit "Create"
+  app/views/welcome/index.html.haml:19:in `_app_views_welcome_index_html_haml__3075993394026451854_70169686572360'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.2ms)
+
+
+Started GET "/" for ::1 at 2015-05-19 06:05:59 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `area_field' for #<ActionView::Helpers::FormBuilder:0x007fa351260fd8>):
+    18: %br
+    19: = form_for :user, url: {action: "create"}, html: {class: "notify"} do |f|
+    20:   = f.text_field :name
+    21:   = f.area_field :description, size: "30x2"
+    22:   = f.submit "Create"
+  app/views/welcome/index.html.haml:21:in `block in _app_views_welcome_index_html_haml__3075993394026451854_70169659006420'
+  app/views/welcome/index.html.haml:19:in `_app_views_welcome_index_html_haml__3075993394026451854_70169659006420'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-19 06:06:21 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"welcome"}):
+    16: %br
+    17: = range_field(:user, :name)
+    18: %br
+    19: = form_for :user, url: {action: "create"}, html: {class: "notify"} do |f|
+    20:   = f.text_field :name
+    21:   = f.text_area :description, size: "30x2"
+    22:   = f.submit "Create"
+  app/views/welcome/index.html.haml:19:in `_app_views_welcome_index_html_haml__3075993394026451854_70169664282280'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-19 06:06:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (No route matches {:action=>"#", :controller=>"welcome"}):
+    16: %br
+    17: = range_field(:user, :name)
+    18: %br
+    19: = form_for :user, url: {action: "#"}, html: {class: "notify"} do |f|
+    20:   = f.text_field :name
+    21:   = f.text_area :description, size: "30x2"
+    22:   = f.submit "Create"
+  app/views/welcome/index.html.haml:19:in `_app_views_welcome_index_html_haml__3075993394026451854_70169666612960'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.9ms)
+
+
+Started GET "/" for ::1 at 2015-05-19 06:06:46 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 138ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 06:06:46 +0200
+
+
+Started GET "/" for ::1 at 2015-05-19 09:09:17 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 372ms (Views: 371.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 09:09:18 +0200
+
+
+Started GET "/" for ::1 at 2015-05-19 09:09:25 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (444.9ms)
+Completed 200 OK in 472ms (Views: 471.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 09:09:25 +0200
+
+
+Started GET "/" for ::1 at 2015-05-19 10:33:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (20.7ms)
+Completed 200 OK in 128ms (Views: 127.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 10:33:00 +0200
+
+
+Started GET "/" for ::1 at 2015-05-19 10:33:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 10:33:14 +0200
+
+
+Started GET "/" for ::1 at 2015-05-19 10:33:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fa34e5061f0>:0x007fa34e6ad558>):
+    4: = form_for :users do |f|
+    5:   = f.label :name, "Imie:"
+    6: %br
+    7:   = f.text_field :name
+    8:   = f.file_field :picture
+  app/views/welcome/index.html.haml:7:in `_app_views_welcome_index_html_haml__3075993394026451854_70169685994440'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.5ms)
+
+
+Started GET "/" for ::1 at 2015-05-19 10:33:25 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-05-19 10:33:26 +0200
+
+
+Started POST "/welcome/index" for ::1 at 2015-05-19 10:33:31 +0200
+
+ActionController::RoutingError (No route matches [POST] "/welcome/index"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/daniel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/daniel/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (113.4ms)
