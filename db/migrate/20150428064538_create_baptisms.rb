@@ -5,7 +5,6 @@ class CreateBaptisms < ActiveRecord::Migration
       t.string :local
       t.string :parish
       t.string :minister
-      t.references :user, index: true
 
       t.timestamps null: false
     end
