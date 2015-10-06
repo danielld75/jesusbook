@@ -7400,3 +7400,31 @@ Migrating to AddUserRefToBaptism (20150521155813)
             FROM sqlite_temp_master
             WHERE name='index_priesthoods_on_user_id' AND type='index'
 
+
+
+Started GET "/" for fe80::1%lo0 at 2015-07-03 11:03:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 762ms (Views: 753.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
