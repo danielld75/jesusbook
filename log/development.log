@@ -7428,3 +7428,82 @@ Started GET "/assets/turbolinks.self.js?body=1" for fe80::1%lo0 at 2015-07-03 11
 
 
 Started GET "/assets/welcome.self.js?body=1" for fe80::1%lo0 at 2015-07-03 11:03:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20151007141918)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "encrypted_password" varchar DEFAULT '' NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "reset_password_sent_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "last_sign_in_at" datetime
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_ip" varchar[0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE "users" ADD "last_sign_in_ip" varchar
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "confirmation_token" varchar[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "confirmed_at" datetime
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "confirmation_sent_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "unconfirmed_email" varchar
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151007141918"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_baptisms_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_baptisms_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_confirmations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_confirmations_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_marriages_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_marriages_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_priesthoods_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_priesthoods_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
