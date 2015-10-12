@@ -7507,3 +7507,307 @@ Migrating to AddDeviseToUsers (20151007141918)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+
+
+Started GET "/" for ::1 at 2015-10-12 21:12:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 749ms (Views: 712.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-12 21:12:49 +0200
+
+
+Started GET "/users" for ::1 at 2015-10-12 21:12:55 +0200
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (189.2ms)
+
+
+Started GET "/user" for ::1 at 2015-10-12 21:13:09 +0200
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.8ms)
+
+
+Started GET "/users/index" for ::1 at 2015-10-12 21:14:06 +0200
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-12 21:14:06 +0200
+
+
+Started GET "/users" for ::1 at 2015-10-12 21:14:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.1ms)
+
+
+Started GET "/users" for ::1 at 2015-10-12 21:14:34 +0200
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-12 21:14:35 +0200
+
+
+Started GET "/users" for ::1 at 2015-10-12 21:14:36 +0200
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-12 21:14:36 +0200
+
+
+Started GET "/users" for ::1 at 2015-10-12 21:14:54 +0200
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/users" for ::1 at 2015-10-12 21:14:54 +0200
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-12 21:14:54 +0200
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-12 21:14:54 +0200
