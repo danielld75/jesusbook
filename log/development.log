@@ -314,3 +314,110 @@ Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-16 15:38:04 +020
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-16 15:38:04 +0200
+
+
+Started GET "/" for ::1 at 2015-10-28 09:40:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 1206ms (Views: 1188.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 09:40:44 +0100
+
+
+Started GET "/users" for ::1 at 2015-10-28 09:40:47 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007fb70a3c53c0@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 09:40:47 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007fb70a3c53c0@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-28 09:41:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 95ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 09:41:30 +0100
+
+
+Started GET "/users" for ::1 at 2015-10-28 09:41:31 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007fb70a3c53c0@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 09:41:31 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007fb70a3c53c0@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
