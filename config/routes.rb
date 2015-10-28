@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  get 'baptisms/index'
-
-  get 'baptisms/show'
-
-  get 'baptisms/edit'
+  resources :baptisms
 
   devise_for :users
   get 'welcome/index'
