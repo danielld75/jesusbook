@@ -1,0 +1,2 @@
+module BaptismsHelper
+end

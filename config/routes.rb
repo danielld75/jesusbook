@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
+  get 'baptisms/index'
+
+  get 'baptisms/show'
+
+  get 'baptisms/edit'
+
   devise_for :users
   get 'welcome/index'
   get '/users' => 'users#index'
   get '/users/show/:id' => "users#show"
+  resources :users do
+    resource :baptism
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
