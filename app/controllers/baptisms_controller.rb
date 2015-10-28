@@ -1,4 +1,7 @@
 class BaptismsController < ApplicationController
+
+  before_action :authenticate_user!
+
   def new
     @baptism = Baptism.new
   end

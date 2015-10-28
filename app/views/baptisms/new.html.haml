@@ -1,1 +1,15 @@
 %h1 New Baptism
+= form_for @baptism do |f|
+  = f.label :local
+  = f.text_field :local
+
+  = f.lable :parish
+  = f.text_field :parish
+
+  = f.label :minister
+  = f.text_field :minister
+
+  = f.label :date
+  = f.date_field :date
+
+  = f.submit
