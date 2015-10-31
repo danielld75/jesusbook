@@ -421,3 +421,2503 @@ Processing by UsersController#index as HTML
 Redirected to https://localhost/users
 Filter chain halted as #<Proc:0x007fb70a3c53c0@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
 Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-28 11:10:59 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 901ms (Views: 891.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:11:00 +0100
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:11:02 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007f9e2ea3f358@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:11:02 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007f9e2ea3f358@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:11:42 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007f9e2ea3f358@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:11:42 +0100
+Processing by UsersController#index as HTML
+Redirected to https://localhost/users
+Filter chain halted as #<Proc:0x007f9e2ea3f358@/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/force_ssl.rb:65> rendered or redirected
+Completed 301 Moved Permanently in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-28 11:12:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:12:13 +0100
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:12:14 +0100
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 77ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-10-28 11:12:14 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (118.6ms)
+Completed 200 OK in 205ms (Views: 189.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-10-28 11:12:35 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QEKIYjmkjbXuwNMx/J+TYi9L7exLzn1aiKbClRIwm9dr4TZJdS2NAXmaEgdH8aonFx71MD3o0bE9sYFuxKmdgg==", "user"=>{"email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "danielld@poczta.fm"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-10-16 13:38:01.428644"], ["current_sign_in_at", "2015-10-28 10:12:36.095906"], ["sign_in_count", 7], ["updated_at", "2015-10-28 10:12:36.097148"], ["id", 6]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 310ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:12:36 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 76ms (Views: 74.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:12:36 +0100
+
+
+Started GET "/users/sign_in" for ::1 at 2015-10-28 11:12:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-10-28 11:12:43 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:12:43 +0100
+
+
+Started GET "/users/baptisms" for ::1 at 2015-10-28 11:12:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"baptisms"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 18ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=baptisms):
+  app/controllers/users_controller.rb:11:in `show'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (827.2ms)
+
+
+Started GET "/users/baptisms/new" for ::1 at 2015-10-28 11:13:26 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/baptisms/new"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (146.4ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-28 11:13:34 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `lable' for #<ActionView::Helpers::FormBuilder:0x007f9e2eade548>):
+    3:   = f.label :local
+    4:   = f.text_field :local
+    5: 
+    6:   = f.lable :parish
+    7:   = f.text_field :parish
+    8: 
+    9:   = f.label :minister
+  app/views/baptisms/new.html.haml:6:in `block in _app_views_baptisms_new_html_haml__4459320509472483387_70158680755600'
+  app/views/baptisms/new.html.haml:2:in `_app_views_baptisms_new_html_haml__4459320509472483387_70158680755600'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.6ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-28 11:13:54 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:13:54 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-28 11:14:21 +0100
+
+AbstractController::ActionNotFound (The action 'create' could not be found for BaptismsController):
+  actionpack (4.2.4) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for ::1 at 2015-10-28 11:15:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:15:05 +0100
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:15:08 +0100
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-10-28 11:15:08 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-10-28 11:17:23 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GaFIlB2su7CHUcLZtTn7uK10SITkXr0nPbTNzXUIjMNW/IWff5KyXLBFn3lBK0O/jPf9PNpJGUDtOe1GHj9Frw==", "user"=>{"email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "danielld@poczta.fm"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-10-28 10:12:36.095906"], ["current_sign_in_at", "2015-10-28 10:17:23.206238"], ["sign_in_count", 8], ["updated_at", "2015-10-28 10:17:23.207220"], ["id", 6]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 92ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:17:23 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:17:23 +0100
+
+
+Started GET "/baptism/new" for ::1 at 2015-10-28 11:17:33 +0100
+
+ActionController::RoutingError (No route matches [GET] "/baptism/new"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.1ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-28 11:17:40 +0100
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/controllers/baptisms_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+      notice: "Baptism created"
+             ^):
+  app/controllers/baptisms_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.4ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-28 11:18:01 +0100
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/controllers/baptisms_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+      flash[notice]: "Baptism created"
+                    ^):
+  app/controllers/baptisms_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.0ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-28 11:18:21 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 76ms (Views: 48.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:18:21 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-28 11:18:50 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RK4ob53s4GtVAhx6mbH410xXTWLSGR676WqJ8fvtRqDBbjFWT8utZgeFGfjTnHhx2+qg2HH3as3qg9DtIft0g==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"1991-02-06"}, "commit"=>"Create Baptism"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "baptisms" ("local", "date", "parish", "minister", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["local", "Legnica"], ["date", "1991-02-06"], ["parish", "Katedra"], ["minister", "Bishopek"], ["created_at", "2015-10-28 10:18:50.445899"], ["updated_at", "2015-10-28 10:18:50.445899"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.0ms)
+
+ActionView::MissingTemplate (Missing template baptisms/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/Users/daniel/apps/jesusbook/app/views"
+  * "/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views"
+):
+  actionview (4.2.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.4) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (85.6ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-28 11:21:54 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RK4ob53s4GtVAhx6mbH410xXTWLSGR676WqJ8fvtRqDBbjFWT8utZgeFGfjTnHhx2+qg2HH3as3qg9DtIft0g==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"1991-02-06"}, "commit"=>"Create Baptism"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "baptisms" ("local", "date", "parish", "minister", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["local", "Legnica"], ["date", "1991-02-06"], ["parish", "Katedra"], ["minister", "Bishopek"], ["created_at", "2015-10-28 10:21:54.919362"], ["updated_at", "2015-10-28 10:21:54.919362"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+Redirected to 
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 4.6ms)
+
+TypeError (no implicit conversion of Symbol into String):
+  app/controllers/baptisms_controller.rb:12:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.5ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-28 11:23:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RK4ob53s4GtVAhx6mbH410xXTWLSGR676WqJ8fvtRqDBbjFWT8utZgeFGfjTnHhx2+qg2HH3as3qg9DtIft0g==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"1991-02-06"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "baptisms" ("local", "date", "parish", "minister", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["local", "Legnica"], ["date", "1991-02-06"], ["parish", "Katedra"], ["minister", "Bishopek"], ["created_at", "2015-10-28 10:23:19.836841"], ["updated_at", "2015-10-28 10:23:19.836841"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 3.9ms)
+
+TypeError (no implicit conversion of Symbol into String):
+  app/controllers/baptisms_controller.rb:12:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.9ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-28 11:23:45 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RK4ob53s4GtVAhx6mbH410xXTWLSGR676WqJ8fvtRqDBbjFWT8utZgeFGfjTnHhx2+qg2HH3as3qg9DtIft0g==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"1991-02-06"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "baptisms" ("local", "date", "parish", "minister", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["local", "Legnica"], ["date", "1991-02-06"], ["parish", "Katedra"], ["minister", "Bishopek"], ["created_at", "2015-10-28 10:23:45.601474"], ["updated_at", "2015-10-28 10:23:45.601474"]]
+  [1m[36m (6.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:23:45 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 238ms (Views: 236.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:23:45 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:23:45 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:23:45 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:23:45 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:23:45 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:23:45 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:23:46 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:23:46 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:23:46 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:23:46 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:23:46 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-28 11:23:56 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (47.5ms)
+Completed 200 OK in 99ms (Views: 96.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:23:56 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-28 11:24:10 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBsLp0yuGD1mEZa8myjIRCEwEl1GELZIJVaRw9AJGbnGDAvDq+aFCVNbiqqSAH5Gu27l66yfD5n9WTSno2FBcQ==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-02-05"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "baptisms" ("local", "date", "parish", "minister", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["local", "Legnica"], ["date", "2015-02-05"], ["parish", "Katedra"], ["minister", "Bishopek"], ["created_at", "2015-10-28 10:24:10.313195"], ["updated_at", "2015-10-28 10:24:10.313195"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users" for ::1 at 2015-10-28 11:24:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-28 11:24:10 +0100
+  [1m[36mBaptism Load (3.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+
+
+Started GET "/" for ::1 at 2015-10-29 10:13:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 200 OK in 934ms (Views: 916.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 10:13:33 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 10:13:40 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 80ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=):
+  app/controllers/baptisms_controller.rb:6:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.0ms)
+
+
+Started GET "/users" for ::1 at 2015-10-29 10:13:49 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/baptisms" for ::1 at 2015-10-29 10:14:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"baptisms"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=baptisms):
+  app/controllers/users_controller.rb:11:in `show'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.5ms)
+
+
+Started GET "/users/baptisms/new" for ::1 at 2015-10-29 10:14:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/baptisms/new"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (215.4ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 10:14:12 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=):
+  app/controllers/baptisms_controller.rb:6:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.3ms)
+
+
+Started GET "/baptism/new" for ::1 at 2015-10-29 11:06:38 +0100
+
+ActionController::RoutingError (No route matches [GET] "/baptism/new"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.7ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:06:45 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.1ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:02 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:05 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.5ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:10 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.7ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:10 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.6ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:10 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.4ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:10 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.3ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:10 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.7ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:11 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.6ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:11 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.2ms)
+
+
+Started GET "/baptisms" for ::1 at 2015-10-29 11:07:18 +0100
+Processing by BaptismsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 223ms (Views: 222.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 11:07:19 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:24 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.3ms)
+
+
+Started GET "/baptisms" for ::1 at 2015-10-29 11:07:46 +0100
+Processing by BaptismsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered baptisms/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 68ms (Views: 50.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 11:07:46 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:07:51 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `baptism_build' for #<User:0x007f853301a530>):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.4ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:08:43 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `baptism_build' for #<User:0x007f852dbe15b8>):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.6ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:08:51 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.7ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:32:57 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.1ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:32:59 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.0ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:33:04 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: %h1 New Baptism
+    2: = form_for [@user, @baptism] do |f|
+    3:   = f.label :local
+    4:   = f.text_field :local
+    5: 
+  app/views/baptisms/new.html.haml:2:in `_app_views_baptisms_new_html_haml__2447314896025932226_70105014268420'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.4ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:34:30 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.0ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `build' for nil:NilClass):
+    1: %h1 New Baptism
+    2: = form_for [@user, @user.baptism.build] do |f|
+    3:   = f.label :local
+    4:   = f.text_field :local
+    5: 
+  app/views/baptisms/new.html.haml:2:in `_app_views_baptisms_new_html_haml__2447314896025932226_70105012786400'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.1ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:34:48 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `build' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:7:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.8ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 11:34:59 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `build' for #<Baptism:0x007f8531e4c650>):
+    1: %h1 New Baptism
+    2: = form_for [@user, @user.baptism.build] do |f|
+    3:   = f.label :local
+    4:   = f.text_field :local
+    5: 
+  app/views/baptisms/new.html.haml:2:in `_app_views_baptisms_new_html_haml__2447314896025932226_70105012786400'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.1ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 13:34:09 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/baptisms_controller.rb:6:in `new'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.8ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 13:34:23 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `baptism' for nil:NilClass):
+    1: %h1 New Baptism
+    2: = form_for [@user, @user.baptism.build] do |f|
+    3:   = f.label :local
+    4:   = f.text_field :local
+    5: 
+  app/views/baptisms/new.html.haml:2:in `_app_views_baptisms_new_html_haml__2447314896025932226_70105012786400'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.5ms)
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 13:34:40 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (331.3ms)
+Completed 200 OK in 500ms (Views: 498.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:34:41 +0100
+  [1m[36mBaptism Load (3.5ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "baptisms" WHERE "baptisms"."id" = ?[0m  [["id", 1]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 2]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "baptisms" WHERE "baptisms"."id" = ?[0m  [["id", 3]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 4]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "baptisms" WHERE "baptisms"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 13:37:56 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AXwzAWfHFQeTcm/DReUQ1T5hjEy9gAkUfSLnh0ByHn5razNlgI+IM6Y4c9VMzabXpD97+lcPsMWlLULjMxpGtg==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-10-29"}, "commit"=>"Create Baptism"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `user=' for #<Baptism:0x007f852dd214c8>):
+  app/controllers/baptisms_controller.rb:11:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.8ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 13:47:41 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AXwzAWfHFQeTcm/DReUQ1T5hjEy9gAkUfSLnh0ByHn5razNlgI+IM6Y4c9VMzabXpD97+lcPsMWlLULjMxpGtg==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-10-29"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `user=' for #<Baptism:0x007f8530da3858>):
+  app/controllers/baptisms_controller.rb:11:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.2ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 13:51:52 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AXwzAWfHFQeTcm/DReUQ1T5hjEy9gAkUfSLnh0ByHn5razNlgI+IM6Y4c9VMzabXpD97+lcPsMWlLULjMxpGtg==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-10-29"}, "commit"=>"Create Baptism"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `user=' for #<Baptism:0x007f8530e34c18>):
+  app/controllers/baptisms_controller.rb:12:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.0ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 13:55:48 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AXwzAWfHFQeTcm/DReUQ1T5hjEy9gAkUfSLnh0ByHn5razNlgI+IM6Y4c9VMzabXpD97+lcPsMWlLULjMxpGtg==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-10-29"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "baptisms" ("local", "date", "parish", "minister", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["local", "Legnica"], ["date", "2015-10-29"], ["parish", "Katedra"], ["minister", "Bishopek"], ["user_id", 6], ["created_at", "2015-10-29 12:55:48.486792"], ["updated_at", "2015-10-29 12:55:48.486792"]]
+  [1m[36m (7.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 66ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/users" for ::1 at 2015-10-29 13:55:48 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:55:48 +0100
+
+
+Started GET "/baptisms" for ::1 at 2015-10-29 13:56:06 +0100
+Processing by BaptismsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered baptisms/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:56:06 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 13:56:10 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:56:10 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 13:56:20 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G0CSuoxjAg1uxdkcvwc4VQQa9c7wgDzkbZd6TNP9TpBxV5LeayufOVuPxQq2L45XnkQCeBoPhTW1mN8ooJUWWA==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Joj", "date"=>"2015-10-05"}, "commit"=>"Create Baptism"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "baptisms" ("local", "date", "parish", "minister", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["local", "Legnica"], ["date", "2015-10-05"], ["parish", "Katedra"], ["minister", "Joj"], ["user_id", 6], ["created_at", "2015-10-29 12:56:20.271089"], ["updated_at", "2015-10-29 12:56:20.271089"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 8ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/users" for ::1 at 2015-10-29 13:56:20 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:56:20 +0100
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "danielld@poczta.fm"]]
+  [1m[35mBaptism Load (0.2ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+
+
+Started GET "/users" for ::1 at 2015-10-29 13:58:55 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 61ms (Views: 44.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:58:55 +0100
+
+
+Started GET "/baptisms" for ::1 at 2015-10-29 13:58:59 +0100
+Processing by BaptismsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered baptisms/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:58:59 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:58:59 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:58:59 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:59:00 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 13:59:02 +0100
+Processing by BaptismsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 56ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:59:02 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 13:59:22 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cfQAkpbfmIuegeQxau4xLPJ0SvBLqyMtY7XRDT5jsisb4wD2cZcFv6vL+CdjxocuaCq9RqEkmvy7unRpTQvq4w==", "baptism"=>{"local"=>"Kraków", "parish"=>"Piotra", "minister"=>"Jojkim", "date"=>"2015-02-12"}, "commit"=>"Create Baptism"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "baptisms" ("local", "date", "parish", "minister", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["local", "Kraków"], ["date", "2015-02-12"], ["parish", "Piotra"], ["minister", "Jojkim"], ["user_id", 6], ["created_at", "2015-10-29 12:59:22.055952"], ["updated_at", "2015-10-29 12:59:22.055952"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users" for ::1 at 2015-10-29 13:59:22 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 13:59:22 +0100
+
+
+Started GET "/baptisms" for ::1 at 2015-10-29 14:25:53 +0100
+Processing by BaptismsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 249ms (Views: 231.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 14:25:54 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 14:25:57 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered baptisms/new.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 59ms (Views: 53.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 14:25:57 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 14:26:07 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hIljvCmeE0T+aNTOOx11O+YMUK7hkdOtKSopNXMH3zLunmPYztaOcMsiyNgyNcM5fFKnGAseanzxJYxRAG+H+g==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-10-29"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `build' for #<User:0x007f852dabb378>):
+  app/controllers/baptisms_controller.rb:11:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.1ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 14:26:27 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hIljvCmeE0T+aNTOOx11O+YMUK7hkdOtKSopNXMH3zLunmPYztaOcMsiyNgyNcM5fFKnGAseanzxJYxRAG+H+g==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-10-29"}, "commit"=>"Create Baptism"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `current_user_build' for #<BaptismsController:0x007f8530fac9d8>):
+  app/controllers/baptisms_controller.rb:11:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.3ms)
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 14:26:40 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hIljvCmeE0T+aNTOOx11O+YMUK7hkdOtKSopNXMH3zLunmPYztaOcMsiyNgyNcM5fFKnGAseanzxJYxRAG+H+g==", "baptism"=>{"local"=>"Legnica", "parish"=>"Katedra", "minister"=>"Bishopek", "date"=>"2015-10-29"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `create' for #<User:0x007f8531eef260>):
+  app/controllers/baptisms_controller.rb:11:in `create'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "danielld@poczta.fm"]]
+  [1m[35mBaptism Load (0.4ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+  [1m[36mBaptism Load (2.5ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[35mBaptism Load (2.1ms)[0m  SELECT "baptisms".* FROM "baptisms"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 6]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "baptisms" WHERE "baptisms"."id" = ?[0m  [["id", 7]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 8]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mBaptism Load (0.2ms)[0m  SELECT "baptisms".* FROM "baptisms"
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "baptisms" WHERE "baptisms"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mBaptism Load (1.9ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[35mBaptism Load (0.2ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "danielld@poczta.fm"]]
+  [1m[35mBaptism Load (0.7ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "baptisms" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 6], ["created_at", "2015-10-29 15:45:11.407631"], ["updated_at", "2015-10-29 15:45:11.407631"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36mBaptism Load (0.6ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "baptisms" WHERE "baptisms"."id" = ?[0m  [["id", 9]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "baptisms" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 6], ["created_at", "2015-10-29 15:45:42.876733"], ["updated_at", "2015-10-29 15:45:42.876733"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mBaptism Load (0.2ms)[0m  SELECT "baptisms".* FROM "baptisms"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "baptisms" ("local", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["local", "Ursus"], ["user_id", 6], ["created_at", "2015-10-29 15:46:35.516522"], ["updated_at", "2015-10-29 15:46:35.516522"]]
+  [1m[36m (194.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "baptisms" WHERE "baptisms"."id" = ?[0m  [["id", 10]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[35m (1.9ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "baptisms" ("local", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["local", "Legnica"], ["user_id", 6], ["created_at", "2015-10-29 15:46:54.986097"], ["updated_at", "2015-10-29 15:46:54.986097"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 11]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mBaptism Load (0.2ms)[0m  SELECT "baptisms".* FROM "baptisms"
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+
+
+Started GET "/" for ::1 at 2015-10-29 16:50:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Completed 200 OK in 1263ms (Views: 1251.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-10-29 16:50:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:50:38 +0100
+
+
+Started GET "/baptisms" for ::1 at 2015-10-29 16:50:47 +0100
+Processing by BaptismsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 71ms (Views: 52.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:50:47 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 16:50:51 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mBaptism Load (0.2ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 12]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  Rendered baptisms/new.html.haml within layouts/application (136.0ms)
+Completed 200 OK in 200ms (Views: 173.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 16:50:51 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 16:50:51 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 16:50:51 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 16:50:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 16:50:51 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 16:50:52 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 16:50:52 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 16:50:52 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 16:50:52 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 16:50:52 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:50:52 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 16:51:01 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1b/I1OfQVWBRycsCuy/gChuCuoipSrorCVb4bt01cwa/qMiwAJjIVGSD1xSyB1YIgdxNPkPFA/rRWV0Krl0rzg==", "baptism"=>{"local"=>"Wrocław", "parish"=>"Piotra", "minister"=>"Bishopek", "date"=>"2015-10-15"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "baptisms" ("local", "date", "parish", "minister", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["local", "Wrocław"], ["date", "2015-10-15"], ["parish", "Piotra"], ["minister", "Bishopek"], ["user_id", 6], ["created_at", "2015-10-29 15:51:01.774446"], ["updated_at", "2015-10-29 15:51:01.774446"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 8ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users" for ::1 at 2015-10-29 16:51:01 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:51:01 +0100
+
+
+Started GET "/baptisms" for ::1 at 2015-10-29 16:51:07 +0100
+Processing by BaptismsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered baptisms/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:51:07 +0100
+
+
+Started GET "/baptisms/new" for ::1 at 2015-10-29 16:51:10 +0100
+Processing by BaptismsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 13]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  Rendered baptisms/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 50ms (Views: 43.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:51:10 +0100
+
+
+Started POST "/baptisms" for ::1 at 2015-10-29 16:51:19 +0100
+Processing by BaptismsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gS43IzGJEdJr79CtiMoZtZ3hP7TFUwSI/TeUwY+902brOTdH1sGM5l6lzLuB4q+3B7/IAi/cvVklODGl/NWLrg==", "baptism"=>{"local"=>"Kraków", "parish"=>"Katedra", "minister"=>"Jojkim", "date"=>"2015-10-26"}, "commit"=>"Create Baptism"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "baptisms" ("local", "date", "parish", "minister", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["local", "Kraków"], ["date", "2015-10-26"], ["parish", "Katedra"], ["minister", "Jojkim"], ["user_id", 6], ["created_at", "2015-10-29 15:51:19.796170"], ["updated_at", "2015-10-29 15:51:19.796170"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/users" for ::1 at 2015-10-29 16:51:19 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-10-29 16:51:19 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-10-29 16:51:19 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-10-29 16:51:19 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-10-29 16:51:19 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-10-29 16:51:20 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-10-29 16:51:20 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-10-29 16:51:20 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-10-29 16:51:20 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-10-29 16:51:20 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-10-29 16:51:20 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:51:20 +0100
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "danielld@poczta.fm"]]
+  [1m[35mBaptism Load (0.2ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "danielld@poczta.fm"]]
+  [1m[35mBaptism Load (0.3ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]

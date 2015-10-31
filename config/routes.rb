@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/users' => 'users#index'
   get '/users/show/:id' => "users#show"
   resources :users do
-    resource :baptism
+    resources :baptisms
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

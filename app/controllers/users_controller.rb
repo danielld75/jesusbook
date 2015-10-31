@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  force_ssl
+
 
   before_action :authenticate_user!
 
@@ -8,6 +8,10 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
+  end
+
+  def edit
     @user = User.find(params[:id])
   end
 
