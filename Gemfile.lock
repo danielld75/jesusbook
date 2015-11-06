@@ -218,7 +218,6 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
-  mail
   mina
   mina-sidekiq
   mina-unicorn
