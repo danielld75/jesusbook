@@ -2921,3 +2921,139 @@ Started GET "/assets/application.self.js?body=1" for ::1 at 2015-10-29 16:51:20 
   [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT "baptisms".* FROM "baptisms"[0m
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "danielld@poczta.fm"]]
   [1m[35mBaptism Load (0.3ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 6]]
+
+
+Started GET "/" for ::1 at 2015-11-06 09:12:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 970ms (Views: 953.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-06 09:12:45 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-06 09:12:52 +0100
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 60ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-06 09:12:52 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (106.4ms)
+Completed 200 OK in 282ms (Views: 200.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/password/new" for ::1 at 2015-11-06 09:12:54 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for ::1 at 2015-11-06 09:12:58 +0100
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"67IArc+bWGFsFzslkQjinJrYrAeX1yfIxP2qgCT1PhgHZDQ0W23+XnV6pODVliUmB2I0D+AWY1rgkj3mQo65rA==", "user"=>{"email"=>"danielld@poczta.fm"}, "commit"=>"Send me reset password instructions"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "danielld@poczta.fm"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["reset_password_token", "b3504c90a51e6282405e0e5a4c0ea4c4863579c4f87cff9adc92e9c9300c08e6"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "b3504c90a51e6282405e0e5a4c0ea4c4863579c4f87cff9adc92e9c9300c08e6"], ["reset_password_sent_at", "2015-11-06 08:12:58.478778"], ["updated_at", "2015-11-06 08:12:58.479366"], ["id", 6]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  Rendered devise/mailer/reset_password_instructions.html.erb (1.6ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 622.8ms
+
+Sent mail to danielld@poczta.fm (3740.1ms)
+Date: Fri, 06 Nov 2015 09:12:59 +0100
+From: "Jesusbook.info" <d.dziuda@gmail.com>
+Reply-To: "Jesusbook.info" <d.dziuda@gmail.com>
+To: danielld@poczta.fm
+Message-ID: <563c610b28df4_10db43fcceef6d8d03654@Thoth.home.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello danielld@poczta.fm!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=AKFvLTiW7ndM71C1HJRF">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 4725ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-06 09:13:02 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-06 09:13:03 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-06 09:13:03 +0100
