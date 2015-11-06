@@ -67,8 +67,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {:host => 'jesusbook.info'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address => "127.0.0.1:8080",
-    :port    => 587,
+    :address => "127.0.0.1",
+    :port    => 465,
     :domain  => 'jesusbook.info'
   }
 
