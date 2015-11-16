@@ -12,7 +12,7 @@ class BaptismsController < ApplicationController
     @user = current_user
     @baptism = @user.build_baptism(baptism_params)
     if @baptism.save
-      redirect_to users_path, notice: "Baptism created"
+      redirect_to user_baptism_path(@baptism), notice: "Baptism created"
     else
       render 'new'
     end
@@ -23,6 +23,8 @@ class BaptismsController < ApplicationController
   end
 
   def show
+    @user = current_user
+    @baptism = @user.baptism.find(params[:id])
   end
 
   def edit
