@@ -7196,3 +7196,2486 @@ Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:27:47 +010
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:27:47 +0100
+
+
+Started POST "/users" for ::1 at 2015-11-16 21:46:12 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vpzPS+Oo/miRoFPm70Ucf2DOxX6J9gUzXI5iJHVfYg+9TFeVkZQ5ejC/0ebINcTuqBMwhbEZPPX6H4HtF5DqsQ==", "user"=>{"name"=>"We", "lastName"=>"Ew", "aboutMe"=>"fsdofjdsj", "birthday"=>"1999-07-08", "religion"=>"Catholicism", "email"=>"uuuuu@uuu.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'uuuuu@uuu.pl' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "uuuuu@uuu.pl"], ["encrypted_password", "$2a$10$Tad2uJ3c3TMfRAnL7X7v9.AmI8wEr091Lf5IU5Bc6b.qhVQ4KloAe"], ["created_at", "2015-11-16 20:46:13.154159"], ["updated_at", "2015-11-16 20:46:13.154159"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-16 20:46:13.159164"], ["current_sign_in_at", "2015-11-16 20:46:13.159164"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 20:46:13.159950"], ["id", 8]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 249ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 21:46:13 +0100
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/controllers/users_controller.rb:30: syntax error, unexpected tLABEL, expecting '='
+    @user.destroy, notice: "#{current_user.email} has been delete"
+                          ^):
+  app/controllers/users_controller.rb:30: syntax error, unexpected tLABEL, expecting '='
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.7ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 21:46:47 +0100
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/controllers/users_controller.rb:30: syntax error, unexpected '=', expecting :: or '[' or '.'
+    @user.destroy, :notice = "#{current_user.email} has been delete"
+                            ^):
+  app/controllers/users_controller.rb:30: syntax error, unexpected '=', expecting :: or '[' or '.'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 21:47:29 +0100
+
+SyntaxError (/Users/daniel/apps/jesusbook/app/controllers/users_controller.rb:30: syntax error, unexpected tLABEL, expecting '='
+    @user.destroy, notice: "#{@user.email} has been delete"
+                          ^):
+  app/controllers/users_controller.rb:30: syntax error, unexpected tLABEL, expecting '='
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 21:54:54 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 76ms (Views: 62.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:54:54 +0100
+
+
+Started DELETE "/users/5" for ::1 at 2015-11-16 21:55:05 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RfwoQskeItqzZVfnaMSkmteRiHDeNcMOLNDTtwWFeg9GLLCcuyLlyBJ61edPtHwLH0x9i+ba+siKQTB+Z0rysQ==", "id"=>"5"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 5]]
+  [1m[35mConfirmation Load (0.1ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [["user_id", 5]]
+  [1m[36mMarriage Load (0.1ms)[0m  [1mSELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1[0m  [["user_id", 5]]
+  [1m[35mPriesthood Load (0.1ms)[0m  SELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1  [["user_id", 5]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 3.8ms)
+
+ActionView::MissingTemplate (Missing template users/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/Users/daniel/apps/jesusbook/app/views"
+  * "/Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views"
+):
+  actionview (4.2.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.4) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (76.1ms)
+
+
+Started DELETE "/users/5" for ::1 at 2015-11-16 21:55:49 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RfwoQskeItqzZVfnaMSkmteRiHDeNcMOLNDTtwWFeg9GLLCcuyLlyBJ61edPtHwLH0x9i+ba+siKQTB+Z0rysQ==", "id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 20ms (ActiveRecord: 1.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=5):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.3ms)
+
+
+Started DELETE "/users/5" for ::1 at 2015-11-16 21:56:33 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RfwoQskeItqzZVfnaMSkmteRiHDeNcMOLNDTtwWFeg9GLLCcuyLlyBJ61edPtHwLH0x9i+ba+siKQTB+Z0rysQ==", "id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 17ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=5):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.2ms)
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:56:37 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:56:37 +0100
+
+
+Started DELETE "/users/8" for ::1 at 2015-11-16 21:56:40 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tepq8wEY/20gSuYFC4L7QmW9N4mSdLFywfrcTRXXvHm2OvItcyQ4f4FVZAUs8iPTrWDCcqqbiLRnaz+Edxg0xw==", "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 8]]
+  [1m[36mConfirmation Load (0.1ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [["user_id", 8]]
+  [1m[35mMarriage Load (0.2ms)[0m  SELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1  [["user_id", 8]]
+  [1m[36mPriesthood Load (0.1ms)[0m  [1mSELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1[0m  [["user_id", 8]]
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 8]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000index
+Completed 302 Found in 21ms (ActiveRecord: 4.8ms)
+
+
+Started DELETE "/users/8" for ::1 at 2015-11-16 21:56:40 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tepq8wEY/20gSuYFC4L7QmW9N4mSdLFywfrcTRXXvHm2OvItcyQ4f4FVZAUs8iPTrWDCcqqbiLRnaz+Edxg0xw==", "id"=>"8"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-16 21:56:40 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:56:41 +0100
+
+
+Started DELETE "/users/6" for ::1 at 2015-11-16 21:56:55 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tepq8wEY/20gSuYFC4L7QmW9N4mSdLFywfrcTRXXvHm2OvItcyQ4f4FVZAUs8iPTrWDCcqqbiLRnaz+Edxg0xw==", "id"=>"6"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-16 21:56:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:56:55 +0100
+
+
+Started DELETE "/users/6" for ::1 at 2015-11-16 21:57:13 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tepq8wEY/20gSuYFC4L7QmW9N4mSdLFywfrcTRXXvHm2OvItcyQ4f4FVZAUs8iPTrWDCcqqbiLRnaz+Edxg0xw==", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "baptisms" WHERE "baptisms"."id" = ?  [["id", 16]]
+  [1m[36mConfirmation Load (0.1ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  [1m[35mMarriage Load (0.1ms)[0m  SELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1  [["user_id", 6]]
+  [1m[36mPriesthood Load (0.2ms)[0m  [1mSELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1[0m  [["user_id", 6]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 6]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000index
+Completed 302 Found in 46ms (ActiveRecord: 8.5ms)
+
+
+Started DELETE "/users/6" for ::1 at 2015-11-16 21:57:13 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tepq8wEY/20gSuYFC4L7QmW9N4mSdLFywfrcTRXXvHm2OvItcyQ4f4FVZAUs8iPTrWDCcqqbiLRnaz+Edxg0xw==", "id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=6):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.4ms)
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:20 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:21 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:22 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:22 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:23 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:23 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:23 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:23 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:23 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:23 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:24 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:24 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:24 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:24 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:24 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:25 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:25 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:25 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:25 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:25 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:25 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:25 +0100
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:25 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:25 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:25 +0100
+
+
+Started DELETE "/users/7" for ::1 at 2015-11-16 21:57:31 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Lfe1ns+CVDueFEyptpziuCYud29NaADhD9qHWNvnE5QuJy1Avb6TKT8LzqmR7Dop7vOClHWHOSepS2SRuSibKg==", "id"=>"7"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBaptism Load (0.0ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 7]]
+  [1m[36mConfirmation Load (0.0ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [["user_id", 7]]
+  [1m[35mMarriage Load (0.0ms)[0m  SELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1  [["user_id", 7]]
+  [1m[36mPriesthood Load (0.1ms)[0m  [1mSELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1[0m  [["user_id", 7]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 7]]
+  [1m[36m (73.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000index
+Completed 302 Found in 78ms (ActiveRecord: 74.2ms)
+
+
+Started DELETE "/users/7" for ::1 at 2015-11-16 21:57:31 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Lfe1ns+CVDueFEyptpziuCYud29NaADhD9qHWNvnE5QuJy1Avb6TKT8LzqmR7Dop7vOClHWHOSepS2SRuSibKg==", "id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=7):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.6ms)
+
+
+Started GET "/users/" for ::1 at 2015-11-16 21:57:36 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 21:57:36 +0100
+
+
+Started GET "/" for ::1 at 2015-11-16 22:03:31 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:03:31 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:03:32 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-16 22:03:42 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:03:42 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:03:44 +0100
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-16 22:03:44 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 93ms (Views: 74.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-16 22:03:50 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-11-16 22:04:10 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbVLE840/zdFnLp1C6+nx5NuDfk4EYTzKhnqGbL8g+jGZdPNvAg4JeSDOHUs339WW7P4AgD+vTWMiAnQ0DMLVg==", "user"=>{"name"=>"Daniel", "lastName"=>"Dziuda", "aboutMe"=>"sdfsdf", "birthday"=>"2015-11-03", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "danielld@poczta.fm"], ["encrypted_password", "$2a$10$3Q5foi2xT9CUDnNrkjCyR.VCK5E93TBJ2NhWGr3tNiB655qEoE9Uq"], ["created_at", "2015-11-16 21:04:10.322590"], ["updated_at", "2015-11-16 21:04:10.322590"]]
+  [1m[35m (17.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-16 21:04:10.341823"], ["current_sign_in_at", "2015-11-16 21:04:10.341823"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 21:04:10.342499"], ["id", 9]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 98ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:04:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:04:10 +0100
+
+
+Started DELETE "/users/9" for ::1 at 2015-11-16 22:04:14 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"70aybwLRqzZbTWbqJdxKEtnl3FjQSFA78ryhCAPrCU3sliqxcO1sJPpS5OoCrJKDETgpo+inaf1ULULBYSSB8w==", "id"=>"9"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mConfirmation Load (0.1ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [["user_id", 9]]
+  [1m[36mMarriage Load (0.2ms)[0m  [1mSELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mPriesthood Load (0.1ms)[0m  SELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1  [["user_id", 9]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  [1m[35m (3.4ms)[0m  commit transaction
+Redirected to http://localhost:3000index
+Completed 302 Found in 22ms (ActiveRecord: 5.0ms)
+
+
+Started DELETE "/users/9" for ::1 at 2015-11-16 22:04:14 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"70aybwLRqzZbTWbqJdxKEtnl3FjQSFA78ryhCAPrCU3sliqxcO1sJPpS5OoCrJKDETgpo+inaf1ULULBYSSB8w==", "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-16 22:04:14 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:04:14 +0100
+
+
+Started DELETE "/users/9" for ::1 at 2015-11-16 22:04:25 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"70aybwLRqzZbTWbqJdxKEtnl3FjQSFA78ryhCAPrCU3sliqxcO1sJPpS5OoCrJKDETgpo+inaf1ULULBYSSB8w==", "id"=>"9"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=9):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.5ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:04:31 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:04:31 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:04:31 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:04:31 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:04:31 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:04:31 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:04:31 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:04:32 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:04:32 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:04:32 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:04:32 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:04:32 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:04:32 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:04:32 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:04:33 +0100
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-16 22:04:42 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 61ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:04:43 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-16 22:04:44 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-11-16 22:05:05 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ah//XxrEz0V9xARAAAEyHr37RmRzLxP6zSWevoC/s80Bz2eBaPgIV9zbhkAnceqPdSazn0vAKjxrtH134nA7cw==", "user"=>{"name"=>"Daniel", "lastName"=>"Dziuda", "aboutMe"=>"sdfds", "birthday"=>"", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "danielld@poczta.fm"], ["encrypted_password", "$2a$10$ezD5DxCMThW2zcRf/W.tzO/m1wVYK5EtpSgx38o7LQWIYUJ7xOWSy"], ["created_at", "2015-11-16 21:05:05.647692"], ["updated_at", "2015-11-16 21:05:05.647692"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-16 21:05:05.652118"], ["current_sign_in_at", "2015-11-16 21:05:05.652118"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 21:05:05.652808"], ["id", 10]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-16 22:05:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 10]]
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:05:05 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:05:12 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 10]]
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/10" for ::1 at 2015-11-16 22:05:16 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rwNexdM4mvFGlUnOzDWk3126JRn0ytfRW4X3oEKkyAWs08YboQRd4+eKy87rRXxOlWfQ4swl7hf9FBRpIGtAuw==", "id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 10]]
+  [1m[35mConfirmation Load (0.1ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [["user_id", 10]]
+  [1m[36mMarriage Load (0.1ms)[0m  [1mSELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1[0m  [["user_id", 10]]
+  [1m[35mPriesthood Load (0.1ms)[0m  SELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1  [["user_id", 10]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000index
+Completed 302 Found in 20ms (ActiveRecord: 3.4ms)
+
+
+Started DELETE "/users/10" for ::1 at 2015-11-16 22:05:16 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rwNexdM4mvFGlUnOzDWk3126JRn0ytfRW4X3oEKkyAWs08YboQRd4+eKy87rRXxOlWfQ4swl7hf9FBRpIGtAuw==", "id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=10):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.9ms)
+
+
+Started DELETE "/users/10" for ::1 at 2015-11-16 22:06:25 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rwNexdM4mvFGlUnOzDWk3126JRn0ytfRW4X3oEKkyAWs08YboQRd4+eKy87rRXxOlWfQ4swl7hf9FBRpIGtAuw==", "id"=>"10"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=10):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.7ms)
+
+
+Started DELETE "/users/10" for ::1 at 2015-11-16 22:06:28 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rwNexdM4mvFGlUnOzDWk3126JRn0ytfRW4X3oEKkyAWs08YboQRd4+eKy87rRXxOlWfQ4swl7hf9FBRpIGtAuw==", "id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=10):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.6ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:06:36 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:06:36 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-16 22:06:42 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 75ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:06:42 +0100
+
+
+Started POST "/users" for ::1 at 2015-11-16 22:06:57 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w09JBpqMYULfy8HjLoHow2RDh5kILjZHTTm2U3kXb+vAn9HY6LCmUH7UQ+MJ8TBSrJ5yYjDBD4HrqFWaG9jnVQ==", "user"=>{"name"=>"We", "lastName"=>"", "aboutMe"=>"", "birthday"=>"", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "danielld@poczta.fm"], ["encrypted_password", "$2a$10$oou011YqHmPVs8iWn6kUkusbLLKNPyF/ZIYmD8FDeT9w5deyZv1Ni"], ["created_at", "2015-11-16 21:06:57.968921"], ["updated_at", "2015-11-16 21:06:57.968921"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-11-16 21:06:57.973721"], ["current_sign_in_at", "2015-11-16 21:06:57.973721"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 21:06:57.974599"], ["id", 11]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 94ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-16 22:06:57 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:06:58 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:07:00 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:07:02 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:07:02 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:07:02 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:07:03 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:07:03 +0100
+
+
+Started DELETE "/users/11" for ::1 at 2015-11-16 22:07:04 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XiS15B3ZmKZitlgDsQ6DZPXN2zTItV87WiOEHSpBm5Fd9C06b+VftMOp2gOWflv1PRAuz/BaZv38smfUSI4TLw==", "id"=>"11"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mConfirmation Load (0.1ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mMarriage Load (0.1ms)[0m  SELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mPriesthood Load (0.1ms)[0m  [1mSELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 11]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000index
+Completed 302 Found in 19ms (ActiveRecord: 4.6ms)
+
+
+Started DELETE "/users/11" for ::1 at 2015-11-16 22:07:04 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XiS15B3ZmKZitlgDsQ6DZPXN2zTItV87WiOEHSpBm5Fd9C06b+VftMOp2gOWflv1PRAuz/BaZv38smfUSI4TLw==", "id"=>"11"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=11):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.8ms)
+
+
+Started DELETE "/users/11" for ::1 at 2015-11-16 22:13:31 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XiS15B3ZmKZitlgDsQ6DZPXN2zTItV87WiOEHSpBm5Fd9C06b+VftMOp2gOWflv1PRAuz/BaZv38smfUSI4TLw==", "id"=>"11"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=11):
+  app/controllers/users_controller.rb:29:in `destroy'
+
+
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/daniel/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.0ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:13:35 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:13:35 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-16 22:13:40 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 60ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:13:40 +0100
+
+
+Started POST "/users" for ::1 at 2015-11-16 22:13:54 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IUX1cl4RFGgvv4iqVRLmcjJ9LU9E1NuJ2qevXfs3vBgilW2sLC3Teo6gCqpyYj7j+qDYtHw74k98NkyUmfg0pg==", "user"=>{"name"=>"Daniel", "lastName"=>"", "aboutMe"=>"", "birthday"=>"", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "danielld@poczta.fm"], ["encrypted_password", "$2a$10$1cIkqmopIQtycrfyn/cfFewDy3Z.g.ga7M6LQjJO01d6NPF.cesmi"], ["created_at", "2015-11-16 21:13:54.113346"], ["updated_at", "2015-11-16 21:13:54.113346"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-11-16 21:13:54.117583"], ["current_sign_in_at", "2015-11-16 21:13:54.117583"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 21:13:54.118205"], ["id", 12]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 90ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-16 22:13:54 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 12]]
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:13:54 +0100
+
+
+Started GET "/" for ::1 at 2015-11-16 22:13:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 12]]
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:13:55 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:13:56 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 12]]
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/12" for ::1 at 2015-11-16 22:13:57 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QnEALCOuCyPU623UiuhVYLkz6m0dTYAYTZqU9dUMQytBoZjyUZLMMXX079StmI3xce4fliWiud7rC3c8t8PLlQ==", "id"=>"12"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 12]]
+  [1m[35mConfirmation Load (0.1ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [["user_id", 12]]
+  [1m[36mMarriage Load (0.1ms)[0m  [1mSELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1[0m  [["user_id", 12]]
+  [1m[35mPriesthood Load (0.1ms)[0m  SELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1  [["user_id", 12]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 12]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 20ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:13:57 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 12]]
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:13:58 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:14:29 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:14:29 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-16 22:14:34 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 63ms (Views: 49.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:14:34 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:14:35 +0100
+
+
+Started POST "/users" for ::1 at 2015-11-16 22:14:48 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LsgklHISvkhlfCN2t8EB/CzKB7fc84ZzsRNGisza8MktGLxKAC55WsRjoXaQsdlt5BfyTOQcv7UXgqVDrhV4dw==", "user"=>{"name"=>"We", "lastName"=>"", "aboutMe"=>"", "birthday"=>"", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "danielld@poczta.fm"], ["encrypted_password", "$2a$10$lTOUTQtZHsGZDJMvkUwBFecmw.XKxwHSv1vzb3ei47zEvfp3xy9gq"], ["created_at", "2015-11-16 21:14:48.549932"], ["updated_at", "2015-11-16 21:14:48.549932"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-11-16 21:14:48.554542"], ["current_sign_in_at", "2015-11-16 21:14:48.554542"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 21:14:48.555455"], ["id", 13]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 92ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-16 22:14:48 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 13]]
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:14:48 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:14:50 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 13]]
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/13" for ::1 at 2015-11-16 22:14:51 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EKNXNi7011089FoDoKIQHnLx98PYKq94L6N/yqu7O7UTc8/oXMgQT53r2AOH0siPuiwCOODFlr6JMpwDyXSzCw==", "id"=>"13"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 13]]
+  [1m[36mConfirmation Load (0.1ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [["user_id", 13]]
+  [1m[35mMarriage Load (0.1ms)[0m  SELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1  [["user_id", 13]]
+  [1m[36mPriesthood Load (0.1ms)[0m  [1mSELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1[0m  [["user_id", 13]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 13]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 21ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:14:51 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 13]]
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:14:52 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-16 22:15:24 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 62ms (Views: 49.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:15:25 +0100
+
+
+Started POST "/users" for ::1 at 2015-11-16 22:15:40 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xXeHRsB2Ev5Ytx6UDO2bLVyTVofzXcnVk2lx3DVso/QxUbDaT0fWVh9Xnp3Q279fa+4oSciTuHw3EYOEho6MQ==", "user"=>{"name"=>"Daniel", "lastName"=>"", "aboutMe"=>"", "birthday"=>"", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "danielld@poczta.fm"], ["encrypted_password", "$2a$10$2sJENGAlMReE14j7LZQvgeCxxKcbTpO3EF/6dtWntNS6k84n4d1ci"], ["created_at", "2015-11-16 21:15:40.181464"], ["updated_at", "2015-11-16 21:15:40.181464"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-11-16 21:15:40.185590"], ["current_sign_in_at", "2015-11-16 21:15:40.185590"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 21:15:40.186229"], ["id", 14]]
+  [1m[35m (3.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-16 22:15:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14]]
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:15:40 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:15:41 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14]]
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/14" for ::1 at 2015-11-16 22:15:43 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7IOm5fIlV9njeyxaQMuAvIGsRtl4bYiOjC6Zn4HjV7AYpZF5fRSTcaSbrFOc/aTOttE4F0Oj+ScoVmvHMgF4A==", "id"=>"14"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 14]]
+  [1m[36mConfirmation Load (0.1ms)[0m  [1mSELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1[0m  [["user_id", 14]]
+  [1m[35mMarriage Load (0.1ms)[0m  SELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1  [["user_id", 14]]
+  [1m[36mPriesthood Load (0.1ms)[0m  [1mSELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1[0m  [["user_id", 14]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 14]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 21ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:15:43 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14]]
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:15:43 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:15:47 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:15:47 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-16 22:16:18 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 67ms (Views: 54.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:16:18 +0100
+
+
+Started POST "/users" for ::1 at 2015-11-16 22:16:29 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vvlmOu0CY7f0IOVN/IGTFX9UO2qncqeHvCozGlaP9Mi9Kf7knz6kpVU/Z03b8UuEt4nOkZ+dnkEau9DTNEB8dg==", "user"=>{"name"=>"", "lastName"=>"", "aboutMe"=>"", "birthday"=>"", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, lastName, aboutMe, birthday, religion
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "danielld@poczta.fm"], ["encrypted_password", "$2a$10$gbErCk9bLJo8AnGbxcgiE.gWtULH20n1ifxOPSBXwdxzXY/J62CRW"], ["created_at", "2015-11-16 21:16:29.516371"], ["updated_at", "2015-11-16 21:16:29.516371"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-16 21:16:29.520677"], ["current_sign_in_at", "2015-11-16 21:16:29.520677"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-11-16 21:16:29.521324"], ["id", 15]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 84ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-16 22:16:29 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 15]]
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:16:29 +0100
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:16:31 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 15]]
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/15" for ::1 at 2015-11-16 22:16:32 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sVG+Dz8c9XXAI3tPeotom6NqmUaawdlkQQ55WiMG44mygSbRTSAyZ2E8+U9d+7AKa7dsvaIu4KLnn5qTQclrNw==", "id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 15]]
+  [1m[35mConfirmation Load (0.2ms)[0m  SELECT  "confirmations".* FROM "confirmations" WHERE "confirmations"."user_id" = ? LIMIT 1  [["user_id", 15]]
+  [1m[36mMarriage Load (0.2ms)[0m  [1mSELECT  "marriages".* FROM "marriages" WHERE "marriages"."user_id" = ? LIMIT 1[0m  [["user_id", 15]]
+  [1m[35mPriesthood Load (0.2ms)[0m  SELECT  "priesthoods".* FROM "priesthoods" WHERE "priesthoods"."user_id" = ? LIMIT 1  [["user_id", 15]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 15]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 29ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/users" for ::1 at 2015-11-16 22:16:32 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 15]]
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-11-16 22:16:32 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-11-16 22:16:32 +0100
