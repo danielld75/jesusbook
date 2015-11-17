@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resources :baptisms
-
   devise_for :users
-  get 'welcome/index'
   get '/users' => 'users#index'
   get '/users/show/:id' => "users#show"
   resources :users do

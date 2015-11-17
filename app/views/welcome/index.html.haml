@@ -1,6 +1,11 @@
 
 %h1 Jesusbook
-%p pixel
+=image_tag "photoJesus.jpg", alt: "Photo Jesus"
+
+-unless current_user
+  =link_to "Zarejestruj się", new_user_registration_path
+
+%br
 
 =link_to "Użytkownicy JESUSBOOK", users_path
 
