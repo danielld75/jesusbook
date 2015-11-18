@@ -1,12 +1,9 @@
-
-%h1 Jesusbook
-=image_tag "photoJesus.jpg", alt: "Photo Jesus"
-
--unless current_user
-  =link_to "Zarejestruj się", new_user_registration_path
-
+.row
+  .col-md-4.col-md-offset-2
+    -unless current_user
+      =link_to "Register << Zarejestruj się >>", new_user_registration_path, class: "btn btn-primary"
+    =link_to "Enter << Wejdź do Społeczności >>", users_path, class: "btn btn-primary"
 %br
-
-=link_to "Użytkownicy JESUSBOOK", users_path
-
-
+.row
+  .col-md-2.col-md-offset-2
+    =image_tag "jesus.jpg", alt: "Photo Jesus"

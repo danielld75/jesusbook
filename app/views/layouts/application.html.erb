@@ -7,13 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <div class="page-header">
+      <h1>JESUSBOOK</h1>
+    </div>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
-<br/>
-<% if current_user %>
-  <%=link_to "Wyloguj się", destroy_user_session_path, method: :delete%>
-<% end %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <div class="row">
+      <%= yield %>
+    </div>
+    <br/>
+
+    <% if current_user %>
+      <%=link_to "Wyloguj się", destroy_user_session_path, method: :delete%>
+    <% end %>
+
+    <footer>
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy;jesusbook 2015</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
