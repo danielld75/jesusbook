@@ -11,6 +11,11 @@
     <div class="page-header">
       <h1>JESUSBOOK</h1>
     </div>
+    <div class="row">
+      <% if current_user %>
+        <%=link_to "Wyloguj się", destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
+      <% end %>
+    </div>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -19,10 +24,6 @@
       <%= yield %>
     </div>
     <br/>
-
-    <% if current_user %>
-      <%=link_to "Wyloguj się", destroy_user_session_path, method: :delete%>
-    <% end %>
 
     <footer>
       <div class="row">
