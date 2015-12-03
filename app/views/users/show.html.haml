@@ -10,3 +10,9 @@
 = @user.birthday
 %br
 = @user.religion
+
+%br
+= link_to "Add your baptism", new_user_baptism_path(@user), class: "btn btn-primary"
+= link_to "Add your confirmation", new_user_confirmation_path(@user), class: "btn btn-primary"
+= link_to "Add your marriage", new_user_marriage_path(@user), class: "btn btn-primary"
+= link_to "Add your priesthood", new_user_priesthood_path(@user), class: "btn btn-primary"
