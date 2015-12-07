@@ -42,6 +42,12 @@ class BaptismsController < ApplicationController
     end
   end
 
+  def destroy
+    @baptism = current_user.baptism
+    @baptism.destroy
+    redirect_to root_path, notice: "Baptism deleted successfully!"
+  end
+
   private
   def baptism_params
     params.require(:baptism).permit(:local, :date, :parish, :minister)

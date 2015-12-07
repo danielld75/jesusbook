@@ -8,5 +8,4 @@ class User < ActiveRecord::Base
   has_one :marriage, dependent: :destroy
   has_one :priesthood, dependent: :destroy
 
-  accepts_nested_attributes_for :baptism
 end

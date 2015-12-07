@@ -1,9 +1,23 @@
 %h1 Show Baptism
-%p
-  = @baptism.date
-  %br
-  = @baptism.local
-  %br
-  = @baptism.parish
-  %br
-  = @baptism.minister
+%table.table
+  %tr
+    %th
+      Date
+    %th
+      Local
+    %th
+      Parish
+    %th
+      Minister
+  %tr
+    %td
+      = @baptism.date
+    %td
+      = @baptism.local
+    %td
+      = @baptism.parish
+    %td
+      = @baptism.minister
+
+= link_to 'Edit', edit_user_baptism_path(@baptism)
+= link_to 'Delete', user_baptism_path, method: :delete, data: {confirm: "Are You sure?"}
