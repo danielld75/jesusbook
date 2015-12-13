@@ -55091,3 +55091,150 @@ Started GET "/assets/bootstrap-sprockets.self.js?body=1" for ::1 at 2015-12-13 0
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-12-13 07:54:07 +0100
+
+
+Started GET "/users/31" for ::1 at 2015-12-13 08:12:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 28]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  Rendered users/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 139ms (Views: 137.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/confirmations.self.css?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/confirmations.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-12-13 08:12:48 +0100
+
+
+Started GET "/users" for ::1 at 2015-12-13 08:12:52 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.0ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2015-12-13 08:12:54 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.0ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 142ms (Views: 141.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2015-12-13 08:12:55 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 143ms (Views: 142.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2015-12-13 08:12:55 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.0ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 153ms (Views: 152.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2015-12-13 08:12:55 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.0ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 146ms (Views: 144.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2015-12-13 08:12:56 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 146ms (Views: 144.6ms | ActiveRecord: 0.5ms)
