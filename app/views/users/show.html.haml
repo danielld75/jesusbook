@@ -1,18 +1,39 @@
 %p Show user ***
-= @user.email
-%br
-= @user.name
-%br
-= @user.lastName
-%br
-= @user.aboutMe
-%br
-= @user.birthday
-%br
-= @user.religion
+%table.table
+  %tr
+    %th
+      Emial
+    %th
+      Name
+    %th
+      Last Name
+    %th
+      About me
+    %th
+      Birthday
+    %th
+      Religion
+  %tr
+    %td
+      = @user.email
+    %td
+      = @user.name
+    %td
+      = @user.lastName
+    %td
+      = @user.aboutMe
+    %td
+      = @user.birthday
+    %td
+      = @user.religion
 
 %br
-= link_to "Add your baptism", new_user_baptism_path(@user), class: "btn btn-primary"
+- if @user.baptism.nil?
+  = link_to "Add your baptism", new_user_baptism_path(@user), class: "btn btn-primary"
+- else
+  = link_to "Edit your baptism", edit_user_baptism_path(@user), class: "btn btn-primary"
+
+
 = link_to "Add your confirmation", new_user_confirmation_path(@user), class: "btn btn-primary"
 = link_to "Add your marriage", new_user_marriage_path(@user), class: "btn btn-primary"
 = link_to "Add your priesthood", new_user_priesthood_path(@user), class: "btn btn-primary"

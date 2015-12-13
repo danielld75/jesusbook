@@ -1,8 +1,10 @@
 <h1>Lista uczestników Jesusbook</h1>
 
 <% @users.each do |user| %>
-  <h1><%= user.name %></h1>
+  <h1>Name: <%= user.name %></h1>
   <h3><%= user.email %><h3>
-  <p><%= link_to "Delete", user, method: :delete %></p>
-  <p><%= link_to "Show", user %></p>
+  <% unless user.baptism.nil? %>
+    <h3>Parish baptism: <%= user.baptism.parish %></h3>
+  <% end %>
+
 <% end %>
