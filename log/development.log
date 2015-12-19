@@ -56746,3 +56746,566 @@ Processing by UsersController#index as HTML
   Rendered users/index.html.erb within layouts/application (2.6ms)
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
 Completed 200 OK in 142ms (Views: 140.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/28" for ::1 at 2015-12-14 13:10:21 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 28]]
+  [1m[36mBaptism Load (0.2ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  Rendered users/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 148ms (Views: 145.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/28/baptism/edit" for ::1 at 2015-12-14 13:10:22 +0100
+Processing by BaptismsController#edit as HTML
+  Parameters: {"user_id"=>"28"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 28]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  Rendered baptisms/edit.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 162ms (Views: 159.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/28" for ::1 at 2015-12-14 13:10:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 28]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  Rendered users/show.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 135ms (Views: 132.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-12-14 13:20:24 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.0ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 135ms (Views: 134.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2015-12-14 13:20:26 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.0ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+Completed 200 OK in 134ms (Views: 133.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2015-12-19 22:12:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.3ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (189.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 28]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Completed 401 Unauthorized in 2601ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-12-19 22:12:09 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (141.5ms)
+Completed 200 OK in 342ms (Views: 331.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-12-19 22:12:09 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 28]]
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 157ms (Views: 156.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/confirmations.self.css?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/confirmations.self.js?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-12-19 22:12:09 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-12-19 22:12:10 +0100
+
+
+Started GET "/users" for ::1 at 2015-12-19 22:12:32 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mBaptism Load (0.1ms)[0m  SELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1  [["user_id", 28]]
+  [1m[36mBaptism Load (0.1ms)[0m  [1mSELECT  "baptisms".* FROM "baptisms" WHERE "baptisms"."user_id" = ? LIMIT 1[0m  [["user_id", 31]]
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 146ms (Views: 145.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-12-19 22:12:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (84.3ms)
+Completed 200 OK in 311ms (Views: 310.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/confirmations.self.css?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/confirmations.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-12-19 22:12:39 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-12-19 22:12:42 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 182ms (Views: 180.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-12-19 22:13:07 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+x+dTLGuVJBipZWrClPveNyixfQsNY4wht8+awutwRKIyenDjFI+XfLPB9AH1LEfhCSQWk7EAD8j3Pvm2Ce1Hw==", "user"=>{"name"=>"Wiesiek", "lastName"=>"Dziuda", "aboutMe"=>"qqq", "birthday"=>"", "religion"=>"Catholicism", "email"=>"danielld@poczta.fm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'danielld@poczta.fm' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 408ms (Views: 188.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/confirmations.self.css?body=1" for ::1 at 2015-12-19 22:13:07 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-12-19 22:13:07 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-12-19 22:13:07 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/confirmations.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for ::1 at 2015-12-19 22:13:08 +0100
+
+
+Started POST "/users" for ::1 at 2015-12-19 22:13:24 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UQJxW84To4UGkR00izuQhXGwCPvTJGI6ajYdcclkaqUi1AXU8+/JSJb7j0+GvM7iKTZdVbHV7DXPNdj8Gu4eqA==", "user"=>{"name"=>"Wiesiek", "lastName"=>"Dziuda", "aboutMe"=>"qqq", "birthday"=>"", "religion"=>"Catholicism", "email"=>"d.dziuda@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'd.dziuda@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "232dd67ccfe466db96819f1472efb878c0ee5f173a11069431b02990b78b8fab"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "aboutMe", "lastName", "religion", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Wiesiek"], ["email", "d.dziuda@gmail.com"], ["encrypted_password", "$2a$10$dy/Gk2eL20F/Mh5cx7WQp.CUAj21D7Wb091xL4Gbe.oOn/CLff1Xu"], ["aboutMe", "qqq"], ["lastName", "Dziuda"], ["religion", "Catholicism"], ["created_at", "2015-12-19 21:13:24.551472"], ["updated_at", "2015-12-19 21:13:24.551472"], ["confirmation_token", "z52urLsPgXtZYtM7uzfP"], ["confirmation_sent_at", "2015-12-19 21:13:24.748536"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.9ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 728.7ms
+
+Sent mail to d.dziuda@gmail.com (2865.2ms)
+Date: Sat, 19 Dec 2015 22:13:25 +0100
+From: "Jesusbook.info" <d.dziuda@gmail.com>
+Reply-To: "Jesusbook.info" <d.dziuda@gmail.com>
+To: d.dziuda@gmail.com
+Message-ID: <5675c875879bd_17fe13fd2193a07203141f@Thoth.home.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome d.dziuda@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=z52urLsPgXtZYtM7uzfP">Confirm my account</a></p>
+
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3914ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-19 22:13:28 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 131ms (Views: 130.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmations.self.css?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/confirmations.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/assets/jesus.jpg" for ::1 at 2015-12-19 22:13:28 +0100
+
+
+Started GET "/users/confirmation?confirmation_token=z52urLsPgXtZYtM7uzfP" for ::1 at 2015-12-19 22:13:57 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"z52urLsPgXtZYtM7uzfP"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "z52urLsPgXtZYtM7uzfP"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2015-12-19 21:13:57.948554"], ["updated_at", "2015-12-19 21:13:57.949212"], ["id", 32]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 19ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-12-19 22:13:57 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 196ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confirmations.self.css?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/users.self.css?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/welcome.self.css?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/application.self.css?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/baptisms.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/turbolinks.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/baptisms.self.css?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/confirmations.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/users.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/welcome.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/affix.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/alert.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/button.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/tab.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/transition.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/popover.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
+
+
+Started GET "/assets/bootstrap/modal.self.js?body=1" for ::1 at 2015-12-19 22:13:58 +0100
