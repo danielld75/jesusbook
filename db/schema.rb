@@ -25,18 +25,6 @@ ActiveRecord::Schema.define(version: 20151007141918) do
 
   add_index "baptisms", ["user_id"], name: "index_baptisms_on_user_id"
 
-  create_table "confirmations", force: :cascade do |t|
-    t.date     "date"
-    t.string   "local"
-    t.string   "parish"
-    t.string   "minister"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "user_id"
-  end
-
-  add_index "confirmations", ["user_id"], name: "index_confirmations_on_user_id"
-
   create_table "marriages", force: :cascade do |t|
     t.date     "date"
     t.string   "local"

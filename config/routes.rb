@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'marriages/index'
+
+  get 'marriages/new'
+
+  get 'marriages/show'
+
   devise_for :users
   get '/users' => 'users#index'
   get '/users/show/:id' => "users#show"

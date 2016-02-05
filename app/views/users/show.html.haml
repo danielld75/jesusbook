@@ -26,7 +26,6 @@
       = @user.birthday
     %td
       = @user.religion
-
 %br
 - if @user.baptism.nil?
   = link_to "Add your baptism", new_user_baptism_path(@user), class: "btn btn-primary"
