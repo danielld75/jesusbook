@@ -7,11 +7,11 @@ class MarriagesController < ApplicationController
 
   def new
   	@user = current_user
-  	@marriage = Marriage.new
+  	@marriage = @user.build_marriage
   end
   def create
   	@user = current_user
-  	@marriage = @user.buiild_marriage(marriage_params)
+  	@marriage = @user.build_marriage(marriage_params)
   	if @marriage.save
   		redirect_to user_marriage_path(@user, @marriage), notice: "Add marriage"
   	else
