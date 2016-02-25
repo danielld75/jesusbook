@@ -68,9 +68,13 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { protocol: 'https', :host => 'jesusbook.info' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address => "127.0.0.1",
-    :port    => 25,
-    :domain  => 'jesusbook.info'
+    :address => "smtp.gmail.com",
+    :port    => 587,
+    :domain  => 'jesusbook.info',
+    :user_name          => 'd.dziuda@gmail.com',
+    :password           => 'greenapple7509',
+    :authentication => 'plain',
+    :enable_starttls_auto => true
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
