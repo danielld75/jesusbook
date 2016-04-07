@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  devise_for :users
-  get '/users' => 'users#index'
-  get '/users/show/:id' => "users#show"
-  resources :users do
-    resource :baptism
-    resource :confirm
-    resource :marriage
-    resource :priesthood
+  scope "/:locale/", locale: /en|pl/ do
+    get '/' => 'welcome#index'
+    devise_for :users
+    get '/users' => 'users#index'
+    get '/users/show/:id' => "users#show"
+    get '/society' => "welcome#body"
+    resources :users do
+      resource :baptism
+      resource :confirm
+      resource :marriage
+      resource :priesthood
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

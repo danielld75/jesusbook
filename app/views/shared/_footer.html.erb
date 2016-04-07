@@ -1,0 +1,12 @@
+<div class="row text-center">
+	<div class="col-md-12 well">
+		<p>&copy;jesusbook 2015</p>
+		<%= t(:hello) %>
+      <li>
+        <%= link_to_unless_current I18n.t('menu.languages.en'), locale: :en %>
+      </li>
+      <li>
+        <%= link_to_unless_current I18n.t('menu.languages.pl'), locale: :pl %>
+      </li>
+	</div>
+</div>
