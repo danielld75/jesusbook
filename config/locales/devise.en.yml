@@ -1,6 +1,19 @@
 # Additional translations at https://github.com/plataformatec/devise/wiki/I18n
 
 en:
+  activerecord:
+    attributes:
+      user:
+        current_password: Current password
+        email: E-mail
+        password: Password
+        password_confirmation: Password confirmation
+        remember_me: Remember me
+        name: First name
+        lastName: Last name
+        aboutMe: About me
+        birthday: Birthday
+        religion: Religion
   devise:
     confirmations:
       confirmed: "Your email address has been successfully confirmed."
@@ -58,5 +71,3 @@ en:
       not_saved:
         one: "1 error prohibited this %{resource} from being saved:"
         other: "%{count} errors prohibited this %{resource} from being saved:"
-  remember_me: "Remember me"
-  log_in: "Log in"

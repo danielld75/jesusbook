@@ -1,4 +1,12 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+  <!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+</body>
+</html><nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <%- if user_signed_in? %>
@@ -27,6 +35,10 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to current_user.email, user_path(id: current_user.id) %></li>
+
+        <li><%= link_to image_tag('UnitedKingsom'), locale: :en %></li>
+        <li><%= link_to image_tag("Poland"), locale: :pl %></li>
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mój Profil <span class="caret"></span></a>
           <ul class="dropdown-menu">

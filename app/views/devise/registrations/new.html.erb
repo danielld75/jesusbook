@@ -1,18 +1,70 @@
-<h2><%= t('.sign_up', :default => "Sign up") %></h2>
+<div class="col-sm-8 col-sm-offset-2">
+	<h2><%= t('.sign_up', :default => "Sign up") %></h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), class: "form-horizontal") do |f| %>
+	  <%= devise_error_messages! %>
+		<div class="form-group">
+	  	<div><%= f.label :name, class: "col-sm-3 control-label" %></div>
+	  	<div class="col-sm-9">
+	  		<%= f.text_field :name, class:"form-control" %>
+			</div>
+		</div>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+		<div class="form-group">
+			<div><%= f.label :lastName, class: "col-sm-3 control-label" %></div>
+			<div class="col-sm-9">
+				<%= f.text_field :lastName, class: "form-control" %>
+			</div>
+		</div>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+		<div class="form-group">
+	  	<div><%= f.label :email, class: "col-sm-3 control-label" %></div>
+	  	<div class="col-sm-9">
+	  		<%= f.email_field :email, class: "form-control" %>
+	  	</div>
+		</div>
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+		<div class="form-group">
+	  	<div><%= f.label :password, class: "col-sm-3 control-label" %></div>
+	  	<div class="col-sm-9">
+	  		<%= f.password_field :password, class: "form-control" %>
+	  	</div>
+		</div>
 
-  <div><%= f.submit t('.sign_up', :default => "Sign up") %></div>
-<% end %>
+		<div class="form-group">
+	  	<div><%= f.label :password_confirmation, class: "col-sm-3 control-label" %></div>
+	  	<div class="col-sm-9">
+	  		<%= f.password_field :password_confirmation, class: "form-control" %>
+	  	</div>
+		</div>
 
-<%= render "devise/shared/links" %>
+		<div class="form-group">
+	  	<div><%= f.label :aboutMe, class: "col-sm-3 control-label" %></div>
+	  	<div class="col-sm-9">
+	  		<%= f.text_area :aboutMe, class: "form-control" %>
+	  	</div>
+		</div>
+
+		<div class="form-group">
+	  	<div><%= f.label :birthday, class: "col-sm-3 control-label" %></div>
+	  	<div class="col-sm-9">
+	  		<%= f.date_field :birthday, class: "form-control" %>
+	  	</div>
+		</div>
+
+		<div class="form-group">
+			<div><%= f.label :religion, class: "col-sm-3 control-label" %></div>
+			<div class="col-sm-9">
+				<%= f.text_field :religion, class: "form-control" %>
+			</div>
+		</div>
+
+		<div class="form-group">
+	  	<div class="col-sm-9 col-sm-offset-3"><%= f.submit t('.sign_up', :default => "Sign up"), class: "btn btn-success" %></div>
+	  </div>
+	<% end %>
+
+	<div class="col-sm-12"><hr></div>
+
+	<%= render "devise/shared/links" %>
+</div>

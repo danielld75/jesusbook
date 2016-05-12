@@ -7,6 +7,11 @@ pl:
         password: Hasło
         password_confirmation: Potwierdzenie hasła
         remember_me: Zapamiętaj mnie
+        name: Imię
+        lastName: "Nazwisko"
+        aboutMe: O mnie
+        birthday: "Data urodzenia"
+        religion: "Wyznanie"
     models:
       user: Użytkownik
   devise:

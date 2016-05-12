@@ -1,8 +1,13 @@
 pl:
-  menu:
-    languages:
-      pl: "Polish"
-      en: "English"
+  users:
+    show:
+      aboutMe: O mnie
+  pl: "Polish"
+  en: "English"
+  activerecord:
+    attributes:
+      baptism:
+
   activerecord:
     errors:
       messages:

@@ -20,9 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  menu:
-    languages:
-      pl: "Polski"
-      en: "Angielski"
-
-  register: register
+  pl: "Polski"
+  en: "Angielski"

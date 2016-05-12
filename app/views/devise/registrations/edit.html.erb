@@ -3,6 +3,12 @@
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
+  <div><%= f.label :name %><br />
+  <%= f.text_field :name %></div>
+
+  <div><%= f.label :lastName %><br />
+  <%= f.text_field :lastName %></div>
+
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 
@@ -17,6 +23,15 @@
 
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.label :aboutMe %><br />
+  <%= f.text_area :aboutMe %></div>
+
+  <div><%= f.label :birthday %><br />
+  <%= f.date_field :birthday %></div>
+
+  <div><%= f.label :religion %><br />
+  <%= f.text_field :religion %></div>
 
   <div><%= f.label :current_password %> <i>(<%= t('.we_need_your_current_password_to_confirm_your_changes', :default => 'we need your current password to confirm your changes') %>)</i><br />
   <%= f.password_field :current_password %></div>
