@@ -18,9 +18,10 @@ Rails.application.configure do
     :address            => 'smtp.gmail.com',
     :port               => 587,
     :domain             => 'gmail.com', #you can also use google.com
-    :authentication     => :plain,
+    :authentication     => 'plain',
     :user_name          => 'd.dziuda@gmail.com',
-    :password           => 'redmilk759'
+    :password           => 'redmilk759',
+    :enable_starttls_auto => true
   }
 
   # Show full error reports and disable caching.

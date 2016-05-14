@@ -10,11 +10,12 @@ class ApplicationController < ActionController::Base
     society_path
   end
 
-  def set_locale
-    I18n.locale = params[:locale] || I18n.default_locale
-  end
   def default_url_options(options={})
      { :locale => I18n.locale }
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 
   protected
