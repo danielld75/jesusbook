@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     get '/society' => "welcome#body"
     resources :users do
       resource :baptism
-      resource :confirm
+      resource :confirm_sacrament
       resource :marriage
       resource :priesthood
     end

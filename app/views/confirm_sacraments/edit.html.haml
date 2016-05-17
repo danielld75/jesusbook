@@ -1,0 +1,17 @@
+
+%h1 Confirmations#edit
+= form_for @confirm_sacrament, url: user_confirm_sacrament_path do |f|
+  = f.label :local
+  = f.text_field :local
+
+  = f.label :parish
+  = f.text_field :parish
+
+  = f.label :minister
+  = f.text_field :minister
+
+  = f.label :date
+  = f.date_field :date
+
+  = f.submit
+

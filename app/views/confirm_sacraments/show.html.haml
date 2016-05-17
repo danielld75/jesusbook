@@ -1,0 +1,24 @@
+%h1 Confirmations#show
+%table.table
+  %tr
+    %th
+      Date
+    %th
+      Local
+    %th
+      Parish
+    %th
+      Minister
+  %tr
+    %td
+      = @confirm_sacrament.date
+    %td
+      = @confirm_sacrament.local
+    %td
+      = @confirm_sacrament.parish
+    %td
+      = @confirm_sacrament.minister
+
+= link_to 'Edit', edit_user_confirm_sacrament_path(@confirm_sacrament)
+= link_to 'Delete', user_confirm_sacrament_path, method: :delete, data: {confirm: "Are You sure?"}
+

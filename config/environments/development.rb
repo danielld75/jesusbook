@@ -20,7 +20,7 @@ Rails.application.configure do
     :domain             => 'gmail.com', #you can also use google.com
     :authentication     => 'plain',
     :user_name          => 'd.dziuda@gmail.com',
-    :password           => 'redmilk759',
+    :password           => 'greenapple7509',
     :enable_starttls_auto => true
   }
 

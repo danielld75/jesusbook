@@ -32,7 +32,17 @@
 - else
   = link_to "Edit your baptism", edit_user_baptism_path(@user), class: "btn btn-primary"
 
+- if @user.confirm_sacrament.nil?
+  = link_to "Add your confirmation", new_user_confirm_sacrament_path(@user), class: "btn btn-primary"
+- else
+  = link_to "Edit your confirmation", edit_user_confirm_sacrament_path(@user), class: "btn btn-primary"
 
-= link_to "Add your confirmation", new_user_confirm_path(@user), class: "btn btn-primary"
-= link_to "Add your marriage", new_user_marriage_path(@user), class: "btn btn-primary"
-= link_to "Add your priesthood", new_user_priesthood_path(@user), class: "btn btn-primary"
+- if @user.marriage.nil?
+  = link_to "Add your marriage", new_user_marriage_path(@user), class: "btn btn-primary"
+- else
+  = link_to 'Edit your marriage', edit_user_marriage_path(@user), class: "btn btn-primary"
+
+- if @user.priesthood.nil?
+  = link_to "Add your priesthood", new_user_priesthood_path(@user), class: "btn btn-primary"
+- else
+  = link_to "Edit your priesthood", edit_user_priesthood_path(@user), class: "btn btn-primary"

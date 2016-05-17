@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
   has_one :baptism, dependent: :destroy
-  has_one :confirm, dependent: :destroy
+  has_one :confirm_sacrament, dependent: :destroy
   has_one :marriage, dependent: :destroy
   has_one :priesthood, dependent: :destroy
 
