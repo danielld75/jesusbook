@@ -11,51 +11,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160517112559) do
+ActiveRecord::Schema.define(version: 20160518122756) do
 
   create_table "baptisms", force: :cascade do |t|
-    t.date     "date"
+    t.date     "sacrament_date"
     t.string   "local"
     t.string   "parish"
     t.string   "minister"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.integer  "user_id"
   end
 
   add_index "baptisms", ["user_id"], name: "index_baptisms_on_user_id"
 
   create_table "confirm_sacraments", force: :cascade do |t|
-    t.date     "date"
+    t.date     "sacrament_date"
     t.string   "local"
     t.string   "parish"
     t.string   "minister"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   add_index "confirm_sacraments", ["user_id"], name: "index_confirm_sacraments_on_user_id"
 
   create_table "marriages", force: :cascade do |t|
-    t.date     "date"
+    t.date     "sacrament_date"
     t.string   "local"
     t.string   "parish"
     t.string   "minister"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.integer  "user_id"
   end
 
   add_index "marriages", ["user_id"], name: "index_marriages_on_user_id"
 
   create_table "priesthoods", force: :cascade do |t|
-    t.date     "date"
+    t.date     "sacrament_date"
     t.string   "local"
     t.string   "parish"
     t.string   "minister"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.integer  "user_id"
   end
 

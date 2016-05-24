@@ -1,17 +1,18 @@
-%h1 Confirmations#show
+%h1
+  = t('Confirmation')
 %table.table
   %tr
     %th
-      Date
+      = t('sacrament_date')
     %th
-      Local
+      = t('local')
     %th
-      Parish
+      = t('parish')
     %th
-      Minister
+      = t('minister')
   %tr
     %td
-      = @confirm_sacrament.date
+      = @confirm_sacrament.sacrament_date
     %td
       = @confirm_sacrament.local
     %td
@@ -19,6 +20,6 @@
     %td
       = @confirm_sacrament.minister
 
-= link_to 'Edit', edit_user_confirm_sacrament_path(@confirm_sacrament)
-= link_to 'Delete', user_confirm_sacrament_path, method: :delete, data: {confirm: "Are You sure?"}
+= link_to t('Edit'), edit_user_confirm_sacrament_path(@confirm_sacrament)
+= link_to t('Delete'), user_confirm_sacrament_path, method: :delete, data: {confirm: t("Are You sure?")}
 

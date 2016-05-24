@@ -1,4 +1,6 @@
 class ConfirmSacramentsController < ApplicationController
+  layout 'user_layout'
+
   before_action :authenticate_user!
 
   def index

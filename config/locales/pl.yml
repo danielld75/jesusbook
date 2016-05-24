@@ -1,13 +1,40 @@
 pl:
-  users:
+  Edit: Edytuj
+  Delete: Usuń
+  New: Nowy
+  local: Miejscowość
+  parish: Parafia
+  minister: Szafarz
+  sacrament_date: Data
+  Baptism: Chrzest
+  Confirmation: Bierzmowanie
+  Confirm sacrament: Bierzmowanie
+  Priesthood: Kapłaństwo
+  Marriage: Małżeństwo
+  Name: Imię
+  About me: O mnie
+  Last name: Nazwisko
+  Birthday: Data urodzenia
+  Religion: Wyznanie
+  Add your baptism: Dodaj swój chrzest
+  Edit your baptism: Edytuj swój chrzest
+  Add your confirmation: Dodaj swoje bierzmowanie
+  Edit your confirmation: Edytuj swoje bierzmowanie
+  Add your marriage: Dodaj małżeństwo
+  Edit your marriage: Edytuj małżeństwo
+  Add your priesthood: Dodaj kapłaństwo
+  Edit your priesthood: Edytuj kapłaństwo
+  Are You sure?: Czy na pewno?
+  baptisms:
+    edit:
+      edit_baptism: Edycja Chrzest
     show:
-      aboutMe: O mnie
+      Show Baptism: Twój Chrzest
+    new:
+      New Baptism: Utwórz Chrzest
+
   pl: "Polish"
   en: "English"
-  activerecord:
-    attributes:
-      baptism:
-
   activerecord:
     errors:
       messages:

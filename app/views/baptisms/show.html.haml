@@ -1,17 +1,18 @@
-%h1 Show Baptism
+%h1
+  = t('.Show Baptism')
 %table.table
   %tr
     %th
-      Date
+      = t('sacrament_date')
     %th
-      Local
+      = t('local')
     %th
-      Parish
+      = t('parish')
     %th
-      Minister
+      = t('minister')
   %tr
     %td
-      = @baptism.date
+      = @baptism.sacrament_date
     %td
       = @baptism.local
     %td
@@ -19,5 +20,5 @@
     %td
       = @baptism.minister
 
-= link_to 'Edit', edit_user_baptism_path(@baptism)
-= link_to 'Delete', user_baptism_path, method: :delete, data: {confirm: "Are You sure?"}
+= link_to t('Edit'), edit_user_baptism_path(@baptism)
+= link_to t('Delete'), user_baptism_path, method: :delete, data: {confirm: t("Are You sure?")}

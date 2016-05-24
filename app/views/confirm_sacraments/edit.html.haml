@@ -1,17 +1,18 @@
 
-%h1 Confirmations#edit
+%h1
+  = t('Confirmation')
 = form_for @confirm_sacrament, url: user_confirm_sacrament_path do |f|
-  = f.label :local
+  = f.label t(:local)
   = f.text_field :local
 
-  = f.label :parish
+  = f.label t(:parish)
   = f.text_field :parish
 
-  = f.label :minister
+  = f.label t(:minister)
   = f.text_field :minister
 
-  = f.label :date
-  = f.date_field :date
+  = f.label t(:sacrament_date)
+  = f.date_field :sacrament_date
 
-  = f.submit
+  = f.submit t('helpers.submit.update', model: t(f.object.model_name.human))
 
