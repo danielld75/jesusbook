@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160518122756) do
+ActiveRecord::Schema.define(version: 20160530093849) do
 
   create_table "baptisms", force: :cascade do |t|
     t.date     "sacrament_date"
@@ -48,6 +48,15 @@ ActiveRecord::Schema.define(version: 20160518122756) do
   end
 
   add_index "marriages", ["user_id"], name: "index_marriages_on_user_id"
+
+  create_table "posts", force: :cascade do |t|
+    t.text     "body"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
   create_table "priesthoods", force: :cascade do |t|
     t.date     "sacrament_date"

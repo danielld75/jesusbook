@@ -6,11 +6,13 @@ Rails.application.routes.draw do
     get '/users' => 'users#index'
     get '/users/show/:id' => "users#show"
     get '/society' => "welcome#body"
+    resources :posts, only: :index
     resources :users do
       resource :baptism
       resource :confirm_sacrament
       resource :marriage
       resource :priesthood
+      resources :posts
     end
   end
 

@@ -1,0 +1,19 @@
+
+%h1
+  = t('.edit_priesthood')
+
+= form_for @priesthood, url: user_priesthood_path do |f|
+  = f.label t(:local)
+  = f.text_field :local
+
+  = f.label t(:parish)
+  = f.text_field :parish
+
+  = f.label t(:minister)
+  = f.text_field :minister
+
+  = f.label t(:sacrament_date)
+  = f.date_field :sacrament_date
+
+  = f.submit t('helpers.submit.update', :model => t(f.object.model_name.human))
+

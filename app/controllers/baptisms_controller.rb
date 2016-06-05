@@ -51,6 +51,6 @@ class BaptismsController < ApplicationController
 
   private
   def baptism_params
-    params.require(:baptism).permit(:local, :date, :parish, :minister)
+    params.require(:baptism).permit(:local, :sacrament_date, :parish, :minister)
   end
 end

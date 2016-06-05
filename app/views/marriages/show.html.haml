@@ -1,2 +1,24 @@
-%h1 Marriages#show
-%p Find me in app/views/marriages/show.html.haml
+%h1
+  = t('.Show Marriage')
+%table.table
+  %tr
+    %th
+      = t('sacrament_date')
+    %th
+      = t('local')
+    %th
+      = t('parish')
+    %th
+      = t('minister')
+  %tr
+    %td
+      = @marriage.sacrament_date
+    %td
+      = @marriage.local
+    %td
+      = @marriage.parish
+    %td
+      = @marriage.minister
+
+= link_to t('Edit'), edit_user_marriage_path(@marriage)
+= link_to t('Delete'), user_marriage_path, method: :delete, data: {confirm: t(:sure)}

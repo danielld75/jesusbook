@@ -7,5 +7,6 @@ class User < ActiveRecord::Base
   has_one :confirm_sacrament, dependent: :destroy
   has_one :marriage, dependent: :destroy
   has_one :priesthood, dependent: :destroy
+  has_many :posts, dependent: :destroy
 
 end

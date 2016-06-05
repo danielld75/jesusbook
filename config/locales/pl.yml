@@ -24,7 +24,16 @@ pl:
   Edit your marriage: Edytuj małżeństwo
   Add your priesthood: Dodaj kapłaństwo
   Edit your priesthood: Edytuj kapłaństwo
-  Are You sure?: Czy na pewno?
+  sure: Czy na pewno?
+  posty: Moje posty
+  wiadomosci: Wiadomości
+  szukaj: Szukaj
+  moj_profil: Mój profil
+  sakramenty: Sakramenty
+  edytuj_dane: Edytuj dane
+  signed_out: Wyloguj się
+  created: Utworzono
+  ago: temu
   baptisms:
     edit:
       edit_baptism: Edycja Chrzest
