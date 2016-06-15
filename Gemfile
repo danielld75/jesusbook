@@ -31,6 +31,7 @@ gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.0.1'
 gem 'sass', '~> 3.4', '>= 3.4.19'
 gem 'rails-i18n', '~> 4.0.0' # for Rails 4
 gem 'devise-i18n'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 
 # Use ActiveModel has_secure_password
