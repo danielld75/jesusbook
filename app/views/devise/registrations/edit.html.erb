@@ -14,6 +14,9 @@
 
   <div><%= f.label :avatar %><br />
   <%= f.file_field :avatar %></div>
+  <% if  @user.avatar.url %>
+    <%=image_tag @user.avatar.url(:thumb) %>
+  <% end %>
 
 
   <%- if devise_mapping.confirmable? && resource.pending_reconfirmation? -%>
