@@ -6,7 +6,8 @@
         <div class="col-sm-3">
           <div class="well">
            <%= post.user.name %>
-           <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+           <br>
+           <%= image_tag post.user.avatar.url(:thumb), class: 'img-circle' %>
           </div>
         </div>
         <div class="col-sm-9">
