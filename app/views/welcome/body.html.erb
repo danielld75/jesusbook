@@ -14,10 +14,11 @@
           <div class="well">
               <br />
               <%= post.body %>
-              <br />
-              <%= t(:created) %>
-              <%= time_ago_in_words(post.created_at) %>
-              <%= t(:ago) %>
+              <div class="well well-sm">
+                <%= t(:created) %>
+                <%= time_ago_in_words(post.created_at) %>
+                <%= t(:ago) %>
+              </div>
           </div>
         </div>
       </div>
