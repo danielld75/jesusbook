@@ -32,6 +32,7 @@ gem 'sass', '~> 3.4', '>= 3.4.19'
 gem 'rails-i18n', '~> 4.0.0' # for Rails 4
 gem 'devise-i18n'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk', '~> 2.3', '>= 2.3.18'
 
 
 # Use ActiveModel has_secure_password
