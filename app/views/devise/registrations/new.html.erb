@@ -1,7 +1,7 @@
 <div class="col-sm-8 col-sm-offset-2">
 	<h2><%= t('.sign_up', :default => "Sign up") %></h2>
 
-	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), class: "form-horizontal"), html: {multipart: true} do |f| %>
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), class: "form-horizontal", html: {multipart: true}) do |f| %>
 	  <%= devise_error_messages! %>
 		<div class="form-group">
 	  	<div><%= f.label :name, class: "col-sm-3 control-label" %></div>
