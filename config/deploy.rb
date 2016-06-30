@@ -22,7 +22,7 @@ set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml', 'log', 'config/secrets.yml', 'public/system']
+set :shared_paths, ['config/database.yml', 'log', 'config/secrets.yml']
 
 
 # This task is the environment that is loaded for most commands, such as
