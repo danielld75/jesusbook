@@ -34,6 +34,13 @@ pl:
   signed_out: Wyloguj się
   created: Utworzono
   ago: temu
+  body: Treść postu
+  post_image: Zdjęcie
+  my_posts: Moje posty
+  created_at: Utworzono
+  actions: Akcje
+  post_edit: Edytuj post
+
   baptisms:
     edit:
       edit_baptism: Edycja Chrzest

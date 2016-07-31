@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160615091056) do
+ActiveRecord::Schema.define(version: 20160727062018) do
 
   create_table "baptisms", force: :cascade do |t|
     t.date     "sacrament_date"
@@ -52,8 +52,12 @@ ActiveRecord::Schema.define(version: 20160615091056) do
   create_table "posts", force: :cascade do |t|
     t.text     "body"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "post_image_file_name"
+    t.string   "post_image_content_type"
+    t.integer  "post_image_file_size"
+    t.datetime "post_image_updated_at"
   end
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id"

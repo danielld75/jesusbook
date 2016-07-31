@@ -1,18 +1,47 @@
 = provide(:title, "Posts")
-= form_for [@user, @post] do |f|
-  - if @post.errors.any?
-    = @post.errors.full_messages.each do |type, msg|
-      = msg
-  = f.label :body
-  = f.text_area :body
-  = f.submit
-%br
+.row
+  .col-md-12
+    .col-md-10.col-md-offset-2
+      = form_for [@user, @post], html: {multipart: true, class: "form-inline"} do |f|
+        - if @post.errors.any?
+          = @post.errors.full_messages.each do |type, msg|
+            = msg
+        .form-group
+          = f.label t :body
+          = f.text_area :body, class: "form-control"
 
-- @posts.each do |post|
-  - if post.id
-    = post.body
-    = post.created_at
-    = post.user.name
-    = link_to t("Edit"), edit_user_post_path(@user, post)
-    = link_to t("Delete"), user_post_path(@user, post), method: :delete, data: {confirm: t(:sure)}
-    %br
+        .form-group
+          = f.label t :post_image
+          = f.file_field :post_image, class: "form-control btn btn-default"
+        = f.submit class: "btn btn-default"
+
+.row
+  .col-md-10.col-md-offset-2
+    %h1
+      = t :my_posts
+  .col-sm-8.col-sm-offset-2
+    %table.table.table-striped
+      %tbody
+        %tr
+          %th
+            = t :body
+          %th
+            = t :post_image
+          %th
+            = t :created_at
+          %th
+            = t :actions
+
+        - @posts.each do |post|
+          - if post.id
+            %tr
+              %td
+                = post.body
+              %td
+                - if post.post_image.file?
+                  = image_tag post.post_image.url(:thumb)
+              %td
+                = post.created_at
+              %td
+                = link_to t("Edit"), edit_user_post_path(@user, post), class: "btn btn-primary"
+                = link_to t("Delete"), user_post_path(@user, post), method: :delete, data: {confirm: t(:sure)}, class: "btn btn-danger"
