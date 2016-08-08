@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def new
     @user = current_user
-    @posts = @user.posts
+    @posts = @user.posts.paginate(:page => params[:page], :per_page => 3)
     @post = @user.posts.build
   end
 

@@ -20,6 +20,7 @@
     %h1
       = t :my_posts
   .col-sm-8.col-sm-offset-2
+    = will_paginate @posts, renderer: BootstrapPagination::Rails
     %table.table.table-striped
       %tbody
         %tr
@@ -45,3 +46,4 @@
               %td
                 = link_to t("Edit"), edit_user_post_path(@user, post), class: "btn btn-primary"
                 = link_to t("Delete"), user_post_path(@user, post), method: :delete, data: {confirm: t(:sure)}, class: "btn btn-danger"
+    = will_paginate @posts, renderer: BootstrapPagination::Rails
