@@ -4,6 +4,8 @@ class Post < ActiveRecord::Base
   validates :body, presence: true,
                    length: {maximum: 200}
 
+  scope :latest_post, ->  {order('created_at DESC')}
+
   has_attached_file :post_image, styles: {medium: "300x300>", thumb: "100x100>" },
     url: "/assets/posts/:id/:style/:basename.:extension",
     path: ":rails_root/public/assets/posts/:id/:style/:basename.:extension",

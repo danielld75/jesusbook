@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
 
   end
   def body
-    @posts = Post.paginate(:page => params[:page], per_page: 7)
+    @posts = Post.paginate(:page => params[:page], per_page: 7).latest_post
   end
 
 end
