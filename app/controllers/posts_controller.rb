@@ -1,11 +1,12 @@
 class PostsController < ApplicationController
+  require 'youtube_embed'
 
   layout 'user_layout'
   before_action :authenticate_user!
 
   def new
     @user = current_user
-    @posts = @user.posts.paginate(:page => params[:page], :per_page => 3)
+    @posts = @user.posts.paginate(:page => params[:page], :per_page => 3).latest_post
     @post = @user.posts.build
   end
 
@@ -43,6 +44,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:body, :post_image)
+    params.require(:post).permit(:body, :url_youtube, :post_image)
   end
 end

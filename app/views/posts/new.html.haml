@@ -1,3 +1,5 @@
+- require 'youtube_embed'
+
 = provide(:title, "Posts")
 .row
   .col-md-12
@@ -13,6 +15,9 @@
         .form-group
           = f.label t :post_image
           = f.file_field :post_image, class: "form-control btn btn-default"
+        .form-group
+          = f.label t :url_youtube
+          = f.text_field :url_youtube
         = f.submit class: "btn btn-default"
 
 .row
@@ -29,6 +34,8 @@
           %th
             = t :post_image
           %th
+            = t :url_youtube
+          %th
             = t :created_at
           %th
             = t :actions
@@ -41,6 +48,9 @@
               %td
                 - if post.post_image.file?
                   = image_tag post.post_image.url(:thumb)
+              %td
+                - if post.url_youtube
+                  = YoutubeEmbed::Video.iframe(post.url_youtube, {width: 320, height: 180})
               %td
                 = post.created_at
               %td

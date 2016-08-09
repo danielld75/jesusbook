@@ -40,6 +40,7 @@ pl:
   created_at: Utworzono
   actions: Akcje
   post_edit: Edytuj post
+  url_youtube: Youtube wideo
 
   will_paginate:
     next_label: Następna &#8594;

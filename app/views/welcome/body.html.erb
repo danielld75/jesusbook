@@ -22,6 +22,11 @@
                 <%= image_tag post.post_image.url(:medium) %>
                 </div>
               <% end %>
+              <% if post.url_youtube %>
+                <div class="video well">
+                <%= YoutubeEmbed::Video.iframe(post.url_youtube, {width: 550}) %>
+                </div>
+              <% end %>
               <div class="info">
                 <%= t(:created) %>
                 <%= time_ago_in_words(post.created_at) %>

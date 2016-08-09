@@ -16,5 +16,10 @@
             %td
               = f.file_field :post_image
           %tr
+            %th
+              = f.label t :url_youtube
+            %td
+              = f.text_field :url_youtube
+          %tr
             %td
               = f.submit class: "btn btn-default"
