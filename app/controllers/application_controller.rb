@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   def search
     @q = User.ransack(params[:q])
-    @people = @q.result
+    @people = @q.result.paginate(page: params[:page], per_page: 10)
   end
 
   def after_sign_in_path_for(user)
