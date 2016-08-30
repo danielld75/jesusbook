@@ -1,8 +1,7 @@
 class PostsController < ApplicationController
-  require 'youtube_embed'
 
   layout 'user_layout'
-  before_action :authenticate_user!
+  before_action :authenticate_user!, :search
 
   def new
     @user = current_user

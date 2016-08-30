@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/activerecord-hackery/ransack.git
+  revision: e16c18ba01a6be6c0ee27e091a84959f4eb20564
+  specs:
+    ransack (1.8.2)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      i18n
+      polyamorous (~> 1.3)
+
+GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: ea68f3f137acd7740ce2fa6996c8a44f6c0981bd
   specs:
@@ -139,6 +150,8 @@ GEM
     orm_adapter (0.5.0)
     pg (0.18.4)
     pkg-config (1.1.7)
+    polyamorous (1.3.1)
+      activerecord (>= 3.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -247,6 +260,7 @@ DEPENDENCIES
   pg
   rails (= 4.2.6)
   rails-i18n (~> 4.0.0)
+  ransack!
   sass (~> 3.4, >= 3.4.19)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

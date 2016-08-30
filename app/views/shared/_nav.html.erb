@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <%- if user_signed_in? %>
-          <li><a href="#"><%= t('wiadomosci') %><span class="sr-only">(current)</span></a></li>
+          <li><a href="#"><%#= t('wiadomosci') %><span class="sr-only">(current)</span></a></li>
         <% else %>
           <li><%= link_to t(:register), new_user_registration_path %></li>
           <li><%= link_to t("Zaloguj się"), new_user_session_path %></li>
@@ -28,11 +28,9 @@
     <%- if user_signed_in? %>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <%= link_to "Search", search_path, class: "btn btn-default" %>
         </div>
-        <%= link_to t("szukaj"), "#", class: "btn btn-default" %>
       </form>
-
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to current_user.email, user_path(id: current_user.id) %></li>
 

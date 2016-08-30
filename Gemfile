@@ -36,6 +36,7 @@ gem 'aws-sdk', '~> 2.3', '>= 2.3.18'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 gem 'youtube-embed'
+gem 'ransack', github: 'activerecord-hackery/ransack'
 
 
 # Use ActiveModel has_secure_password
@@ -47,6 +48,7 @@ gem 'mina'
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
 gem 'sqlite3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

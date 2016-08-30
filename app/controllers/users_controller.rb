@@ -17,7 +17,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    # @user = User.find(params[:id])
     @user = current_user
     @baptism = @user.baptism
   end
@@ -43,6 +42,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    require.params(:user).permit(:name, :lastName, :aboutMe, :birthday, :religion)
+    require.params(:user).permit(:name, :lastName, :aboutMe, :place, :birthday, :religion)
   end
 end

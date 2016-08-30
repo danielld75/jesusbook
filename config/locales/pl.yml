@@ -41,6 +41,12 @@ pl:
   actions: Akcje
   post_edit: Edytuj post
   url_youtube: Youtube wideo
+  imie: Imię
+  nazwisko: Nazwisko
+  ostatni_post: Ostatni post
+  name: Imię
+  last_name: Nazwisko
+  place: Miejscowość
 
   will_paginate:
     next_label: Następna &#8594;

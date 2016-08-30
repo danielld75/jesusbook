@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   scope "/:locale/", locale: /en|pl/ do
     get '/' => 'welcome#index'
     devise_for :users
+    get '/search' => 'welcome#search'
     get '/users' => 'users#index'
     get '/users/show/:id' => "users#show"
     get '/society' => "welcome#body"
