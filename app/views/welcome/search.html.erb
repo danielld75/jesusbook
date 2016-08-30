@@ -31,7 +31,11 @@
                 <%= image_tag(person.avatar.url(:thumb)) %>
               <% end %>
           </td>
-          <td><%= truncate(person.posts.latest_post.first.body) %>
+          <%- if person.posts.empty? %>
+            <td><%= t(:no_posts) %></td>
+          <% else %>
+            <td><%= truncate(person.posts.latest_post.first.body) %>
+          <% end %>
           </td>
         </tr>
       <% end %>
