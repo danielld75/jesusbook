@@ -48,6 +48,7 @@ pl:
   last_name: Nazwisko
   place: Miejscowość
   no_posts: Brak postów
+  search_description: Tutaj możesz wyszukiwać osoby które dzielą się informacjami z życia chrześcijańskiego i zobaczyć te momenty w życiu, które są dla nich ważne.
 
   will_paginate:
     next_label: Następna &#8594;

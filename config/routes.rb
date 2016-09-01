@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+
   root 'welcome#index'
   scope "/:locale/", locale: /en|pl/ do
+    get 'profiles/show'
     get '/' => 'welcome#index'
     devise_for :users
     get '/search' => 'welcome#search'

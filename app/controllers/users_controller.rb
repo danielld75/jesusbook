@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   layout "user_layout"
 
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!
 
   def index
     @users = User.all

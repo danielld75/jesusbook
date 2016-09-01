@@ -13,7 +13,7 @@
   </div>
 
   <div class="col-md-8 col-md-offset-2">
-    <%- if @q %>
+    <%- if params[:q] %>
       <div class="col-md-8 col-md-offset-4"><%= will_paginate @people, renderer: BootstrapPagination::Rails %></div>
         <table class="table">
           <tr>
@@ -25,15 +25,15 @@
           </tr>
         <% @people.each do |person| %>
           <tr>
-            <td><%= person.name %></td>
-            <td><%= person.lastName %></td>
+            <td><%= link_to person.name, controller: "profiles", action: "show", id: person %></td>
+            <td><%= link_to person.lastName, controller: "profiles", action: "show", id: person %></td>
             <td><%= person.place %></td>
             <td><%- if person.avatar.file? %>
                   <%= image_tag(person.avatar.url(:thumb)) %>
                 <% end %>
             </td>
             <%- if person.posts.empty? %>
-              <td><%= t(:no_posts) %></td>
+              <td><span class="glyphicon glyphicon-hand-right"> <%= t(:no_posts) %></span></td>
             <% else %>
               <td><%= truncate(person.posts.latest_post.first.body) %>
             <% end %>
@@ -42,6 +42,8 @@
         <% end %>
         </table>
       <div class="col-md-8 col-md-offset-4"><%= will_paginate @people, renderer: BootstrapPagination::Rails %></div>
+    <% else %>
+      <label class="well"><%= t :search_description %></label>
     <% end %>
   </div>
 </div>

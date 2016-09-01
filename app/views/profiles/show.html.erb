@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2 well">
+    <%- if @person.avatar.file? %>
+      <%= image_tag(@person.avatar.url(:thumb)) %>
+    <%end%>
+    <%= @person.name %>
+    <%= @person.lastName %>,
+    <%= @person.place%>
+    <br>
+    <%- if @person.baptism.nil? %>
+      <% %>
+    <%else%>
+      <label>Miejsce Chrztu: </label>
+      <%= @person.baptism.local %>
+      <label>Data Chrztu: </label>
+      <%= @person.baptism.sacrament_date %>
+      <label>Szafarz: </label>
+      <%= @person.baptism.minister%>
+    <%end%>
+    <br>
+    <%- if @person.confirm_sacrament.nil? %>
+      <% %>
+    <%else%>
+      <label>Miejsce Bierzmowania: </label>
+      <%= @person.confirm_sacrament.local %>
+      <label>Data Bierzmowania: </label>
+      <%= @person.confirm_sacrament.sacrament_date %>
+      <label>Szafarz: </label>
+      <%= @person.confirm_sacrament.minister%>
+    <%end%>
+    <br>
+    <%- if @person.marriage.nil? %>
+      <% %>
+    <%else%>
+      <label>Miejsce zawarcia związku małżeńskiego: </label>
+      <%= @person.marriage.local %>
+      <label>Data zawarcia: </label>
+      <%= @person.marriage.sacrament_date %>
+      <label>Szafarz: </label>
+      <%= @person.marriage.minister%>
+    <%end%>
+    <br>
+    <%- if @person.priesthood.nil? %>
+      <% %>
+    <%else%>
+      <label>Miejsce święceń kapłańskich: </label>
+      <%= @person.priesthood.local %>
+      <label>Data święceń: </label>
+      <%= @person.priesthood.sacrament_date %>
+      <label>Szafarz: </label>
+      <%= @person.priesthood.minister%>
+    <%end%>
+
+  </div>
+</div>
