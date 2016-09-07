@@ -19,6 +19,7 @@ set :user, 'jsbarm'
 set :forward_agent, true
 set :port, '6969'
 set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
+set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
