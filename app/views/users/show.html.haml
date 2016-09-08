@@ -6,12 +6,6 @@
       = t('Name')
     %th
       =t ('Last name')
-    %th
-      = t('About me')
-    %th
-      = t('Birthday')
-    %th
-      = t('Religion')
   %tr
     %td
       = @user.email
@@ -19,12 +13,6 @@
       = @user.name
     %td
       = @user.lastName
-    %td
-      = @user.aboutMe
-    %td
-      = @user.birthday
-    %td
-      = @user.religion
 %br
 - if @user.baptism.nil?
   = link_to t("Add your baptism"), new_user_baptism_path(@user), class: "btn btn-primary"

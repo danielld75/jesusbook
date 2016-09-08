@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160819072012) do
+ActiveRecord::Schema.define(version: 20160908081731) do
 
   create_table "baptisms", force: :cascade do |t|
     t.date     "sacrament_date"
@@ -78,9 +78,6 @@ ActiveRecord::Schema.define(version: 20160819072012) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "lastName"
-    t.text     "aboutMe"
-    t.date     "birthday"
-    t.string   "religion"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "email",                  default: "", null: false
