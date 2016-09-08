@@ -12,10 +12,6 @@ class ApplicationController < ActionController::Base
     @people = @q.result.paginate(page: params[:page], per_page: 10)
   end
 
-  def after_sign_in_path_for(user)
-    society_path
-  end
-
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
@@ -25,6 +21,7 @@ class ApplicationController < ActionController::Base
   end
 
   protected
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up) do |u| u.permit(:name, :email, :password, :password_confirmation, :place, :remember_me, :name, :lastName, :avatar) end
     devise_parameter_sanitizer.permit(:account_update) do |u| u.permit(:name, :email, :password, :password_confirmation, :place, :current_password, :name, :lastName, :avatar) end
