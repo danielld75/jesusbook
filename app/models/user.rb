@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
 
   private
   def create_baptism
-    Baptism.create(user_id: self.id)
+    Baptism.create(user_id: self.id, sacrament_date: self.baptism_date_user)
   end
 
 end
