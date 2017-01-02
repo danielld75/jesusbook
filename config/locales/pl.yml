@@ -52,6 +52,7 @@ pl:
   baptism_date_user: Data chrztu
   login: Logowanie
   register: Przyłącz się do nas
+  search: Szukaj
 
   will_paginate:
     next_label: Następna &#8594;
