@@ -22,7 +22,7 @@
           <li><a href="#"><%#= t('wiadomosci') %><span class="sr-only">(current)</span></a></li>
         <% else %>
           <li><%= link_to t(:register), new_user_registration_path %></li>
-          <li><%= link_to t("Zaloguj się"), new_user_session_path %></li>
+          <li><%= link_to t(:login), new_user_session_path %></li>
         <% end %>
       </ul>
     <%- if user_signed_in? %>

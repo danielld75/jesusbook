@@ -50,6 +50,8 @@ pl:
   no_posts: Brak postów
   search_description: Tutaj możesz wyszukiwać osoby które dzielą się informacjami z życia chrześcijańskiego i zobaczyć te momenty w życiu, które są dla nich ważne.
   baptism_date_user: Data chrztu
+  login: Logowanie
+  register: Przyłącz się do nas
 
   will_paginate:
     next_label: Następna &#8594;
