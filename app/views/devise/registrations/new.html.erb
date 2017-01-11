@@ -61,4 +61,12 @@
 
 	<div class="col-sm-12"><hr></div>
 	<%= render "devise/shared/links" %>
+	<script>
+		$(function(){
+			$(".datepicker").datepicker({
+				dateFormat: "dd-mm-yy",
+    		changeYear: true
+			});
+		});
+	</script>
 </div>
