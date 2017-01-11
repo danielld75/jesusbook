@@ -11,7 +11,7 @@
   = f.text_field :minister
 
   = f.label t(:sacrament_date)
-  = f.date_field :sacrament_date
+  = f.text_field :sacrament_date, class: "datepicker"
 
   = f.submit t('helpers.submit.create', model: t(f.object.model_name.human))
 

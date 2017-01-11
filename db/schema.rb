@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161118095900) do
+ActiveRecord::Schema.define(version: 20170111140337) do
 
   create_table "baptisms", force: :cascade do |t|
     t.date     "sacrament_date"
@@ -98,7 +98,7 @@ ActiveRecord::Schema.define(version: 20161118095900) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.string   "place"
+    t.string   "country"
     t.date     "baptism_date_user"
   end
 

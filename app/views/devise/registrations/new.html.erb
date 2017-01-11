@@ -26,16 +26,16 @@
 		</div>
 
 		<div class="form-group">
-	  	<div><%= f.label t(:place), class: "col-sm-3 control-label" %></div>
+	  	<div><%= f.label t(:country), class: "col-sm-3 control-label" %></div>
 	  	<div class="col-sm-9">
-	  		<%= f.text_field :place, class: "form-control" %>
+	  		<%= f.country_select :country, selected: "PL", class: "form-control" %>
 	  	</div>
 		</div>
 
 		<div class="form-group">
 			<div><%= f.label t(:baptism_date_user), class: "col-sm-3 control-label" %></div>
 			<div class="col-sm-9">
-				<%= f.date_field :baptism_date_user, class: "form-control" %>
+				<%= f.text_field :baptism_date_user, class: "form-control datepicker", placeholder: "dd/mm/yy" %>
 			</div>
 		</div>
 

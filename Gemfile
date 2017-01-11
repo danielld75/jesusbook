@@ -38,6 +38,7 @@ gem 'will_paginate-bootstrap'
 gem 'youtube-embed'
 gem 'ransack', github: 'activerecord-hackery/ransack'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'country_select'
 
 
 # Use ActiveModel has_secure_password
