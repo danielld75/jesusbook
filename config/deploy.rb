@@ -67,8 +67,10 @@ task :deploy => :environment do
     invoke :'rails:assets_precompile'
 
     on :launch do
-      invoke :'sidekiq:restart'
-      invoke :'unicorn:restart'
+      in_path(fetch(:current_path)) do
+        invoke :'sidekiq:restart'
+        invoke :'unicorn:restart'
+      end
     end
   end
 end
