@@ -49,7 +49,7 @@ gem 'unicorn'
 gem 'mina'
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
-gem 'sqlite3'
+# gem 'sqlite3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
