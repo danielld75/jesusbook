@@ -5,7 +5,6 @@ require 'mina/rbenv'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
 
-
 set :domain, '78.8.191.166'
 set :deploy_to, '/home/jsbarm/jesusbook/'
 set :repository, 'https://github.com/danielld75/jesusbook.git'
@@ -13,7 +12,7 @@ set :branch, 'master'
 set :user, 'jsbarm'
 set :forward_agent, true
 set :port, '6969'
-set :unicorn_pid, ":deploy_to/shared/pids/unicorn.pid"
+set :unicorn_pid, "/home/jsbarm/jesusbook/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
@@ -37,21 +36,21 @@ end
 # For Rails apps, we'll make some of the shared paths that are shared between
 # all releases.
 task :setup => :environment do
-  command %[mkdir -p ":deploy_to/shared/log"]
-  command %[chmod g+rx,u+rwx "#{:deploy_to}/shared/log"]
+  command %[mkdir -p "#{deploy_to}/shared/log"]
+  command %[chmod g+rx,u+rwx "#{deploy_to}/shared/log"]
 
-  command %[mkdir -p ":deploy_to/shared/config"]
-  command %[chmod g+rx,u+rwx ":deploy_to/shared/config"]
+  command %[mkdir -p "#{deploy_to}/shared/config"]
+  command %[chmod g+rx,u+rwx "#{deploy_to}/shared/config"]
 
-  command %[touch ":deploy_to/shared/config/database.yml"]
+  command %[touch "#{deploy_to}/shared/config/database.yml"]
   command  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
 
-  command %[touch ":deploy_to/shared/config/secrets.yml"]
+  command %[touch "#{deploy_to}/shared/config/secrets.yml"]
   command %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 
   # sidekiq needs a place to store its pid file and log file
-  command %[mkdir -p ":deploy_to/shared/pids/"]
-  command %[chmod g+rx,u+rwx ":deploy_to/shared/pids"]
+  command %[mkdir -p "#{deploy_to}/shared/pids/"]
+  command %[chmod g+rx,u+rwx "#{deploy_to}/shared/pids"]
 end
 
 desc "Deploys the current version to the server."
