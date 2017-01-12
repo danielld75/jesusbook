@@ -23,10 +23,10 @@ set :shared_paths, ['config/database.yml', 'log', 'config/secrets.yml']
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
 task :environment do
-  command %{
-echo "-----> Loading environment"
-#{echo_cmd %[source ~/.bashrc]}
-}
+#   command %{
+# echo "-----> Loading environment"
+# #{echo_cmd %[source ~/.bashrc]}
+# }
   invoke :'rbenv:load'
   # If you're using rbenv, use this to load the rbenv environment.
   # Be sure to commit your .rbenv-version to your repository.
@@ -49,8 +49,8 @@ task :setup => :environment do
   command %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 
   # sidekiq needs a place to store its pid file and log file
-  command %[mkdir -p "#{deploy_to}/shared/pids/"]
-  command %[chmod g+rx,u+rwx "#{deploy_to}/shared/pids"]
+  command %[mkdir -p "#{fetch(:deploy_to)}/shared/pids/"]
+  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/pids"]
 end
 
 desc "Deploys the current version to the server."
