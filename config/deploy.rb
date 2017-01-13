@@ -5,7 +5,6 @@ require 'mina/rbenv'
 require 'mina/rbenv/addons'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
-require 'mina/whenever'
 
 set :domain, '78.8.191.166'
 set :deploy_to, '/home/jsbarm/jesusbook/'
@@ -18,7 +17,6 @@ set :unicorn_pid, "/home/jsbarm/jesusbook/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
 set :sidekiq, -> { "#{fetch(:bundle_bin)} exec sidekiq" }
 set :sidekiqctl, -> { "#{fetch(:bundle_prefix)} sidekiqctl" }
-set :whenever_name
 
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
@@ -72,12 +70,11 @@ task :deploy => :environment do
     invoke :'deploy:cleanup'
 
     on :launch do
-      invoke :'whenever:update'
       in_path(fetch(:current_path)) do
         invoke :'sidekiq:restart'
         invoke :'unicorn:restart'
-        command %{mkdir -p tmp/}
-        command %{touch tmp/restart.txt}
+        # command %{mkdir -p tmp/}
+        # command %{touch tmp/restart.txt}
       end
     end
   end

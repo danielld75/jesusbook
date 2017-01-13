@@ -155,8 +155,6 @@ GEM
       mina (>= 1.0.2)
     mina-unicorn (1.0.1)
       mina (~> 1.0)
-    mina-whenever (1.0.0)
-      mina (~> 1.0.0)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     money (6.8.1)
@@ -288,7 +286,6 @@ DEPENDENCIES
   mina-rbenv-addons
   mina-sidekiq
   mina-unicorn
-  mina-whenever
   paperclip!
   pg
   rails (= 5.0.1)
