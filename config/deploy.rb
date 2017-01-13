@@ -5,6 +5,7 @@ require 'mina/rbenv'
 require 'mina/rbenv/addons'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
+require 'mina/puma'
 
 set :domain, '78.8.191.166'
 set :deploy_to, '/home/jsbarm/jesusbook/'
@@ -73,6 +74,7 @@ task :deploy => :environment do
       in_path(fetch(:current_path)) do
         invoke :'sidekiq:restart'
         invoke :'unicorn:restart'
+        invoke :'puma:phased_restart'
         # command %{mkdir -p tmp/}
         # command %{touch tmp/restart.txt}
       end
