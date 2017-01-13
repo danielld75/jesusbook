@@ -42,17 +42,17 @@ end
 # For Rails apps, we'll make some of the shared paths that are shared between
 # all releases.
 task :setup => :environment do
-  # command %[mkdir -p "#{fetch(:deploy_to)}/shared/log"]
-  # command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/log"]
+  command %[mkdir -p "#{fetch(:deploy_to)}/shared/log"]
+  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/log"]
 
-  # command %[mkdir -p "#{fetch(:deploy_to)}/shared/config"]
-  # command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/config"]
+  command %[mkdir -p "#{fetch(:deploy_to)}/shared/config"]
+  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/config"]
 
-  # command %[touch "#{fetch(:deploy_to)}/shared/config/database.yml"]
-  # comment  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
+  command %[touch "#{fetch(:deploy_to)}/shared/config/database.yml"]
+  comment  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
 
-  # command %[touch "#{fetch(:deploy_to)}/shared/config/secrets.yml"]
-  # comment %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
+  command %[touch "#{fetch(:deploy_to)}/shared/config/secrets.yml"]
+  comment %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 
   # sidekiq needs a place to store its pid file and log file
   command %[mkdir -p "#{fetch(:deploy_to)}/shared/pids/"]
