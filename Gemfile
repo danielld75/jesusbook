@@ -49,6 +49,7 @@ gem 'unicorn'
 gem 'mina'
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
+gem 'mina-rbenv-addons'
 gem 'sqlite3'
 
 group :development, :test do

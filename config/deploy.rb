@@ -2,6 +2,7 @@ require 'mina/bundler'
 require 'mina/rails'
 require 'mina/git'
 require 'mina/rbenv'
+require 'mina/rbenv/addons'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
 
@@ -14,21 +15,9 @@ set :forward_agent, true
 set :port, '6969'
 set :unicorn_pid, "/home/jsbarm/jesusbook/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
-set :rbenv_path, "$HOME/.rbenv"
+set :sidekiq, -> { "#{fetch(:bundle_bin)} exec sidekiq" }
+set :sidekiqctl, -> { "#{fetch(:bundle_prefix)} sidekiqctl" }
 
-task :'rbenv:load' do
-  comment %{Loading rbenv}
-  command %{export RBENV_ROOT="#{fetch(:rbenv_path)}"}
-  command %{export PATH="#{fetch(:rbenv_path)}/bin:$PATH"}
-  command %{
-    if ! which rbenv >/dev/null; then
-      echo "! rbenv not found"
-      echo "! If rbenv is installed, check your :rbenv_path setting."
-      exit 1
-    fi
-  }
-  command %{eval "$(rbenv init -)"}
-end
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
@@ -51,17 +40,17 @@ end
 # For Rails apps, we'll make some of the shared paths that are shared between
 # all releases.
 task :setup => :environment do
-  command %[mkdir -p "#{fetch(:deploy_to)}/shared/log"]
-  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/log"]
+  # command %[mkdir -p "#{fetch(:deploy_to)}/shared/log"]
+  # command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/log"]
 
-  command %[mkdir -p "#{fetch(:deploy_to)}/shared/config"]
-  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/config"]
+  # command %[mkdir -p "#{fetch(:deploy_to)}/shared/config"]
+  # command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/config"]
 
-  command %[touch "#{fetch(:deploy_to)}/shared/config/database.yml"]
-  comment  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
+  # command %[touch "#{fetch(:deploy_to)}/shared/config/database.yml"]
+  # comment  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
 
-  command %[touch "#{fetch(:deploy_to)}/shared/config/secrets.yml"]
-  comment %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
+  # command %[touch "#{fetch(:deploy_to)}/shared/config/secrets.yml"]
+  # comment %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 
   # sidekiq needs a place to store its pid file and log file
   command %[mkdir -p "#{fetch(:deploy_to)}/shared/pids/"]
@@ -72,19 +61,20 @@ desc "Deploys the current version to the server."
 task :deploy => :environment do
   deploy do
 
-    # stop accepting new workers
     invoke :'sidekiq:quiet'
-
     invoke :'git:clone'
     invoke :'deploy:link_shared_paths'
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
+    invoke :'deploy:cleanup'
 
     on :launch do
       in_path(fetch(:current_path)) do
         invoke :'sidekiq:restart'
         invoke :'unicorn:restart'
+        command %{mkdir -p tmp/}
+        command %{touch tmp/restart.txt}
       end
     end
   end
