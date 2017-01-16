@@ -76,7 +76,7 @@ task :deploy => :environment do
         invoke :'unicorn:restart'
         # invoke :'puma:phased_restart'
         command %{mkdir -p tmp/}
-        command %{touch tmp/restart.txt}
+        command %{touch #{fetch(:deploy_to)}/tmp/restart.txt}
       end
     end
   end
