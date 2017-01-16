@@ -81,4 +81,3 @@ task :deploy => :environment do
     end
   end
 end
-

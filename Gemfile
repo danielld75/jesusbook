@@ -51,7 +51,6 @@ gem 'mina'
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
 gem 'mina-rbenv-addons'
-gem 'mina-puma', :require => false
 
 gem 'sqlite3'
 
