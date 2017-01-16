@@ -5,7 +5,7 @@ require 'mina/rbenv'
 require 'mina/rbenv/addons'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
-require 'mina/puma'
+# require 'mina/puma'
 
 set :domain, '78.8.191.166'
 set :deploy_to, '/home/jsbarm/jesusbook/'
@@ -14,7 +14,7 @@ set :branch, 'master'
 set :user, 'jsbarm'
 set :forward_agent, true
 set :port, '6969'
-set :unicorn_pid, "/home/jsbarm/jesusbook/shared/pids/unicorn.pid"
+set :unicorn_pid, "#{fetch(:deploy_to)}/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
 set :sidekiq, -> { "#{fetch(:bundle_bin)} exec sidekiq" }
 set :sidekiqctl, -> { "#{fetch(:bundle_prefix)} sidekiqctl" }
@@ -68,7 +68,7 @@ task :deploy => :environment do
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
-    invoke :'deploy:cleanup'
+    # invoke :'deploy:cleanup'
 
     on :launch do
       in_path(fetch(:current_path)) do
