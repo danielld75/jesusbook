@@ -27,7 +27,7 @@
           <tr>
             <td><%= link_to person.name, controller: "profiles", action: "show", id: person %></td>
             <td><%= link_to person.lastName, controller: "profiles", action: "show", id: person %></td>
-            <td><%= person.place %></td>
+            <td><%= person.country %></td>
             <td><%- if person.avatar.file? %>
                   <%= image_tag(person.avatar.url(:thumb)) %>
                 <% end %>
