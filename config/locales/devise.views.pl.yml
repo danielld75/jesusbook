@@ -7,11 +7,8 @@ pl:
         password: Hasło
         password_confirmation: Potwierdzenie hasła
         remember_me: Zapamiętaj mnie
-        name: Imię
-        lastName: "Nazwisko"
-        aboutMe: O mnie
-        birthday: "Data urodzenia"
-        religion: "Wyznanie"
+        reset_password_token: 
+        unlock_token: 
     models:
       user: Użytkownik
   devise:
@@ -38,9 +35,9 @@ pl:
         instruction: 'Możesz potwierdzić swoje konto przy pomocy poniższego linku:'
         subject: Instrukcja aktywacji konta
       password_change:
-        greeting:
-        message:
-        subject:
+        greeting: 
+        message: 
+        subject: 
       reset_password_instructions:
         action: Zmień swoje hasło
         greeting: Cześć %{recipient}!
@@ -55,7 +52,7 @@ pl:
         message: Twoje konto zostało zablokowane z powodu zbyt dużej ilości nieprawidłowych prób zalogowania się na nie.
         subject: Instrukcja odblokowania konta
     omniauth_callbacks:
-      failure: Logowanie przez konto %{kind} zakończyło się błędem z powodu \"%{reason}\".
+      failure: Logowanie przez konto %{kind} zakończyło się błędem z powodu "%{reason}".
       success: Logowanie przez konto %{kind} zakończyło się sukcesem.
     passwords:
       edit:
@@ -101,7 +98,7 @@ pl:
         back: Powrót
         didn_t_receive_confirmation_instructions: Nie otrzymałeś instrukcji aktywacji konta?
         didn_t_receive_unlock_instructions: Nie otrzymałeś instrukcji odblokowania konta?
-        forgot_your_password: Zapomniałeś hasło?
+        forgot_your_password: Zapomniałeś hasła?
         sign_in: Zaloguj się
         sign_in_with_provider: Zaloguj się przez %{provider}
         sign_up: Zarejestruj się
