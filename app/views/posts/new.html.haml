@@ -47,7 +47,7 @@
                 - if post.post_image.file?
                   = image_tag post.post_image.url(:thumb)
               %td
-                - if post.url_youtube
+                - if post.url_youtube?
                   = YoutubeEmbed::Video.iframe(post.url_youtube, {width: 320, height: 180})
               %td
                 = post.created_at
