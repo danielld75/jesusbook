@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get '/users/show/:id' => "users#show"
     get '/society' => "welcome#body"
     resources :posts, only: :index
+    resources :profiles, only: :show
     resources :users do
       resource :baptism
       resource :confirm_sacrament
