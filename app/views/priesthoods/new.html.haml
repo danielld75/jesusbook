@@ -14,3 +14,8 @@
   = f.text_field :sacrament_date, class: "datepicker"
 
   = f.submit t('helpers.submit.create', model: t(f.object.model_name.human))
+:coffeescript
+  $(document).ready ->
+    $(".datepicker").datepicker
+      dateFormat: "dd-mm-yy",
+      changeYear: true
