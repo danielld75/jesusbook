@@ -50,6 +50,6 @@ class ConfirmSacramentsController < ApplicationController
 
   private
   def confirm_sacrament_params
-    params.require(:confirm_sacrament).permit(:date, :local, :parish, :minister)
+    params.require(:confirm_sacrament).permit(:sacrament_date, :local, :parish, :minister)
   end
 end
