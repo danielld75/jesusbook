@@ -1,0 +1,24 @@
+%h1
+  = t('.Show First holy communion')
+%table.table
+  %tr
+    %th
+      = t('sacrament_date')
+    %th
+      = t('local')
+    %th
+      = t('parish')
+    %th
+      = t('minister')
+  %tr
+    %td
+      = @first_holy_communion.sacrament_date
+    %td
+      = @first_holy_communion.local
+    %td
+      = @first_holy_communion.parish
+    %td
+      = @first_holy_communion.minister
+
+= link_to t('Edit'), edit_user_first_holy_communion_path(@first_holy_communion)
+= link_to t('Delete'), user_first_holy_communion_path, method: :delete, data: {confirm: t(:sure)}

@@ -19,6 +19,11 @@
 - else
   = link_to t("Edit your baptism"), edit_user_baptism_path(@user), class: "btn btn-primary"
 
+- if @user.first_holy_communion.nil?
+  = link_to t("Add your first holy_communion"), new_user_first_holy_communion_path(@user), class: "btn btn-primary"
+- else
+  = link_to t("Edit your first holy_communion"), edit_user_first_holy_communion_path(@user), class: "btn btn-primary"
+
 - if @user.confirm_sacrament.nil?
   = link_to t("Add your confirmation"), new_user_confirm_sacrament_path(@user), class: "btn btn-primary"
 - else

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   root 'welcome#index'
   scope "/:locale/", locale: /en|pl/ do
     get 'profiles/show'
@@ -13,6 +12,7 @@ Rails.application.routes.draw do
     resources :profiles, only: :show
     resources :users do
       resource :baptism
+      resource :first_holy_communion
       resource :confirm_sacrament
       resource :marriage
       resource :priesthood

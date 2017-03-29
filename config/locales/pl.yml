@@ -7,6 +7,7 @@ pl:
   minister: Szafarz
   sacrament_date: Data
   Baptism: Chrzest
+  First holy communion: Pierwsza komunia święta
   Confirmation: Bierzmowanie
   Confirm sacrament: Bierzmowanie
   Priesthood: Kapłaństwo
@@ -17,7 +18,9 @@ pl:
   Birthday: Data urodzenia
   Religion: Wyznanie
   Add your baptism: Dodaj swój chrzest
+  Add your first holy_communion: Dodaj pierwszą komunię świętą
   Edit your baptism: Edytuj swój chrzest
+  Edit your first holy_communion: Edytuj pierwszą komunię świętą
   Add your confirmation: Dodaj swoje bierzmowanie
   Edit your confirmation: Edytuj swoje bierzmowanie
   Add your marriage: Dodaj małżeństwo
@@ -36,7 +39,7 @@ pl:
   ago: temu
   body: Treść postu
   post_image: Zdjęcie
-  my_posts: Moje posty
+  my_posts: Moja historia chrześcijaństwa
   created_at: Utworzono
   actions: Akcje
   post_edit: Edytuj post

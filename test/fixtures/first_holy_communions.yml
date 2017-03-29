@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sacrament_date: 2017-03-23
+  local: MyString
+  parish: MyString
+  minister: MyString
+  user: one
+
+two:
+  sacrament_date: 2017-03-23
+  local: MyString
+  parish: MyString
+  minister: MyString
+  user: two
