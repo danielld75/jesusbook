@@ -45,7 +45,7 @@
                 = post.body
               %td
                 - if post.post_image.file?
-                  = image_tag post.post_image.url(:thumb)
+                  = link_to image_tag(post.post_image.url(:thumb)), image_url(post.post_image.url(:large)), {'data-toggle' =>'lightbox', class: 'img-fluid'}
               %td
                 - if post.url_youtube?
                   = YoutubeEmbed::Video.iframe(post.url_youtube, {width: 320, height: 180})
