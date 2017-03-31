@@ -19,12 +19,12 @@
               <%= post.body %>
               <% if post.post_image.file? %>
                 <div class="image well">
-                <%= image_tag post.post_image.url(:medium) %>
+                <%= link_to image_tag(post.post_image.url(:medium)), image_url(post.post_image.url(:large)), {'data-toggle' =>'lightbox', class: 'img-fluid'} %>
                 </div>
               <% end %>
               <% if post.url_youtube? %>
                 <div class="video well">
-                <%= YoutubeEmbed::Video.iframe(post.url_youtube, {width: 550}) %>
+                  <%= YoutubeEmbed::Video.iframe(post.url_youtube) %>
                 </div>
               <% end %>
               <div class="info">

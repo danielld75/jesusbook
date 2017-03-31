@@ -18,9 +18,10 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "lightbox-bootstrap";
 
 .body-container {
-	padding-top: 65px;
+  padding-top: 65px;
 }
 
 #without-margin {

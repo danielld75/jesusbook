@@ -17,3 +17,5 @@
 //= require jquery-ui
 //= require jquery-ui/widgets/datepicker
 //= require_tree .
+//= require lightbox-bootstrap
+//

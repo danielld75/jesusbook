@@ -39,6 +39,7 @@ gem 'youtube-embed'
 gem 'ransack', github: 'activerecord-hackery/ransack'
 gem 'jquery-ui-rails'
 gem 'country_select'
+gem 'lightbox-bootstrap-rails', '5.1.0.1'
 
 
 # Use ActiveModel has_secure_password

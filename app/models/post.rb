@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
 
   scope :latest_post, ->  {order('created_at DESC')}
 
-  has_attached_file :post_image, styles: {medium: "300x300>", thumb: "100x100>" },
+  has_attached_file :post_image, styles: {medium: "300x300>", large: "800x800>" },
     url: "/assets/posts/:id/:style/:basename.:extension",
     path: ":rails_root/public/assets/posts/:id/:style/:basename.:extension",
     default_url: "/images/:style/missing.png"
