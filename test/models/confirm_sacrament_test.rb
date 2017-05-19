@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ConfirmationTest < ActiveSupport::TestCase
+class ConfirmSacramentTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

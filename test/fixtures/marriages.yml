@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 
+  sacrament_date:
   local: MyString
   parish: MyString
   minister: MyString
 
 two:
-  date: 
+  sacrament_date:
   local: MyString
   parish: MyString
   minister: MyString
