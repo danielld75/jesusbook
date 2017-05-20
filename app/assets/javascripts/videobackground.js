@@ -1,3 +1,3 @@
-$().ready(function() {
-    $('#wrapper').tubular({videoId: 'zlRUNBAk6Jk'});
-});
+// $(document).on('page:change', function() {
+//   $('#wrapper').tubular({videoId: 'zlRUNBAk6Jk'});
+// });

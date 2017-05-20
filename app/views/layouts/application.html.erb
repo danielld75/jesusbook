@@ -7,7 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
   <div class="container">
+  <div id="wrapper">
     <div class="page-header">
       <h1><%= link_to 'JESUSBOOK', users_path %></h1>
     </div>
@@ -19,21 +21,22 @@
       <% end %>
     </div>
 
-    <p class="notice"><%= notice %></p>
+      <p class="notice"><%= notice %></p>
 
-    <div class="row">
-
-      <%= yield %>
-    </div>
-    <br/>
-    <%= debug(params) if Rails.env.development? %>
-    <footer>
       <div class="row">
-        <div class="col-md-6">
-          <p>&copy;jesusbook 2016</p>
-        </div>
+
+        <%= yield %>
       </div>
-    </footer>
+      <br/>
+      <%= debug(params) if Rails.env.development? %>
+      <footer>
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy;jesusbook 2016</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </div>
 </body>
 </html>
