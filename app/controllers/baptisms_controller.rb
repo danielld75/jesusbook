@@ -13,7 +13,7 @@ class BaptismsController < ApplicationController
     @user = current_user
     @baptism = @user.build_baptism(baptism_params)
     if @baptism.save
-      redirect_to user_baptism_path(@user, @baptism, locale: I18n.locale), notice: "Baptism created"
+      redirect_to user_baptism_path(@user, @baptism, locale: I18n.locale), notice: t('.notice')
     else
       render 'new'
     end
@@ -37,7 +37,7 @@ class BaptismsController < ApplicationController
     @user = current_user
     @baptism = @user.baptism
     if @baptism.update(baptism_params)
-      redirect_to user_baptism_path(@user, @baptism, locale: I18n.locale), notice: "Baptism updated"
+      redirect_to user_baptism_path(@user, @baptism, locale: I18n.locale), notice: t('.notice')
     else
       render "edit"
     end
@@ -46,7 +46,7 @@ class BaptismsController < ApplicationController
   def destroy
     @baptism = current_user.baptism
     @baptism.destroy
-    redirect_to root_path, notice: "Baptism deleted successfully!"
+    redirect_to root_path, notice: t('.notice')
   end
 
   private

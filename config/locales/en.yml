@@ -9,6 +9,7 @@ en:
   Confirm sacrament: Confirmation
   Marriage: Marriage
   Priesthood: Priesthood
+  First holy communion: First Holy Communion
   wiadomosci: Messages
   szukaj: Search
   moj_profil: My profile
@@ -28,3 +29,32 @@ en:
   country: Country
   baptism_date_user: Baptism date
   search: Search
+
+  baptisms:
+    update:
+      notice: "Baptism was updated successfully!"
+    create:
+      notice: "Baptism was created successfully!"
+    destroy:
+      notice: "Baptism destroyed successfully!"
+  confirm_sacraments:
+    update:
+      notice: "Confirmation was updated successfully!"
+    create:
+      notice: "Confirmation was created successfully!"
+    destroy:
+      notice: "Confirmation destroyed successfully!"
+  first_holy_communions:
+    update:
+      notice: "First Holy Communion was updated successfully!"
+    create:
+      notice: "First Holy Communion was created successfully!"
+    destroy:
+      notice: "First Holy Communion destroyed successfully!"
+  marriages:
+    update:
+      notice: "Marriage was updated successfully!"
+    create:
+      notice: "Marriage was created successfully!"
+    destroy:
+      notice: "Marriage destroyed successfully!"

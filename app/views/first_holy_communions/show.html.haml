@@ -1,5 +1,5 @@
 %h1
-  = t('.Show First holy communion')
+  = t('.Show First Holy Communion')
 %table.table
   %tr
     %th
@@ -20,5 +20,5 @@
     %td
       = @first_holy_communion.minister
 
-= link_to t('Edit'), edit_user_first_holy_communion_path(@first_holy_communion)
-= link_to t('Delete'), user_first_holy_communion_path, method: :delete, data: {confirm: t(:sure)}
+= link_to t('Edit'), edit_user_first_holy_communion_path(@first_holy_communion), class: "btn btn-default"
+= link_to t('Delete'), user_first_holy_communion_path, method: :delete, class: "btn btn-danger", data: {confirm: t(:sure)}

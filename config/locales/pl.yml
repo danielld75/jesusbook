@@ -27,6 +27,7 @@ pl:
   Edit your marriage: Edytuj małżeństwo
   Add your priesthood: Dodaj kapłaństwo
   Edit your priesthood: Edytuj kapłaństwo
+
   sure: Czy na pewno?
   posty: Moje posty
   wiadomosci: Wiadomości
@@ -56,6 +57,7 @@ pl:
   login: Logowanie
   register: Przyłącz się do nas
   search: Szukaj
+  Confirmation updated: Edycja bierzmowanie
 
   will_paginate:
     next_label: Następna &#8594;
@@ -84,6 +86,60 @@ pl:
       Show Baptism: Twój Chrzest
     new:
       New Baptism: Utwórz Chrzest
+    update:
+      notice: "Dokonałeś edycji sakramentu Chrztu"
+    create:
+      notice: "Utworzyłeś sakrament Chrztu"
+    destroy:
+      notice: "Usunąłeś sakrament Chrztu"
+  confirm_sacraments:
+    edit:
+      edit_confirmation: Edytuj Sakrament Bierzmowania
+    update:
+      notice: "Dokonałeś edycji sakramentu Bierzmowania"
+    create:
+      notice: "Utworzyłeś sakrament Bierzmowania"
+    destroy:
+      notice: "Usunąłeś sakrament Bierzmowania"
+  first_holy_communions:
+    edit:
+      edit_first_holy_communion: Edytuj Sakrament Pierwszej Komunii Świętej
+    show:
+      Show First Holy Communion: Twoja Pierwsza Komunia Święta
+    update:
+      notice: "Dokonałeś edycji sakramentu Pierwszej Komunii"
+    create:
+      notice: "Utworzyłeś sakrament Pierwszej Komunii"
+    destroy:
+      notice: "Usunąłeś sakrament Pierwszej Komunii"
+  marriages:
+    edit:
+      edit_marriage: Edytuj Sakrament Małżeństwa
+    show:
+      Show Marriage: Twoje Małżeństwo
+    update:
+      notice: "Dokonałeś edycji sakramentu Małżeństwa"
+    create:
+      notice: "Utworzyłeś sakrament Małżeństwa"
+    destroy:
+      notice: "Usunąłeś sakrament Małżeństwa"
+  priesthoods:
+    edit:
+      edit_priesthood: Edytuj Sakrament Kapłaństwa
+    show:
+      Show Priesthood: Twoje Kapłaństwo
+    update:
+      notice: "Dokonałeś edycji sakramentu Kapłaństwa"
+    create:
+      notice: "Utworzyłeś sakrament Kapłaństwa"
+    destroy:
+      notice: "Usunąłeś sakrament Kapłaństwa"
+
+
+
+
+
+
 
   pl: "Polish"
   en: "English"

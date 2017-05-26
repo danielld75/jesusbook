@@ -13,7 +13,7 @@ class PriesthoodsController < ApplicationController
     @user = current_user
     @priesthood = @user.build_priesthood(priesthood_params)
     if @priesthood.save
-      redirect_to user_priesthood_path(@user, @priesthood, locale: I18n.locale), notice: "Add Priesthood"
+      redirect_to user_priesthood_path(@user, @priesthood, locale: I18n.locale), notice: t('.notice')
     else
       render 'new'
     end
@@ -28,7 +28,7 @@ class PriesthoodsController < ApplicationController
     @user = current_user
     @priesthood = @user.priesthood
     if @priesthood.update(priesthood_params)
-      redirect_to user_priesthood_path(@user, @priesthood, locale: I18n.locale), notice: "Priesthood updated"
+      redirect_to user_priesthood_path(@user, @priesthood, locale: I18n.locale), notice: t('.notice')
     else
       render "edit"
     end
@@ -42,7 +42,7 @@ class PriesthoodsController < ApplicationController
   def destroy
     @priesthood = current_user.priesthood
     @priesthood.destroy
-    redirect_to root_path, notice: "Priesthood deleted successfully!"
+    redirect_to root_path, notice: t('.notice')
   end
 
   private

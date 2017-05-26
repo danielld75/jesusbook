@@ -12,7 +12,7 @@ class MarriagesController < ApplicationController
   	@user = current_user
   	@marriage = @user.build_marriage(marriage_params)
   	if @marriage.save
-  		redirect_to user_marriage_path(@user, @marriage, locale: I18n.locale), notice: "Add marriage"
+  		redirect_to user_marriage_path(@user, @marriage, locale: I18n.locale), notice: t('.notice')
   	else
   		render 'new'
   	end
@@ -27,7 +27,7 @@ class MarriagesController < ApplicationController
     @user = current_user
     @marriage = @user.marriage
     if @marriage.update(marriage_params)
-      redirect_to user_marriage_path(@user, @marriage, locale: I18n.locale), notice: "Marriage updated"
+      redirect_to user_marriage_path(@user, @marriage, locale: I18n.locale), notice: t('.notice')
     else
       render "edit"
     end
@@ -41,7 +41,7 @@ class MarriagesController < ApplicationController
   def destroy
     @marriage = current_user.marriage
     @marriage.destroy
-    redirect_to root_path, notice: "Marriage deleted successfully!"
+    redirect_to root_path, notice: t('.notice')
   end
 
   private

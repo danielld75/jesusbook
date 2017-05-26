@@ -20,5 +20,5 @@
     %td
       = @marriage.minister
 
-= link_to t('Edit'), edit_user_marriage_path(@marriage)
-= link_to t('Delete'), user_marriage_path, method: :delete, data: {confirm: t(:sure)}
+= link_to t('Edit'), edit_user_marriage_path(@marriage), class: "btn btn-default"
+= link_to t('Delete'), user_marriage_path, method: :delete, class: "btn btn-danger", data: {confirm: t(:sure)}

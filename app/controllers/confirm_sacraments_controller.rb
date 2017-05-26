@@ -16,7 +16,7 @@ class ConfirmSacramentsController < ApplicationController
     @user = current_user
     @confirm_sacrament = @user.build_confirm_sacrament(confirm_sacrament_params)
     if @confirm_sacrament.save
-      redirect_to user_confirm_sacrament_path(@user, @confirm_sacrament, locale: I18n.locale), notice: "The confirmation was created successfully!"
+      redirect_to user_confirm_sacrament_path(@user, @confirm_sacrament, locale: I18n.locale), notice: t('.notice')
     else
       render 'new'
     end
@@ -30,7 +30,7 @@ class ConfirmSacramentsController < ApplicationController
   def destroy
     @confirm_sacrament = current_user.confirm_sacrament
     @confirm_sacrament.destroy
-    redirect_to root_path, notice: "Confirmation was destroyed"
+    redirect_to root_path, notice: t('.notice')
   end
 
   def show
@@ -42,7 +42,7 @@ class ConfirmSacramentsController < ApplicationController
     @user = current_user
     @confirm_sacrament = @user.confirm_sacrament
     if @confirm_sacrament.update(confirm_sacrament_params)
-      redirect_to user_confirm_sacrament_path(@user, @confirm_sacrament, locale: I18n.locale), notice: "Confirmation updated"
+      redirect_to user_confirm_sacrament_path(@user, @confirm_sacrament, locale: I18n.locale), notice: t('.notice')
     else
       render "edit"
     end
