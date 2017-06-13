@@ -11,6 +11,9 @@
     <div class="page-header">
       <%= render 'shared/nav' %>
     </div>
+    <div class="col-sm-12">
+      <%= render partial: "shared/flash_messages", flash: flash %>
+    </div>
     <div class="row">
       <% if current_user %>
         <%= link_to current_user.email, user_path(current_user.id),  class: "btn btn-primary"%>
@@ -22,15 +25,11 @@
 
       <%= yield %>
     </div>
-    <br/>
-    <%= debug(params) if Rails.env.development? %>
-    <footer>
-      <div class="row">
-        <div class="col-md-6">
-          <p>&copy;jesusbook 2016</p>
-        </div>
-      </div>
-    </footer>
+    <div class='col-sm-12'>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+
+    <%= render 'shared/footer' %>
   </div>
 </body>
 </html>

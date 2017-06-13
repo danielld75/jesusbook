@@ -79,11 +79,24 @@ pl:
     page_gap: "&hellip;"
     previous_label: "&#8592; Poprzednia"
 
+  users:
+    show:
+      edit_your_baptism: Edytuj sakrament Chrztu
+      add_your_baptism: Dodaj sakrament Chrztu
+      add_your_first_holy_communion: Dodaj sakrament Pierwszej Komunii
+      edit_your_first_holy_communion: Edytuj sakrament Pierwszej Komunii
+      add_your_confirmation: Dodaj sakrament Bierzmowania
+      edit_your_confirmation: Edytuj sakrament Bierzmowania
+      add_your_marriage: Dodaj sakrament Małżeństwa
+      edit_your_marriage: Edytuj sakrament Małżeństwa
+      add_your_priesthood: Dodaj sakrament Kapłaństwa
+      edit_your_priesthood: Edytuj sakrament Kapłaństwa
+
   baptisms:
     edit:
       edit_baptism: Edycja Chrzest
     show:
-      Show Baptism: Twój Chrzest
+      show_baptism: Twój Chrzest
     new:
       New Baptism: Utwórz Chrzest
     update:
@@ -95,6 +108,8 @@ pl:
   confirm_sacraments:
     edit:
       edit_confirmation: Edytuj Sakrament Bierzmowania
+    show:
+      show_confirmation: Twój sakrament Bierzmowania
     update:
       notice: "Dokonałeś edycji sakramentu Bierzmowania"
     create:

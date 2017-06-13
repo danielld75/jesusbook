@@ -30,7 +30,26 @@ en:
   baptism_date_user: Baptism date
   search: Search
 
+  users:
+    show:
+      edit_your_baptism: Edit your Baptism
+      add_your_baptism: Add your Baptism
+      add_your_first_holy_communion: Add your First Holy Communion
+      edit_your_first_holy_communion: Edit your First Holy Communion
+      add_your_confirmation: Add your Confirmation
+      edit_your_confirmation: Edit your Confirmation
+      add_your_marriage: Add your Marriage
+      edit_your_marriage: Edit your Marriage
+      add_your_priesthood: Add your Priesthood
+      edit_your_priesthood: Edit your Priesthood
+    edit:
+      edit_registration: "Edit registration"
+
   baptisms:
+    show:
+      show_baptism: Show Baptism
+    edit:
+      edit_baptism: Edit Baptism
     update:
       notice: "Baptism was updated successfully!"
     create:
@@ -38,6 +57,10 @@ en:
     destroy:
       notice: "Baptism destroyed successfully!"
   confirm_sacraments:
+    show:
+      show_confirmation: Show Confirmation
+    edit:
+      edit_confirmation: Edit Confirmation
     update:
       notice: "Confirmation was updated successfully!"
     create:

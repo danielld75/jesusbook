@@ -1,40 +1,41 @@
-%table.table
-  %tr
-    %th
-      Email
-    %th
-      = t('Name')
-    %th
-      =t ('Last name')
-  %tr
-    %td
-      = @user.email
-    %td
-      = @user.name
-    %td
-      = @user.lastName
-%br
-- if @user.baptism.nil?
-  = link_to t("Add your baptism"), new_user_baptism_path(@user), class: "btn btn-primary"
-- else
-  = link_to t("Edit your baptism"), edit_user_baptism_path(@user), class: "btn btn-primary"
+.col-sm-8
+  %table.table
+    %tr.well
+      %th
+        Email
+      %th
+        = t('Name')
+      %th
+        =t ('Last name')
+    %tr.well
+      %td
+        = @user.email
+      %td
+        = @user.name
+      %td
+        = @user.lastName
+  %br
+  - if @user.baptism.nil?
+    = link_to t(".add_your_baptism"), new_user_baptism_path(@user), class: "btn btn-primary"
+  - else
+    = link_to t(".edit_your_baptism"), edit_user_baptism_path(@user), class: "btn btn-primary"
 
-- if @user.first_holy_communion.nil?
-  = link_to t("Add your first holy_communion"), new_user_first_holy_communion_path(@user), class: "btn btn-primary"
-- else
-  = link_to t("Edit your first holy_communion"), edit_user_first_holy_communion_path(@user), class: "btn btn-primary"
+  - if @user.first_holy_communion.nil?
+    = link_to t(".add_your_first_holy_communion"), new_user_first_holy_communion_path(@user), class: "btn btn-primary"
+  - else
+    = link_to t(".edit_your_first_holy_communion"), edit_user_first_holy_communion_path(@user), class: "btn btn-primary"
 
-- if @user.confirm_sacrament.nil?
-  = link_to t("Add your confirmation"), new_user_confirm_sacrament_path(@user), class: "btn btn-primary"
-- else
-  = link_to t("Edit your confirmation"), edit_user_confirm_sacrament_path(@user), class: "btn btn-primary"
+  - if @user.confirm_sacrament.nil?
+    = link_to t(".add_your_confirmation"), new_user_confirm_sacrament_path(@user), class: "btn btn-primary"
+  - else
+    = link_to t(".edit_your_confirmation"), edit_user_confirm_sacrament_path(@user), class: "btn btn-primary"
 
-- if @user.marriage.nil?
-  = link_to t("Add your marriage"), new_user_marriage_path(@user), class: "btn btn-primary"
-- else
-  = link_to t('Edit your marriage'), edit_user_marriage_path(@user), class: "btn btn-primary"
+  - if @user.marriage.nil?
+    = link_to t(".add_your_marriage"), new_user_marriage_path(@user), class: "btn btn-primary"
+  - else
+    = link_to t('.edit_your_marriage'), edit_user_marriage_path(@user), class: "btn btn-primary"
 
-- if @user.priesthood.nil?
-  = link_to t("Add your priesthood"), new_user_priesthood_path(@user), class: "btn btn-primary"
-- else
-  = link_to t("Edit your priesthood"), edit_user_priesthood_path(@user), class: "btn btn-primary"
+  - if @user.priesthood.nil?
+    = link_to t(".add_your_priesthood"), new_user_priesthood_path(@user), class: "btn btn-primary"
+  - else
+    = link_to t(".edit_your_priesthood"), edit_user_priesthood_path(@user), class: "btn btn-primary"

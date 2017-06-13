@@ -7,8 +7,8 @@ pl:
         password: Hasło
         password_confirmation: Potwierdzenie hasła
         remember_me: Zapamiętaj mnie
-        reset_password_token: 
-        unlock_token: 
+        reset_password_token:
+        unlock_token:
     models:
       user: Użytkownik
   devise:
@@ -35,9 +35,9 @@ pl:
         instruction: 'Możesz potwierdzić swoje konto przy pomocy poniższego linku:'
         subject: Instrukcja aktywacji konta
       password_change:
-        greeting: 
-        message: 
-        subject: 
+        greeting:
+        message:
+        subject:
       reset_password_instructions:
         action: Zmień swoje hasło
         greeting: Cześć %{recipient}!
@@ -81,6 +81,8 @@ pl:
         we_need_your_current_password_to_confirm_your_changes: potrzebujemy Twojego bieżącego hasła, aby potwierdzić zmiany
       new:
         sign_up: Zarejestruj się
+        name: Imię
+        last_name: Nazwisko
       signed_up: Witaj! Rejestracja zakończyła się sukcesem.
       signed_up_but_inactive: Konto zostało utworzone pomyślnie. Zanim się jednak zalogujesz, musi ono zostać jeszcze aktywowane.
       signed_up_but_locked: Konto zostało utworzone pomyślnie. Nie możesz się jednak zalogować, ponieważ jest ono zablokowane.

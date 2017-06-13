@@ -20,6 +20,10 @@ class ApplicationController < ActionController::Base
      { :locale => I18n.locale }.merge options
   end
 
+  def after_sign_in_path_for(user)
+    society_path
+  end
+
   protected
 
   def configure_permitted_parameters

@@ -22,6 +22,7 @@
 
 .body-container {
   padding-top: 65px;
+  min-height: 900px;
 }
 
 #without-margin {
@@ -37,7 +38,31 @@
   height: 33px;
   width: 532.5px;
 }
+.posts_history {
+  color: #64b1ff !important;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7),
+    -2px -2px 2px rgba(0,0,0,0.7);;
 
+}
+.post_label {
+  color: #64b1ff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 12px;
+  padding: 1px;
+  background-color: rgba(0,0,0,0.3);
+  opacity: 0.7;
+}
+.post_content {
+  color: #b3feff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+.society {
+  background-image: url("jesus-christ.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .video_background {
   z-index: -1;
   position: fixed;
@@ -45,7 +70,14 @@
   min-height: 100%;
   width: auto;
   height: auto;
+  background-color: #2F00B1;
 }
-.footer {
+footer {
   opacity: 0.5;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  margin-top: -3em;
+  width: 100%;
+  height: 3em;
 }

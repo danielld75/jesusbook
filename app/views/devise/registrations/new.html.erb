@@ -4,7 +4,7 @@
 	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), class: "form-horizontal", html: {multipart: true}) do |f| %>
 	  <%= devise_error_messages! %>
 		<div class="form-group">
-	  		<div><%= f.label :name, class: "col-sm-3 control-label" %></div>
+	  		<div><%= f.label t('.name'), class: "col-sm-3 control-label" %></div>
 	  			<div class="col-sm-9">
 	  			<%= f.text_field :name, class:"form-control" %>
 				</div>
@@ -12,7 +12,7 @@
 
 
 		<div class="form-group">
-			<div><%= f.label :lastName, class: "col-sm-3 control-label" %></div>
+			<div><%= f.label t('.last_name'), class: "col-sm-3 control-label" %></div>
 			<div class="col-sm-9">
 				<%= f.text_field :lastName, class: "form-control" %>
 			</div>
@@ -61,12 +61,5 @@
 
 	<div class="col-sm-12"><hr></div>
 	<%= render "devise/shared/links" %>
-	<script>
-		$(function(){
-			$(".datepicker").datepicker({
-				dateFormat: "dd-mm-yy",
-    		changeYear: true
-			});
-		});
-	</script>
+
 </div>
