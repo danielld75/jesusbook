@@ -29,6 +29,8 @@ en:
   country: Country
   baptism_date_user: Baptism date
   search: Search
+  register: Register
+  login: Login
 
   users:
     show:
