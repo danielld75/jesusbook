@@ -69,6 +69,13 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.video_background {
+  z-index: -1;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #2F00B1;
+}
 .video-container {
   position:relative;
   padding-bottom:56.25%;
