@@ -41,7 +41,7 @@ gem 'ransack', github: 'activerecord-hackery/ransack'
 gem 'jquery-ui-rails'
 gem 'country_select'
 gem 'lightbox-bootstrap-rails', '5.1.0.1'
-
+gem 'compass-rails', '~> 3.0', '>= 3.0.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

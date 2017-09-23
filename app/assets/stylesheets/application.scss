@@ -16,9 +16,11 @@
  *= require jquery-ui/datepicker
  */
 
+ @import "compass";
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "lightbox-bootstrap";
+
 
 .body-container {
   padding-top: 65px;
@@ -39,10 +41,14 @@
   width: 532.5px;
 }
 .posts_history {
-  color: #64b1ff !important;
+  color: #64b1ff;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.7),
-    -2px -2px 2px rgba(0,0,0,0.7);;
-
+    2px 2px rgba(0,0,0,0.7);
+  padding: 2px;
+  @include transition(opacity 4s);
+    &:hover {
+      @include opacity(0.5);
+  }
 }
 .post_label {
   color: #64b1ff;
@@ -63,14 +69,19 @@
   background-size: cover;
   background-attachment: fixed;
 }
-.video_background {
-  z-index: -1;
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  background-color: #2F00B1;
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 footer {
   opacity: 0.5;
@@ -80,4 +91,10 @@ footer {
   margin-top: -3em;
   width: 100%;
   height: 3em;
+}
+.size-hover {
+  @include transition-duration(0.5s);
+}
+.size-hover:hover {
+  transform: scale(1.2) translate(40px);
 }

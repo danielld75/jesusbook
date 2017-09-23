@@ -23,7 +23,7 @@
                 </div>
               <% end %>
               <% if post.url_youtube? %>
-                <div class="video well">
+                <div class="video well video-container">
                   <%= YoutubeEmbed::Video.iframe(post.url_youtube) %>
                 </div>
               <% end %>

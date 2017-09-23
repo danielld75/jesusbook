@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
     <% unless current_user %>
-      <%= link_to "Register", new_user_registration_path, class: "btn btn-primary" %>
-      <%= link_to "Login", users_path, class: "btn btn-primary" %>
+      <%= link_to t(:register), new_user_registration_path, class: "btn btn-primary btn-lg btn-block size-hover" %>
+      <%= link_to t(:login), users_path, class: "btn btn-primary btn-lg btn-block size-hover" %>
     <% end %>
   </div>
 </div>
