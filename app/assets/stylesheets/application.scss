@@ -20,11 +20,12 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "lightbox-bootstrap";
-
+ @import url('https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i&subset=latin-ext');
 
 .body-container {
   padding-top: 65px;
   min-height: 900px;
+  font-family: 'Tinos', serif;
 }
 
 #without-margin {
