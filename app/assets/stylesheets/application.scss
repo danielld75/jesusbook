@@ -21,10 +21,17 @@
  @import "bootstrap";
  @import "lightbox-bootstrap";
  @import url('https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i&subset=latin-ext');
-
+body {
+  padding:0;
+  margin:0;
+}
+.row {
+  padding:0;
+  width: 100vw;
+}
 .body-container {
   padding-top: 65px;
-  min-height: 900px;
+  height: 100vh;
   font-family: 'Tinos', serif;
 }
 .container {
@@ -71,7 +78,7 @@
   position: relative;
 }
 .society::after {
-  background-image: image-url("jesus.jpg");
+  background: image-url("jesus.jpg");
   position: absolute;
   content: '';
   top: 0;
