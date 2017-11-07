@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="container">
+      <div class="panel panel-info inline">
+        <div class="panel-heading">
+          Email
+        </div>
+        <div class="panel-body">
+          <p><%= @user.email %></p>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <%= t('Name') %>
+        </div>
+        <div class="panel-body">
+          <p><%= @user.name %></p>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <%= t('Last name') %>
+        </div>
+        <div class="panel-body">
+          <p><%= @user.lastName %></p>
+        </div>
+      </div>
+      <div class="btn-group btn-group-justified">
+        <p>
+        <% if @user.baptism.nil? %>
+          <%= link_to t(".add_your_baptism"), new_user_baptism_path(@user), class: "btn btn-primary btn-block" %>
+        <% else %>
+          <%= link_to t(".edit_your_baptism"), edit_user_baptism_path(@user), class: "btn btn-primary btn-block" %>
+        <% end %>
+        </p>
+        <p>
+        <% if @user.first_holy_communion.nil? %>
+          <%= link_to t(".add_your_first_holy_communion"), new_user_first_holy_communion_path(@user), class: "btn btn-primary btn-block" %>
+        <% else %>
+          <%= link_to t(".edit_your_first_holy_communion"), edit_user_first_holy_communion_path(@user), class: "btn btn-primary btn-block" %>
+        <% end %>
+        </p>
+        <p>
+        <% if @user.confirm_sacrament.nil? %>
+          <%= link_to t(".add_your_confirmation"), new_user_confirm_sacrament_path(@user), class: "btn btn-primary btn-block" %>
+        <% else %>
+          <%= link_to t(".edit_your_confirmation"), edit_user_confirm_sacrament_path(@user), class: "btn btn-primary btn-block" %>
+        <% end %>
+        </p>
+        <p>
+        <% if @user.marriage.nil? %>
+          <%= link_to t(".add_your_marriage"), new_user_marriage_path(@user), class: "btn btn-primary btn-block" %>
+        <% else %>
+          <%= link_to t('.edit_your_marriage'), edit_user_marriage_path(@user), class: "btn btn-primary btn-block" %>
+        <% end %>
+        </p>
+        <p>
+        <% if @user.priesthood.nil? %>
+          <%= link_to t(".add_your_priesthood"), new_user_priesthood_path(@user), class: "btn btn-primary btn-block" %>
+        <% else %>
+          <%= link_to t(".edit_your_priesthood"), edit_user_priesthood_path(@user), class: "btn btn-primary btn-block" %>
+        <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

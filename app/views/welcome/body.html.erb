@@ -6,7 +6,7 @@
       <div class='row'>
         <div class="col-sm-3">
           <div class="well box-shadow">
-            <%= post.user.name %>
+            <span class="post-author"><%= post.user.name %></span>
             <br>
             <% if post.user.avatar.file? %>
               <%= image_tag post.user.avatar.url(:thumb), class: 'img-circle' %>
@@ -42,7 +42,7 @@
     <div class="row right-aside">
       <div class="well">
         <p>Słowa Boże na dzień dzisiejszy:
-        <em>Marność nad mądrościami, to wszystko marność </em></p>
+        <em>Marność nad marnościami, to wszystko marność </em></p>
       </div>
       <div>
         <%= link_to image_tag("biblioteka-banner.png", alt:'Bibliotego im. Jana Pawła II', title: 'Biblioteka im. Jana Pawła II'), "http://www.biblioteka.diecezja.legnica.pl/", class:'img-fluid rounded', target:'_blank' %>
