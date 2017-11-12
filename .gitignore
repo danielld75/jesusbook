@@ -18,3 +18,5 @@
 /public/assets/posts/*
 /public/assets/users/*
 .idea
+# add secrets.yml to ignore
+/config/secrets.yml
