@@ -17,6 +17,6 @@
 /tmp
 /public/assets/posts/*
 /public/assets/users/*
-.idea
+/.idea
 # add secrets.yml to ignore
 /config/secrets.yml
