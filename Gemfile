@@ -9,7 +9,8 @@ group :production do
   gem 'pg'
 end
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -30,7 +31,6 @@ gem 'haml-rails'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.0.1'
-gem 'sass', '~> 3.4', '>= 3.4.19'
 gem 'rails-i18n', '~> 4.0.0' # for Rails 4
 gem 'devise-i18n'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
