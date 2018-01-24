@@ -68,13 +68,13 @@ task :deploy => :environment do
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
-    # invoke :'deploy:cleanup'
+    invoke :'deploy:cleanup'
 
     on :launch do
       in_path(fetch(:current_path)) do
         invoke :'sidekiq:restart'
         invoke :'unicorn:restart'
-        # invoke :'puma:phased_restart'
+        invoke :'puma:phased_restart'
         command %{mkdir -p tmp/}
         command %{touch #{fetch(:deploy_to)}/tmp/restart.txt}
       end
