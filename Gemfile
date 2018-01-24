@@ -50,11 +50,11 @@ gem 'compass-core', '~> 1.0', '>= 1.0.3'
 gem 'sidekiq'
 # Use unicorn as the app server
 gem 'unicorn'
-gem 'mina', :require => false
-gem 'mina-sidekiq', :require => false
-gem 'mina-unicorn', :require => false
-gem 'mina-rbenv-addons'
-gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
+# gem 'mina', :require => false
+# gem 'mina-sidekiq', :require => false
+# gem 'mina-unicorn', :require => false
+# gem 'mina-rbenv-addons'
+# gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
 gem 'sqlite3'
 
 group :development, :test do
@@ -70,7 +70,9 @@ group :development, :test do
 end
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'capistrano-rails', group: :development
+gem 'capistrano-rvm', group: :development
+gem 'capistrano3-unicorn', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
