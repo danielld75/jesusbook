@@ -330,7 +330,7 @@ DEPENDENCIES
   jquery-turbolinks (~> 2.1)
   jquery-ui-rails
   lightbox-bootstrap-rails (= 5.1.0.1)
-  mina (~> 0.3.8)
+  mina (~> 0.3)
   mina-rbenv-addons
   mina-sidekiq
   mina-unicorn

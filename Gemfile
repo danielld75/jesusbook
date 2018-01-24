@@ -50,7 +50,7 @@ gem 'compass-core', '~> 1.0', '>= 1.0.3'
 gem 'sidekiq'
 # Use unicorn as the app server
 gem 'unicorn'
-gem 'mina', '~> 0.3.8'
+gem 'mina', '~> 0.3'
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
 gem 'mina-rbenv-addons'
