@@ -51,8 +51,8 @@ gem 'sidekiq'
 # Use unicorn as the app server
 gem 'unicorn'
 gem 'mina', '~> 0.3.8'
-gem 'mina-sidekiq'
-gem 'mina-unicorn'
+gem 'mina-sidekiq', :require => false
+gem 'mina-unicorn', :require => false
 gem 'mina-rbenv-addons'
 
 gem 'sqlite3'
