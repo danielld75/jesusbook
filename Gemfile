@@ -42,6 +42,7 @@ gem 'jquery-ui-rails'
 gem 'country_select'
 gem 'lightbox-bootstrap-rails', '5.1.0.1'
 gem 'compass-rails', '~> 3.0', '>= 3.0.2'
+gem 'compass-core', '~> 1.0', '>= 1.0.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

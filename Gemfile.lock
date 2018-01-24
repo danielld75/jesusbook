@@ -316,6 +316,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.5.1)
   byebug
   coffee-rails (~> 4.1.0)
+  compass-core (~> 1.0, >= 1.0.3)
   compass-rails (~> 3.0, >= 3.0.2)
   country_select
   devise
