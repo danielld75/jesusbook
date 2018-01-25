@@ -30,6 +30,7 @@ task :environment do
     echo "-----> Loading environment"
     #{echo_cmd %[source ~/.bashrc]}
           }
+  invoke :'rvm:use[ruby-2.4.0]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
