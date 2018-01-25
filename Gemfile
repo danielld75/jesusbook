@@ -54,8 +54,10 @@ gem 'mina', :require => false
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
 gem 'mina-rbenv-addons'
-gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
+# gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
 gem 'sqlite3'
+gem 'rack-cache', :require => 'rack/cache'
+gem 'mina-whenever'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
