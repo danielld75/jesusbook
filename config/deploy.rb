@@ -1,13 +1,14 @@
 require 'mina/bundler'
 require 'mina/rails'
 require 'mina/git'
+require 'mina/rbenv'
+require 'mina/rbenv/addons'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
-require 'mina/rvm'
-# require 'mina/puma'
+require 'mina/puma'
 
 set :domain, '78.8.191.166'
-set :deploy_to, '/home/jsbarm/jesusbook'
+set :deploy_to, '/home/jsbarm/jesusbook/'
 set :repository, 'https://github.com/danielld75/jesusbook.git'
 set :branch, 'master'
 set :user, 'jsbarm'
@@ -15,9 +16,8 @@ set :forward_agent, true
 set :port, '6969'
 set :unicorn_pid, "#{fetch(:deploy_to)}/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
-set :sidekiq, -> {"#{fetch(:bundle_bin)} exec sidekiq"}
-set :sidekiqctl, -> {"#{fetch(:bundle_prefix)} sidekiqctl"}
-set :rvm_path, "$HOME/.rvm/scripts/rvm"
+set :sidekiq, -> { "#{fetch(:bundle_bin)} exec sidekiq" }
+set :sidekiqctl, -> { "#{fetch(:bundle_prefix)} sidekiqctl" }
 
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
@@ -32,7 +32,9 @@ task :environment do
     echo "-----> Loading environment"
     #{echo_cmd %[source ~/.bashrc]}
           }
-  invoke :'rvm:use[ruby-2.4.0]'
+  invoke :'rbenv:load'
+  # If you're using rbenv, use this to load the rbenv environment.
+  # Be sure to commit your .rbenv-version to your repository.
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
@@ -46,7 +48,7 @@ task :setup => :environment do
   command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/config"]
 
   command %[touch "#{fetch(:deploy_to)}/shared/config/database.yml"]
-  comment %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
+  comment  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
 
   command %[touch "#{fetch(:deploy_to)}/shared/config/secrets.yml"]
   comment %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
@@ -66,12 +68,13 @@ task :deploy => :environment do
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
-    # invoke :'deploy:cleanup'
+    invoke :'deploy:cleanup'
 
     on :launch do
       in_path(fetch(:current_path)) do
         invoke :'sidekiq:restart'
         invoke :'unicorn:restart'
+        invoke :'puma:phased_restart'
         command %{mkdir -p tmp/}
         command %{touch #{fetch(:deploy_to)}/tmp/restart.txt}
       end
