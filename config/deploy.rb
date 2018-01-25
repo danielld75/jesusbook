@@ -36,6 +36,26 @@ task :environment do
   # If you're using rbenv, use this to load the rbenv environment.
   # Be sure to commit your .rbenv-version to your repository.
 end
+task :local_environment do
+end
+
+task :remote_environment do
+end
+set :rbenv_path, "$HOME/.rbenv"
+
+task :'rbenv:load' do
+  comment %{Loading rbenv}
+  command %{export RBENV_ROOT="#{fetch(:rbenv_path)}"}
+  command %{export PATH="#{fetch(:rbenv_path)}/bin:$PATH"}
+  command %{
+    if ! which rbenv >/dev/null; then
+      echo "! rbenv not found"
+      echo "! If rbenv is installed, check your :rbenv_path setting."
+      exit 1
+    fi
+  }
+  command %{eval "$(rbenv init -)"}
+end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
 # For Rails apps, we'll make some of the shared paths that are shared between
