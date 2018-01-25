@@ -1,12 +1,9 @@
 require 'mina/bundler'
 require 'mina/rails'
 require 'mina/git'
-require 'mina/rbenv'
-# require 'mina/rbenv/addons'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
 # require 'mina/puma'
-# require 'mina/whenever'
 
 set :domain, '78.8.191.166'
 set :deploy_to, '/home/jsbarm/jesusbook'
@@ -19,7 +16,6 @@ set :unicorn_pid, "#{fetch(:deploy_to)}/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
 set :sidekiq, -> {"#{fetch(:bundle_bin)} exec sidekiq"}
 set :sidekiqctl, -> {"#{fetch(:bundle_prefix)} sidekiqctl"}
-# set :whenever_name, "#{domain}_#{rails_env}"
 
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
@@ -35,19 +31,6 @@ task :environment do
     #{echo_cmd %[source ~/.bashrc]}
           }
 end
-# task :local_environment do
-#   command %{
-#     echo "-----> Loading environment"
-#     #{echo_cmd %[source ~/.bashrc]}
-#           }
-# end
-#
-# task :remote_environment do
-#   command %{
-#     echo "-----> Loading environment"
-#     #{echo_cmd %[source ~/.bashrc]}
-#           }
-# end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
 # For Rails apps, we'll make some of the shared paths that are shared between
@@ -86,11 +69,9 @@ task :deploy => :environment do
       in_path(fetch(:current_path)) do
         invoke :'sidekiq:restart'
         invoke :'unicorn:restart'
-        # invoke :'puma:phased_restart'
         command %{mkdir -p tmp/}
         command %{touch #{fetch(:deploy_to)}/tmp/restart.txt}
       end
-      # invoke :'whenever:update'
     end
   end
 end
