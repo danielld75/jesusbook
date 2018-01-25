@@ -53,9 +53,6 @@ gem 'unicorn'
 gem 'mina', :require => false
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
-gem 'mina', :require => false
-gem 'mina-sidekiq', :require => false
-gem 'mina-unicorn', :require => false
 # gem 'mina-rbenv-addons'
 # gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
 gem 'sqlite3'
