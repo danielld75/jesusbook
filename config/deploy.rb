@@ -8,18 +8,8 @@ require 'mina/unicorn'
 # require 'mina/puma'
 
 set :domain, '78.8.191.166'
-# config valid for current version and patch releases of Capistrano
-lock "~> 3.10.1"
-
-set :application, "jesusbook.info"
-set :repo_url, "https://github.com/danielld75/jesusbook.git"
-
-# Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-
-# Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
 set :deploy_to, '/home/jsbarm/jesusbook/'
+set :repository, 'https://github.com/danielld75/jesusbook.git'
 set :branch, 'master'
 set :user, 'jsbarm'
 set :forward_agent, true
@@ -45,35 +35,28 @@ task :environment do
   invoke :'rbenv:load'
   # If you're using rbenv, use this to load the rbenv environment.
   # Be sure to commit your .rbenv-version to your repository.
-
-set :use_sudo, false
-set :bundle_binstubs, nil
-set :linked_files, fetch(:linked_files, []).push('config/database.yml')
-set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
-
-after 'deploy:publishing', 'deploy:restart'
-
-namespace :deploy do
-  task :restart do
-    invoke 'unicorn:reload'
-  end
 end
 
-# Default value for :format is :airbrussh.
-# set :format, :airbrussh
+# Put any custom mkdir's in here for when `mina setup` is ran.
+# For Rails apps, we'll make some of the shared paths that are shared between
+# all releases.
+task :setup => :environment do
+  command %[mkdir -p "#{fetch(:deploy_to)}/shared/log"]
+  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/log"]
 
-# You can configure the Airbrussh format using :format_options.
-# These are the defaults.
-# set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
+  command %[mkdir -p "#{fetch(:deploy_to)}/shared/config"]
+  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/config"]
 
-# Default value for :pty is false
-# set :pty, true
+  command %[touch "#{fetch(:deploy_to)}/shared/config/database.yml"]
+  comment  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
 
-# Default value for :linked_files is []
-# append :linked_files, "config/database.yml", "config/secrets.yml"
+  command %[touch "#{fetch(:deploy_to)}/shared/config/secrets.yml"]
+  comment %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 
-# Default value for linked_dirs is []
-# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+  # sidekiq needs a place to store its pid file and log file
+  command %[mkdir -p "#{fetch(:deploy_to)}/shared/pids/"]
+  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/pids"]
+end
 
 desc "Deploys the current version to the server."
 task :deploy => :environment do
@@ -98,15 +81,3 @@ task :deploy => :environment do
     end
   end
 end
-
-# Default value for default_env is {}
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
-
-# Default value for local_user is ENV['USER']
-# set :local_user, -> { `git config user.name`.chomp }
-
-# Default value for keep_releases is 5
-# set :keep_releases, 5
-
-# Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure
