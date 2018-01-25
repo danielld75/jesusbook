@@ -53,7 +53,6 @@ gem 'unicorn'
 gem 'mina', :require => false
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
-gem 'rvm', '~> 1.11', '>= 1.11.3.9'
 gem 'mina', :require => false
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
