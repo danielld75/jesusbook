@@ -3,6 +3,7 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
+require 'mina/rvm'
 # require 'mina/puma'
 
 set :domain, '78.8.191.166'
@@ -16,6 +17,7 @@ set :unicorn_pid, "#{fetch(:deploy_to)}/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
 set :sidekiq, -> {"#{fetch(:bundle_bin)} exec sidekiq"}
 set :sidekiqctl, -> {"#{fetch(:bundle_prefix)} sidekiqctl"}
+set :rvm_path, "$HOME/.rvm/scripts/rvm"
 
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
