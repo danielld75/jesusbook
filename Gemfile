@@ -6,9 +6,8 @@ gem 'rails', '5.0.1'
 gem 'nokogiri', '~> 1.8', '>= 1.8.1'
 # Use postgresql as the database for Active Record
 group :production do
-  # gem 'pg'
+  gem 'pg'
 end
-gem 'pg', '~> 1.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sass'
@@ -16,7 +15,7 @@ gem 'sass'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# See https://github.com/sstephenson/execjs#readme fxor more supported runtimes
 gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library
@@ -55,6 +54,9 @@ gem 'mina', :require => false
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
 gem 'rvm', '~> 1.11', '>= 1.11.3.9'
+gem 'mina', :require => false
+gem 'mina-sidekiq', :require => false
+gem 'mina-unicorn', :require => false
 # gem 'mina-rbenv-addons'
 # gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
 gem 'sqlite3'
@@ -74,7 +76,7 @@ group :development, :test do
 end
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
