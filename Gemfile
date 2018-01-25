@@ -56,7 +56,7 @@ gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
 gem 'rvm', '~> 1.11', '>= 1.11.3.9'
 # gem 'mina-rbenv-addons'
-# gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
+gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
 gem 'sqlite3'
 gem 'rack-cache', :require => 'rack/cache'
 # gem 'mina-whenever'
