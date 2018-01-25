@@ -6,7 +6,7 @@ require 'mina/rbenv'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
 # require 'mina/puma'
-require 'mina/whenever'
+# require 'mina/whenever'
 
 set :domain, '78.8.191.166'
 set :deploy_to, '/home/jsbarm/jesusbook'
@@ -87,7 +87,7 @@ task :deploy => :environment do
         command %{mkdir -p tmp/}
         command %{touch #{fetch(:deploy_to)}/tmp/restart.txt}
       end
-      invoke :'whenever:update'
+      # invoke :'whenever:update'
     end
   end
 end
