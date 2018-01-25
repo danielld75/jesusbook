@@ -335,7 +335,7 @@ DEPENDENCIES
   mina-unicorn
   nokogiri (~> 1.8, >= 1.8.1)
   paperclip!
-  pg
+  pg (~> 1.0)
   pry-rails
   rack-cache
   rails (= 5.0.1)
