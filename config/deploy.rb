@@ -30,21 +30,24 @@ set :shared_paths, ['config/database.yml', 'log', 'config/secrets.yml']
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
 task :environment do
-  print_error ':environment is DEPRECATED! Please use local_environment and remote_environment'
-end
-task :local_environment do
   command %{
     echo "-----> Loading environment"
     #{echo_cmd %[source ~/.bashrc]}
           }
 end
-
-task :remote_environment do
-  command %{
-    echo "-----> Loading environment"
-    #{echo_cmd %[source ~/.bashrc]}
-          }
-end
+# task :local_environment do
+#   command %{
+#     echo "-----> Loading environment"
+#     #{echo_cmd %[source ~/.bashrc]}
+#           }
+# end
+#
+# task :remote_environment do
+#   command %{
+#     echo "-----> Loading environment"
+#     #{echo_cmd %[source ~/.bashrc]}
+#           }
+# end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
 # For Rails apps, we'll make some of the shared paths that are shared between
