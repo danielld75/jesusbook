@@ -36,11 +36,6 @@ task :environment do
   # If you're using rbenv, use this to load the rbenv environment.
   # Be sure to commit your .rbenv-version to your repository.
 end
-task :local_environment do
-end
-
-task :remote_environment do
-end
 set :rbenv_path, "$HOME/.rbenv"
 
 task :'rbenv:load' do
