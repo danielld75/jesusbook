@@ -28,15 +28,15 @@ set :shared_paths, ['config/database.yml', 'log', 'config/secrets.yml']
 
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
-# task :environment do
-#   command %{
-#     echo "-----> Loading environment"
-#     #{echo_cmd %[source ~/.bashrc]}
-#           }
-#   invoke :'rbenv:load'
-#   # If you're using rbenv, use this to load the rbenv environment.
-#   # Be sure to commit your .rbenv-version to your repository.
-# end
+task :environment do
+  command %{
+    echo "-----> Loading environment"
+    #{echo_cmd %[source ~/.bashrc]}
+          }
+  invoke :'rbenv:load'
+  # If you're using rbenv, use this to load the rbenv environment.
+  # Be sure to commit your .rbenv-version to your repository.
+end
 
 task :'rbenv:load' do
   comment %{Loading rbenv}
