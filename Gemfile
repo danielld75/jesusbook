@@ -6,8 +6,9 @@ gem 'rails', '5.0.1'
 gem 'nokogiri'
 # Use postgresql as the database for Active Record
 group :production do
-  gem 'pg'
+
 end
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sass'
