@@ -333,7 +333,7 @@ DEPENDENCIES
   mina (~> 1.0, >= 1.0.7)
   mina-sidekiq
   mina-unicorn
-  nokogiri (~> 1.8, >= 1.8.1)
+  nokogiri
   paperclip!
   pg
   pry-rails
