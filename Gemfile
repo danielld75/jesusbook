@@ -50,7 +50,7 @@ gem 'compass-core', '~> 1.0', '>= 1.0.3'
 gem 'sidekiq'
 # Use unicorn as the app server
 gem 'unicorn'
-gem 'mina'
+gem 'mina', '~> 1.0', '>= 1.0.7'
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
 # gem 'mina-rbenv-addons'
@@ -72,7 +72,6 @@ group :development, :test do
 end
 
 # Use Capistrano for deployment
-
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

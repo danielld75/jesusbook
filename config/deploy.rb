@@ -14,6 +14,7 @@ set :branch, 'master'
 set :user, 'jsbarm'
 set :forward_agent, true
 set :port, '6969'
+set :rbenv_path, "$HOME/.rbenv"
 set :unicorn_pid, "#{fetch(:deploy_to)}/shared/pids/unicorn.pid"
 set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
 set :sidekiq, -> { "#{fetch(:bundle_bin)} exec sidekiq" }
@@ -27,16 +28,15 @@ set :shared_paths, ['config/database.yml', 'log', 'config/secrets.yml']
 
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
-task :environment do
-  command %{
-    echo "-----> Loading environment"
-    #{echo_cmd %[source ~/.bashrc]}
-          }
-  invoke :'rbenv:load'
-  # If you're using rbenv, use this to load the rbenv environment.
-  # Be sure to commit your .rbenv-version to your repository.
-end
-set :rbenv_path, "$HOME/.rbenv"
+# task :environment do
+#   command %{
+#     echo "-----> Loading environment"
+#     #{echo_cmd %[source ~/.bashrc]}
+#           }
+#   invoke :'rbenv:load'
+#   # If you're using rbenv, use this to load the rbenv environment.
+#   # Be sure to commit your .rbenv-version to your repository.
+# end
 
 task :'rbenv:load' do
   comment %{Loading rbenv}

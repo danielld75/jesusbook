@@ -330,7 +330,7 @@ DEPENDENCIES
   jquery-turbolinks (~> 2.1)
   jquery-ui-rails
   lightbox-bootstrap-rails (= 5.1.0.1)
-  mina
+  mina (~> 1.0, >= 1.0.7)
   mina-sidekiq
   mina-unicorn
   nokogiri (~> 1.8, >= 1.8.1)
