@@ -51,9 +51,10 @@ gem 'compass-core', '~> 1.0', '>= 1.0.3'
 gem 'sidekiq'
 # Use unicorn as the app server
 gem 'unicorn'
-gem 'mina', '~> 1.0', '>= 1.0.7'
+gem 'mina', '1.2.3'
 gem 'mina-sidekiq', :require => false
 gem 'mina-unicorn', :require => false
+gem 'mina-whenever'
 # gem 'mina-rbenv-addons'
 # gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
 gem 'sqlite3'
