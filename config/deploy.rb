@@ -41,9 +41,11 @@ task :deploy do
 
   deploy do
     invoke :'git:clone'
+    invoke :'sidekiq:quiet'
     invoke :'deploy:link_shared_paths'
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
+    invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
 
     on :launch do
