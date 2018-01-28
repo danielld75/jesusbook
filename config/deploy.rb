@@ -5,7 +5,7 @@ require 'mina/rbenv'
 # require 'mina/rbenv/addons'
 require 'mina_sidekiq/tasks'
 require 'mina/unicorn'
-require 'mina/whenever'
+# require 'mina/whenever'
 # require 'mina/puma'
 
 set :domain, '78.8.191.166'
@@ -93,7 +93,7 @@ task :deploy => :environment do
       in_path(fetch(:current_path)) do
         invoke :'sidekiq:restart'
         invoke :'unicorn:restart'
-        invoke :'whenever:update'
+        # invoke :'whenever:update'
         # invoke :'puma:phased_restart'
         command %{mkdir -p tmp/}
         command %{touch #{fetch(:deploy_to)}/tmp/restart.txt}
