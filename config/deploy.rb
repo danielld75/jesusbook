@@ -26,78 +26,93 @@ set :sidekiqctl, -> { "#{fetch(:bundle_prefix)} sidekiqctl" }
 # They will be linked in the 'deploy:link_shared_paths' step.
 set :shared_paths, ['config/database.yml', 'log', 'config/secrets.yml']
 
+set :releases_path, -> { "#{fetch(:deploy_to)}/releases" }
+set :shared_path, -> { "#{fetch(:deploy_to)}/shared" }
+set :current_path, -> { "#{fetch(:deploy_to)}/current" }
+set :lock_file, 'deploy.lock'
+set :deploy_script, Mina.root_path('data/deploy.sh.erb')
+set :keep_releases, 5
+set :version_scheme, :sequence
+set :execution_mode, :pretty
 
-# This task is the environment that is loaded for most commands, such as
-# `mina deploy` or `mina rake`.
-# task :environment do
-#   command %{
-#     echo "-----> Loading environment"
-#     #{echo_cmd %[source ~/.bashrc]}
-#           }
-#   invoke :'rbenv:load'
-# end
-task :remote_environment do
-  invoke :'rbenv:load'
-end
+namespace :deploy do
+  desc 'Forces a deploy unlock.'
+  task :force_unlock do
+    comment %{Unlocking}
+    command %{rm -f "#{fetch(:deploy_to)}/#{fetch(:lock_file)}"}
+  end
 
-task :'rbenv:load' do
-  comment %{Loading rbenv}
-  command %{export RBENV_ROOT="#{fetch(:rbenv_path)}"}
-  command %{export PATH="#{fetch(:rbenv_path)}/bin:$PATH"}
-  command %{
-    if ! which rbenv >/dev/null; then
-      echo "! rbenv not found"
-      echo "! If rbenv is installed, check your :rbenv_path setting."
-      exit 1
-    fi
-  }
-  command %{eval "$(rbenv init -)"}
-end
+  desc 'Links paths set in :shared_dirs and :shared_files.'
+  task :link_shared_paths do
+    comment %{Symlinking shared paths}
 
-# Put any custom mkdir's in here for when `mina setup` is ran.
-# For Rails apps, we'll make some of the shared paths that are shared between
-# all releases.
-task :setup => :environment do
-  #command %[mkdir -p "#{fetch(:deploy_to)}/current"]
+    fetch(:shared_dirs, []).each do |linked_dir|
+      command %{
+        if [ ! -d  "#{fetch(:shared_path)}/#{linked_dir}" ]; then
+          echo "! ERROR: not set up."
+          echo "The directory '#{fetch(:shared_path)}/#{linked_dir}' does not exist on the server"
+          echo "You may need to run 'mina setup' first"
+          exit 18
+        fi
+      }
+      command %{mkdir -p #{File.dirname("./#{linked_dir}")}}
+      command %{rm -rf "./#{linked_dir}"}
+      command %{ln -s "#{fetch(:shared_path)}/#{linked_dir}" "./#{linked_dir}"}
+    end
 
-  command %[mkdir -p "#{fetch(:deploy_to)}/shared/log"]
-  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/log"]
+    fetch(:shared_files, []).each do |linked_path|
+      command %{ln -sf "#{fetch(:shared_path)}/#{linked_path}" "./#{linked_path}"}
+    end
+  end
 
-  command %[mkdir -p "#{fetch(:deploy_to)}/shared/config"]
-  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/config"]
+  desc 'Clean up old releases.'
+  task :cleanup do
+    ensure!(:keep_releases)
+    ensure!(:deploy_to)
 
-  command %[touch "#{fetch(:deploy_to)}/shared/config/database.yml"]
-  comment  %[echo "-----> Be sure to edit 'shared/config/database.yml'."]
-
-  command %[touch "#{fetch(:deploy_to)}/shared/config/secrets.yml"]
-  comment %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
-
-  # sidekiq needs a place to store its pid file and log file
-  command %[mkdir -p "#{fetch(:deploy_to)}/shared/pids/"]
-  command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/pids"]
-
-end
-
-desc "Deploys the current version to the server."
-task :deploy => :environment do
-  deploy do
-    invoke :'git:clone'
-    invoke :'sidekiq:quiet'
-    invoke :'deploy:link_shared_paths'
-    invoke :'bundle:install'
-    invoke :'rails:db_migrate'
-    invoke :'rails:assets_precompile'
-    # invoke :'deploy:cleanup'
-
-    on :launch do
-      in_path(fetch(:current_path)) do
-        invoke :'sidekiq:restart'
-        invoke :'unicorn:restart'
-        # invoke :'whenever:update'
-        # invoke :'puma:phased_restart'
-        command %{mkdir -p tmp/}
-        command %{touch #{fetch(:deploy_to)}/tmp/restart.txt}
-      end
+    comment %{Cleaning up old releases (keeping #{fetch(:keep_releases)})}
+    in_path "#{fetch(:releases_path)}" do
+      command %{count=$(ls -A1 | sort -rn | wc -l)}
+      command %{remove=$((count > #{fetch(:keep_releases)} ? count - #{fetch(:keep_releases)} : 0))}
+      command %{ls -A1 | sort -rn | tail -n $remove | xargs rm -rf {}}
     end
   end
 end
+
+desc 'Rollbacks the latest release'
+task :rollback do
+  comment %{Rolling back to previous release}
+
+  in_path "#{fetch(:releases_path)}" do
+    # TODO: add check if there are more than 1 release
+    command %{rollback_release=$(ls -1A | sort -n | tail -n 2 | head -n 1)}
+    comment %{Rollbacking to release: $rollback_release}
+    command %{ln -nfs #{fetch(:releases_path)}/$rollback_release #{fetch(:current_path)}}
+    command %{current_release=$(ls -1A | sort -n | tail -n 1)}
+    comment %{Deleting current release: $current_release}
+    command %{rm -rf #{fetch(:releases_path)}/$current_release}
+  end
+end
+
+desc 'Sets up a site.'
+task :setup do
+  ensure!(:deploy_to)
+
+  comment %{Setting up #{fetch(:deploy_to)}}
+  command %{mkdir -p "#{fetch(:deploy_to)}"}
+  command %{mkdir -p "#{fetch(:releases_path)}"}
+  command %{mkdir -p "#{fetch(:shared_path)}"}
+
+  in_path "#{fetch(:shared_path)}" do
+    fetch(:shared_dirs, []).each do |linked_dir|
+      command %{mkdir -p "#{linked_dir}"}
+    end
+    fetch(:shared_files, []).each do |linked_path|
+      command %{mkdir -p "#{File.dirname(linked_path)}"}
+    end
+  end
+
+  command %{if [ -x "$(command -v tree)" ]; then tree -d -L 2 "#{fetch(:deploy_to)}"; else ls -al "#{fetch(:deploy_to)}"; fi}
+
+  invoke :ssh_keyscan_repo
+  end
