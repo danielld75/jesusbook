@@ -9,7 +9,7 @@ require 'mina/whenever'
 # require 'mina/puma'
 
 set :domain, '78.8.191.166'
-set :deploy_to, '/home/jsbarm/jesusbookinfo/'
+set :deploy_to, '/home/jsbarm/jesusbook/'
 set :repository, 'https://github.com/danielld75/jesusbook.git'
 set :branch, 'master'
 set :user, 'jsbarm'
@@ -58,7 +58,7 @@ end
 # For Rails apps, we'll make some of the shared paths that are shared between
 # all releases.
 task :setup => :environment do
-  command %[mkdir -p "#{fetch(:deploy_to)}/current"]
+  #command %[mkdir -p "#{fetch(:deploy_to)}/current"]
 
   command %[mkdir -p "#{fetch(:deploy_to)}/shared/log"]
   command %[chmod g+rx,u+rwx "#{fetch(:deploy_to)}/shared/log"]
